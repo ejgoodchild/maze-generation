@@ -8,7 +8,7 @@ struct MazeNode {
 	int x, y;
 	char nodeType = NULL;
 	float g, h;
-	bool passable;
+	bool passable = true;
 };
 class Maze
 {
@@ -26,7 +26,12 @@ class Maze
 	private:
 		int width, height;
 		int edges = 1;
+		int getNodesPos(int x, int y){
+			return x + (y * width);
+		}
 		std::vector <MazeNode> nodes;
+		void generateNodes();
+		void generateStartPoint();
 
 };
 

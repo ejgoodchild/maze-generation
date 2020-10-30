@@ -21,7 +21,7 @@ void Maze::printMaze()
 {
 	for (int y = 0; y < height; y++) {
 		for (int x = 0; x < width; x++) {
-			cout << nodes.at(x + (y * width)).nodeType;
+			cout << nodes.at(getNodesPos(x,y)).nodeType;
 		}
 		cout << endl;
 	}
@@ -31,8 +31,13 @@ void Maze::printMaze()
 
 void Maze::generateMaze()
 {
-	MazeNode* mNode;
+	generateNodes();
+	generateStartPoint();
+}
 
+void Maze::generateNodes()
+{
+	MazeNode* mNode;
 	for (int y = 0; y < height; y++) {
 		for (int x = 0; x < width; x++) {
 			mNode = new MazeNode();
@@ -41,6 +46,28 @@ void Maze::generateMaze()
 			nodes.emplace_back(*mNode);
 		}
 	}
+}
+
+void Maze::generateStartPoint()
+{
+	
+	
+	int ch = (height - 1) / 2;
+	int cw = (width - 1) / 2;
+	
+	MazeNode* mNode;
+	for (int y = ch - 1; y < ch+ 1; y++) {
+		for (int x = cw - 1; x < cw + 1; x++) {
+			mNode = &nodes.at(getNodesPos(x, y));
+			mNode->nodeType = (y == ch && x == cw) ? 'S' : ' ';
+		
+
+		}
+	}
+
+	
+
+
 }
 
 
