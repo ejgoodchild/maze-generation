@@ -13,7 +13,8 @@ void MazeGeneration::generateMaze()
     curMaze = new Maze(getMazeWidth(), getMazeHeight());
     curMaze->setEdges(getNumberOfEdges());
     curMaze->printMazeSize();
-    
+    curMaze->generateMaze();
+    curMaze->printMaze();
     
    
 
