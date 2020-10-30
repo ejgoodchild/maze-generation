@@ -1,0 +1,2 @@
+C:\Users\Ethan\Documents\GitHub\maze-generation\Maze Generation\Debug\Maze Generation.exe
+C:\Users\Ethan\Documents\GitHub\maze-generation\Maze Generation\Debug\Maze Generation.pdb
