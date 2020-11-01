@@ -1,11 +1,16 @@
 #pragma once
 #include "Maze.h"
-class SaveLoad
+ class SaveLoad
 {
 	public:
 		void save(Maze*);
+		Maze* load();
 
 	private:
-		string getFileName();
+	
+
+		string getFileNameSave();
+		 string getFileNameLoad();
+		string checkExtension(string*);
 };
 

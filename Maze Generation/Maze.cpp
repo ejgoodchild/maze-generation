@@ -18,6 +18,25 @@ Maze::Maze(int w, int h)
 	
 }
 
+Maze::Maze(int w, int h, string str)
+{
+	width = w;
+	height = h;
+
+	MazeNode* mNode;
+	for (int y = 0; y < height; y++) {
+		for (int x = 0; x < width; x++) {
+			mNode = new MazeNode();
+			mNode->x = x;
+			mNode->y = y;
+			mNode->nodeType = str.at(getNodesPos(x, y));
+			mNode->passable = mNode->nodeType == 'X' ? false : true;
+			nodes.emplace_back(*mNode);
+		}
+	}
+
+}
+
 /**
  * Prints the maze size
  */

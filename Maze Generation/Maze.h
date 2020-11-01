@@ -15,6 +15,7 @@ class Maze
 {
 	public:
 		Maze(int, int);
+		Maze(int, int, string);
 		void printMazeSize();
 		int getMaxNumOfExits();
 		void setExits(int exits) {

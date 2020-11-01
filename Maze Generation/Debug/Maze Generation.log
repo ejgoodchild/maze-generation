@@ -1,4 +1,6 @@
 ﻿  MazeGeneration.cpp
 C:\Users\Ethan\Documents\GitHub\maze-generation\Maze Generation\MazeGeneration.cpp(8,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-C:\Users\Ethan\Documents\GitHub\maze-generation\Maze Generation\MazeGeneration.cpp(50): warning C4717: 'MazeGeneration::start': recursive on all control paths, function will cause runtime stack overflow
+  SaveLoad.cpp
+  Generating Code...
+C:\Users\Ethan\Documents\GitHub\maze-generation\Maze Generation\MazeGeneration.cpp(61): warning C4717: 'MazeGeneration::start': recursive on all control paths, function will cause runtime stack overflow
   Maze Generation.vcxproj -> C:\Users\Ethan\Documents\GitHub\maze-generation\Maze Generation\Debug\Maze Generation.exe

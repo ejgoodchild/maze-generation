@@ -18,6 +18,7 @@ class MazeGeneration {
 
 		void generateMaze();
 		void saveMaze();
+		void loadMaze();
 		UserOptions getUserSelection();
 		
 };

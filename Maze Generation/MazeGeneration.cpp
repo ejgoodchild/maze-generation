@@ -30,6 +30,16 @@ void MazeGeneration::saveMaze()
     saveload.save(curMaze);
 }
 
+void MazeGeneration::loadMaze()
+{
+    if (curMaze) {
+        delete curMaze;
+    }
+    SaveLoad saveload;
+    curMaze = saveload.load();
+    curMaze->printMaze();
+}
+
 UserOptions MazeGeneration::getUserSelection()
 {
     cout << "Please type the number for the option you'd like to pick..." << endl;
@@ -43,7 +53,7 @@ UserOptions MazeGeneration::getUserSelection()
 void MazeGeneration::start()
 {
     UserOptions mode = getUserSelection();
-    mode == UserOptions::GENERATE ? generateMaze() : (mode == UserOptions::LOAD ? (void)(cout << "Coming Soon"<<endl) : (void)(cout << "No option selected" << endl));
+    mode == UserOptions::GENERATE ? generateMaze() : (mode == UserOptions::LOAD ?  loadMaze(): (void)(cout << "No option selected" << endl));
 
     saveMaze();
     cout << endl << endl;
