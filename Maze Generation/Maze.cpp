@@ -1,5 +1,8 @@
 #include "Maze.h"
 #include <algorithm>
+#include <random>
+#include <chrono>       // std::chrono::system_clock
+#include <array>        // std::array
 
 
 
@@ -109,27 +112,23 @@ void Maze::generatePaths(MazeNode* curNode)
 }
 
 
+
 MazeNode* Maze::getPathEndNode(MazeNode* curNode, Directions dir)
 {
 	int x = 0, y = 0;
-	
-	switch (dir) {
-	case Directions::NORTH:
-		y = curNode->y - 2 <= 0 ? 0 : -2;
-		break;
-	case Directions::EAST:
-		x = curNode->x + 2 >= width - 1 ? 0 : 2;
-		break;
+	int len =  2;
 
-	case Directions::SOUTH:
-		y = curNode->y + 2 >= height - 1 ? 0 : 2;
-		break;
+	x += dir == Directions::EAST ? (curNode->x + len >= width - 1 ? 0 : len) : 0; // if direction is EAST and in range then x = len
+	x += dir == Directions::WEST ? (curNode->x - len <= 0 ? 0 : -len) : 0; // if direction is WEST and in range then x = -len
+	y += dir == Directions::NORTH ? (curNode->y - len <= 0 ? 0 : -len) : 0; // if direction is NORTH and in range then y = -len
+	y += dir == Directions::SOUTH ? (curNode->y + len >= height - 1 ? 0 : len) : 0; // if direction is SOUTH and in range then y = len
 
-	case Directions::WEST:
-		x = curNode->x - 2 <= 0 ? 0 : -2;
-		break;
-
-	}
+	bool isXIncrementable = width % 2 == 0 ? (dir == Directions::EAST || dir == Directions::WEST) : false;
+	bool isYIncrementable = height % 2 == 0 ? (dir == Directions::NORTH || dir == Directions::SOUTH) : false;
+	//if x is incrementable then decrement if x is on left side of maze and if x is even otherwise if on right side then increment x if odd
+	x += isXIncrementable ? (curNode->x < width / 2 ? (curNode->x % 2 == 0 ? -1 : 0) : (curNode->x % 2 == 1 ? 1 : 0)) : 0;
+	//if y is incrementable then decrement if y is on top side of maze and if y is even otherwise if on bottom side then increment y if odd
+	y += isYIncrementable ? (curNode->y < height / 2 ? (curNode->y % 2 == 0 ? -1 : 0) : (curNode->y % 2 == 1 ? 1 : 0)) : 0; 
 
 	MazeNode* endNode = &nodes.at(getNodesPos(curNode->x + x, curNode->y + y));
 	endNode = endNode->nodeType ? NULL : endNode;

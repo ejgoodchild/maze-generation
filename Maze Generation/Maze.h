@@ -40,7 +40,6 @@ class Maze
 		};
 		void generatePaths(MazeNode* node);
 
-
 		void generateStartPoint();
 		void generateWalls();
 

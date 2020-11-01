@@ -1,9 +1,12 @@
 #include "MazeGeneration.h"
 #include <iostream>
+#include <time.h>
 
 using namespace std;
 int main()
 {
+    srand(time(NULL));
+
     MazeGeneration mazeGen;
     mazeGen.generateMaze();
 }
