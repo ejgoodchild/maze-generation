@@ -16,9 +16,9 @@ class Maze
 	public:
 		Maze(int, int);
 		void printMazeSize();
-		int getMaxNumOfEdges();
-		void setEdges(int edges) {
-			this->edges = edges;
+		int getMaxNumOfExits();
+		void setExits(int exits) {
+			this->exits = exits;
 		};
 		void printMaze();
 		void generateMaze();
@@ -26,7 +26,7 @@ class Maze
 
 	private:
 		int width, height;
-		int edges = 1;
+		int exits = 1;
 		int getNodesPos(int x, int y){
 			return x + (y * width);
 		}	
@@ -36,18 +36,22 @@ class Maze
 		
 		void generateNodes();
 		void generatePaths() {
-			generatePaths(getStartNode());
+			MazeNode* start = getStartNode();
+			int x = (width % 2 == 1) ? (((width-1)/2) % 2 == 0 ? start->x + 1 : start->x): start->x;
+			int y = (height % 2 == 1) ? (((height - 1) / 2) % 2 == 0 ? start->y + 1 : start->y) : start->y;
+			generatePaths(&nodes.at(getNodesPos(x,y)));
 		};
 		void generatePaths(MazeNode* node);
 
 		void generateStartPoint();
 		void generateWalls();
+		void generateExits();
 
 		MazeNode* getStartNode(){
 			return &nodes.at(getNodesPos((width - 1) / 2, (height - 1) / 2));
 		}
 
-
+		std::vector <MazeNode*> getPossibleExits();
 		
 
 		MazeNode* getPathEndNode(MazeNode*, Directions);

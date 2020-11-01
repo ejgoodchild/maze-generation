@@ -17,7 +17,7 @@ int main()
 void MazeGeneration::generateMaze()
 {
     curMaze = new Maze(getMazeWidth(), getMazeHeight());
-    curMaze->setEdges(getNumberOfEdges());
+    curMaze->setExits(getNumberOfExits());
     curMaze->printMazeSize();
     curMaze->generateMaze();
     curMaze->printMaze();
@@ -72,17 +72,17 @@ int MazeGeneration::getMazeHeight()
  * 
  * @return the amount of edges the user has requested
  */
-int MazeGeneration::getNumberOfEdges()
+int MazeGeneration::getNumberOfExits()
 {
     int edges;
     cout << "Enter the number of edges in the maze" << endl;
     cin >> edges;
-    if (edges > 1 && edges <= curMaze->getMaxNumOfEdges()) {
+    if (edges > 1 && edges <= curMaze->getMaxNumOfExits()) {
         return edges;
     }
-    cout << "The number of edges is outside the range, the number of edges must be between 1 and " << curMaze->getMaxNumOfEdges() << endl;
+    cout << "The number of edges is outside the range, the number of edges must be between 1 and " << curMaze->getMaxNumOfExits() << endl;
 
-    return getNumberOfEdges();
+    return getNumberOfExits();
 }
 
 

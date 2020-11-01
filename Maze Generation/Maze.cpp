@@ -27,9 +27,9 @@ void Maze::printMazeSize()
 }
 
 /**
- * Calculates the maximum amount of edges possible
+ * Calculates the maximum amount of exits possible
  */
-int Maze::getMaxNumOfEdges()
+int Maze::getMaxNumOfExits()
 {
 	return (width-2)*2 + (height-2)*2;
 }
@@ -57,6 +57,7 @@ void Maze::generateMaze()
 	generatePaths();
 	generateStartPoint();
 	generateWalls();
+	generateExits();
 }
 
 /**
@@ -110,6 +111,20 @@ void Maze::generateWalls()
 		}
 	}
 }
+
+void Maze::generateExits()
+{
+	std::vector<MazeNode*> possibleExits = getPossibleExits();
+	std::random_shuffle(possibleExits.begin(), possibleExits.end());
+
+	for (int i = 0; i < exits; i++) {
+		possibleExits.at(i)->nodeType = 'E';
+		possibleExits.at(i)->passable = true;
+
+	}
+	
+}
+
 /**
  * Recursively generates a random path around the maze until an invalid end node is founf
  *
@@ -128,6 +143,30 @@ void Maze::generatePaths(MazeNode* curNode)
 			generatePaths(endNode);
 		}				
 	}
+}
+
+std::vector<MazeNode*> Maze::getPossibleExits()
+{
+	std::vector <MazeNode*> possibleExits;
+
+	for (int y = 0; y < height; y++) {
+		if (nodes.at(getNodesPos(1, y)).passable) {
+			possibleExits.emplace_back(&nodes.at(getNodesPos(0, y)));
+		}
+		if (nodes.at(getNodesPos(width - 2, y)).passable) {
+			possibleExits.emplace_back(&nodes.at(getNodesPos(width - 1, y)));
+		}
+	}
+	for (int x = 1; x < width - 1; x++) {
+		if (nodes.at(getNodesPos(x, 1)).passable) {
+			possibleExits.emplace_back(&nodes.at(getNodesPos(x, 0)));
+		}
+		if (nodes.at(getNodesPos(x, height -2)).passable) {
+			possibleExits.emplace_back(&nodes.at(getNodesPos(x, height-1)));
+		}
+	}
+	cout << possibleExits.size() << endl;
+	return possibleExits;
 }
 
 /**

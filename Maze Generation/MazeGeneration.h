@@ -9,7 +9,7 @@ class MazeGeneration {
 		int const MIN_MAZE_LENGTH = 5;
 		int getMazeWidth();
 		int getMazeHeight();
-		int getNumberOfEdges();
+		int getNumberOfExits();
 
 		Maze* curMaze = NULL;
 };
