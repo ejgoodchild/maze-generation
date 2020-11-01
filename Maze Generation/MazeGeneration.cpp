@@ -5,12 +5,15 @@
 using namespace std;
 int main()
 {
-    srand(time(NULL));
+    srand(time(NULL)); // For randomness effect
 
     MazeGeneration mazeGen;
     mazeGen.generateMaze();
 }
 
+/**
+ * Generates, sets up and prints out the maze
+ */
 void MazeGeneration::generateMaze()
 {
     curMaze = new Maze(getMazeWidth(), getMazeHeight());
@@ -23,6 +26,12 @@ void MazeGeneration::generateMaze()
 
 }
 
+/**
+ * Asks the user the width they want the maze
+ * If width too small, then the user is asked to type in another width
+ *
+ * @return the width of the maze
+ */
 int MazeGeneration::getMazeWidth()
 {
     int width;
@@ -37,6 +46,12 @@ int MazeGeneration::getMazeWidth()
     return width;
 }
 
+/**
+ * Asks the user the height they want the maze
+ * If height too small, then the user is asked to type in another height
+ * 
+ * @return the height of the maze
+ */
 int MazeGeneration::getMazeHeight()
 {
     int height;
@@ -51,6 +66,12 @@ int MazeGeneration::getMazeHeight()
     return height;
 }
 
+/**
+ * Asks user how many edges they want in the maze
+ * If not within the range, then the user is asked to type in another amount
+ * 
+ * @return the amount of edges the user has requested
+ */
 int MazeGeneration::getNumberOfEdges()
 {
     int edges;

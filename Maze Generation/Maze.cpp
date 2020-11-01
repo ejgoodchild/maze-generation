@@ -6,7 +6,11 @@
 
 
 
-
+/**
+ * Constructor to instantiate the maze 
+ * 
+ * @param the width and height of the maze
+ */
 Maze::Maze(int w, int h)
 {
 	width = w;
@@ -14,16 +18,25 @@ Maze::Maze(int w, int h)
 	
 }
 
+/**
+ * Prints the maze size
+ */
 void Maze::printMazeSize()
 {
 	cout << "The maze is a size of " << width << "x" << height << endl;
 }
 
+/**
+ * Calculates the maximum amount of edges possible
+ */
 int Maze::getMaxNumOfEdges()
 {
 	return (width-2)*2 + (height-2)*2;
 }
 
+/**
+ * Prints the maze 
+ */
 void Maze::printMaze()
 {
 	for (int y = 0; y < height; y++) {
@@ -35,7 +48,9 @@ void Maze::printMaze()
 	cout << endl;
 
 }
-
+/**
+ * Generates the maze by generating the nodes, paths, the start point and the walls
+ */
 void Maze::generateMaze()
 {
 	generateNodes();
@@ -44,6 +59,9 @@ void Maze::generateMaze()
 	generateWalls();
 }
 
+/**
+ * Generates width*height number of maze nodes and gives them all x and y values
+ */
 void Maze::generateNodes()
 {
 	MazeNode* mNode;
@@ -59,8 +77,10 @@ void Maze::generateNodes()
 
 
 
-
-
+/**
+ * Generates a 3x3 area in the center of the maze
+ * The start point is denoted with the character 'S'
+ */
 void Maze::generateStartPoint()
 {
 	MazeNode* startPoint = getStartNode();
@@ -69,32 +89,32 @@ void Maze::generateStartPoint()
 		for (int x = startPoint->x - 1; x <= startPoint->x + 1; x++) {
 			mNode = &nodes.at(getNodesPos(x, y));
 			mNode->nodeType = mNode == startPoint ? 'S' : ' ';
-		
-
 		}
 	}
-
-	
-
-
 }
 
+/**
+ * Generates the walls on nodes that have not been assigned a node type
+ * Wall node type is denoted with the character 'X'
+ */
 void Maze::generateWalls()
 {
 	MazeNode* mNode;
 	for (int y = 0; y < height; y++) {
 		for (int x = 0; x < width; x++) {
 			mNode = &nodes.at(getNodesPos(x, y));
-			if(mNode->nodeType == NULL){
+			if(!mNode->nodeType){ 
 				mNode->nodeType = 'X';
 				mNode->passable = false;
-			}
-
-			
-			
+			}					
 		}
 	}
 }
+/**
+ * Recursively generates a random path around the maze until an invalid end node is founf
+ *
+ * @param the starting node
+ */
 void Maze::generatePaths(MazeNode* curNode)
 {
 	Directions dir[]{ Directions::NORTH, Directions::EAST, Directions::SOUTH, Directions::WEST };
@@ -103,16 +123,19 @@ void Maze::generatePaths(MazeNode* curNode)
 	std::random_shuffle(std::begin(dir), std::end(dir));
 	for (int i = 0; i < 4; i++) {
 		endNode = getPathEndNode(curNode, dir[i]);
-		if (endNode != NULL) {
-			//endNode->print();
+		if (endNode) {
 			fillPathNodes(curNode, endNode);
 			generatePaths(endNode);
 		}				
 	}
 }
 
-
-
+/**
+ * Finds where the end node will be positioned in a given the direction
+ *
+ * @param the starting node and the direction the path is travelling
+ * @return MazeNode* of end node or NULL if end node is not valid.
+ */
 MazeNode* Maze::getPathEndNode(MazeNode* curNode, Directions dir)
 {
 	int x = 0, y = 0;
@@ -131,11 +154,16 @@ MazeNode* Maze::getPathEndNode(MazeNode* curNode, Directions dir)
 	y += isYIncrementable ? (curNode->y < height / 2 ? (curNode->y % 2 == 0 ? -1 : 0) : (curNode->y % 2 == 1 ? 1 : 0)) : 0; 
 
 	MazeNode* endNode = &nodes.at(getNodesPos(curNode->x + x, curNode->y + y));
-	endNode = endNode->nodeType ? NULL : endNode;
+	endNode = endNode->nodeType ? NULL : endNode; //if end node has already had its type defined then return null
 
 	return curNode == endNode ? NULL : endNode ;
 }
 
+/**
+ * Fills nodes between start node and end node with the space character
+ *
+ * @param the starting node and the ending node
+ */
 void Maze::fillPathNodes(MazeNode* curNode, MazeNode* nextNode)
 {
 
