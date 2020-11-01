@@ -1,9 +1,12 @@
 #pragma once
 #include "Maze.h"
+#include "SaveLoad.h"
+enum class UserOptions {GENERATE = 1, LOAD = 2, SAVE = 3};
 class MazeGeneration {
 
 	public:
-		void generateMaze();
+		
+		void start();
 
 	private:
 		int const MIN_MAZE_LENGTH = 5;
@@ -12,4 +15,9 @@ class MazeGeneration {
 		int getNumberOfExits();
 
 		Maze* curMaze = NULL;
+
+		void generateMaze();
+		void saveMaze();
+		UserOptions getUserSelection();
+		
 };

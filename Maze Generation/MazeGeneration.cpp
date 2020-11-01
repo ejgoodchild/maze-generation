@@ -6,9 +6,8 @@ using namespace std;
 int main()
 {
     srand(time(NULL)); // For randomness effect
-
     MazeGeneration mazeGen;
-    mazeGen.generateMaze();
+    mazeGen.start();
 }
 
 /**
@@ -22,8 +21,33 @@ void MazeGeneration::generateMaze()
     curMaze->generateMaze();
     curMaze->printMaze();
     
-   
 
+}
+
+void MazeGeneration::saveMaze()
+{
+    SaveLoad saveload;
+    saveload.save(curMaze);
+}
+
+UserOptions MazeGeneration::getUserSelection()
+{
+    cout << "Please type the number for the option you'd like to pick..." << endl;
+    cout << "| Generate Maze (1) | Load Maze (2) |" << endl;
+    int option;
+    cin >> option;
+    
+    return option == 1 ?  UserOptions::GENERATE : (option == 2 ? UserOptions::LOAD : getUserSelection()) ;
+}
+
+void MazeGeneration::start()
+{
+    UserOptions mode = getUserSelection();
+    mode == UserOptions::GENERATE ? generateMaze() : (mode == UserOptions::LOAD ? (void)(cout << "Coming Soon"<<endl) : (void)(cout << "No option selected" << endl));
+
+    saveMaze();
+    cout << endl << endl;
+    start();
 }
 
 /**

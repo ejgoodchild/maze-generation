@@ -39,14 +39,20 @@ int Maze::getMaxNumOfExits()
  */
 void Maze::printMaze()
 {
+
+	cout << toString();
+
+}
+string Maze::toString()
+{
+	string maze ="";
 	for (int y = 0; y < height; y++) {
 		for (int x = 0; x < width; x++) {
-			cout << nodes.at(getNodesPos(x,y)).nodeType;
+			maze += nodes.at(getNodesPos(x, y)).nodeType;
 		}
-		cout << endl;
+		maze += '\n';
 	}
-	cout << endl;
-
+	return maze;
 }
 /**
  * Generates the maze by generating the nodes, paths, the start point and the walls
@@ -165,7 +171,6 @@ std::vector<MazeNode*> Maze::getPossibleExits()
 			possibleExits.emplace_back(&nodes.at(getNodesPos(x, height-1)));
 		}
 	}
-	cout << possibleExits.size() << endl;
 	return possibleExits;
 }
 

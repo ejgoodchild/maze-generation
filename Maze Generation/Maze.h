@@ -21,6 +21,7 @@ class Maze
 			this->exits = exits;
 		};
 		void printMaze();
+		string toString();
 		void generateMaze();
 
 
