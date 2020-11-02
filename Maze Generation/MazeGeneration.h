@@ -21,4 +21,5 @@ class MazeGeneration {
 		void loadMaze();
 		UserOptions getUserSelection();
 		
+		
 };

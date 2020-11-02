@@ -10,12 +10,18 @@ struct MazeNode {
 	float g, h;
 	bool passable = true;
 	void print() { cout << "[" <<x <<"," << y << "]"; };
+	bool closed = false;
+	MazeNode* bestParent = NULL;
 };
+
+
+
 class Maze
 {
 	public:
 		Maze(int, int);
 		Maze(int, int, string);
+		~Maze();
 		void printMazeSize();
 		int getMaxNumOfExits();
 		void setExits(int exits) {
@@ -25,16 +31,18 @@ class Maze
 		string toString();
 		void generateMaze();
 
+		void getBestExitPaths();
+
+
 
 	private:
 		int width, height;
 		int exits = 1;
-		int getNodesPos(int x, int y){
-			return x + (y * width);
-		}	
-
-		std::vector <MazeNode> nodes;
 		
+		int getNodesPos(int x, int y) {
+			return x + (y * width);
+		}
+		std::vector <MazeNode> nodes;
 		
 		void generateNodes();
 		void generatePaths() {
@@ -54,10 +62,22 @@ class Maze
 		}
 
 		std::vector <MazeNode*> getPossibleExits();
-		
+
 
 		MazeNode* getPathEndNode(MazeNode*, Directions);
 		void fillPathNodes(MazeNode*, MazeNode*);
 
+
+		void expandNode(std::vector<MazeNode*>& openList, MazeNode* bestNode, MazeNode* endNode, std::vector <MazeNode>& nodes);
+		bool isNodeValid(int, int, std::vector<MazeNode>&);
+		vector<MazeNode*> getPathResults(MazeNode*, MazeNode*);
+		MazeNode* getBestNode(std::vector<MazeNode*>& openList);
+		vector<MazeNode*> getBestPath(MazeNode* start, MazeNode* end);
+
+		int ManhattanDistance(MazeNode* a, MazeNode* b) {
+			return abs(a->x - b->x) + abs(a->y - b->y);
+		}
+		
+		
 };
 

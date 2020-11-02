@@ -32,9 +32,7 @@ void MazeGeneration::saveMaze()
 
 void MazeGeneration::loadMaze()
 {
-    if (curMaze) {
-        delete curMaze;
-    }
+    
     SaveLoad saveload;
     curMaze = saveload.load();
     curMaze->printMaze();
@@ -52,10 +50,18 @@ UserOptions MazeGeneration::getUserSelection()
 
 void MazeGeneration::start()
 {
-    UserOptions mode = getUserSelection();
+    if (curMaze) {
+        delete curMaze;
+    }
+
+
+   UserOptions mode = getUserSelection();
     mode == UserOptions::GENERATE ? generateMaze() : (mode == UserOptions::LOAD ?  loadMaze(): (void)(cout << "No option selected" << endl));
 
-    saveMaze();
+
+
+    curMaze->getBestExitPaths();
+    //saveMaze();
     cout << endl << endl;
     start();
 }
