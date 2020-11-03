@@ -38,26 +38,42 @@ void MazeGeneration::loadMaze()
     curMaze->printMaze();
 }
 
-UserOptions MazeGeneration::getUserSelection()
-{
-    cout << "Please type the number for the option you'd like to pick..." << endl;
-    cout << "| Generate Maze (1) | Load Maze (2) |" << endl;
-    int option;
-    cin >> option;
-    
-    return option == 1 ?  UserOptions::GENERATE : (option == 2 ? UserOptions::LOAD : getUserSelection()) ;
-}
 
-void MazeGeneration::start()
+
+void MazeGeneration::getUserMaze()
 {
     if (curMaze) {
         delete curMaze;
     }
+    cout << "Please type the number for the option you'd like to pick..." << endl;
+    cout << "| Generate Maze (1) | Load Maze (2) |" << endl;
+    int option;
+    cin >> option;
 
+    UserOptions mode = option == 1 ? UserOptions::GENERATE : (option == 2 ? UserOptions::LOAD : UserOptions::EXIT);
+    mode == UserOptions::GENERATE ? generateMaze() : (mode == UserOptions::LOAD ? loadMaze() : (void)(cout << "No option selected" << endl));
 
-   UserOptions mode = getUserSelection();
-    mode == UserOptions::GENERATE ? generateMaze() : (mode == UserOptions::LOAD ?  loadMaze(): (void)(cout << "No option selected" << endl));
+}
 
+void MazeGeneration::promptSave()
+{
+    cout << "Would you like to save this maze?" << endl;
+    cout << "| Yes | No |" << endl;
+    string input;
+    cin >> input;
+    bool result = input.length() > 0 ? (tolower(input.at(0)) == 'y' ? true : false) : false;
+    if (result) {
+
+        saveMaze();
+    }
+}
+
+void MazeGeneration::start()
+{
+    getUserMaze();
+    promptSave();
+
+   
 
 
     curMaze->getBestExitPaths();

@@ -25,7 +25,7 @@ class Maze
 		void printMazeSize();
 		int getMaxNumOfExits();
 		void setExits(int exits) {
-			this->exits = exits;
+			this->noOfExits = exits;
 		};
 		void printMaze();
 		string toString();
@@ -37,13 +37,14 @@ class Maze
 
 	private:
 		int width, height;
-		int exits = 1;
+		int noOfExits = 1;
 		
 		int getNodesPos(int x, int y) {
 			return x + (y * width);
 		}
 		std::vector <MazeNode> nodes;
-		
+		std::vector <MazeNode*> exits;
+
 		void generateNodes();
 		void generatePaths() {
 			MazeNode* start = getStartNode();

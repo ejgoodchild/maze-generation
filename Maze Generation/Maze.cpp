@@ -92,13 +92,16 @@ void Maze::generateMaze()
 
 void Maze::getBestExitPaths()
 {
-	std::vector <MazeNode*> exits = getPossibleExits();
 	for (int i = 0; i < exits.size(); i++) {
+		cout << "Exit" << i;
 		std::vector <MazeNode*> path = getBestPath(getStartNode() , exits.at(i));
-		for (int j = 0; j < path.size(); j++) {
-			nodes.at(j).nodeType = 'o';
+		for (int j = 1; j < path.size(); j++) {
+			cout << "o";
+
+			path.at(j)->nodeType = 'o';
 		}
 	}
+	cout << endl;
 
 	cout << toString();
 }
@@ -165,10 +168,10 @@ void Maze::generateExits()
 	std::vector<MazeNode*> possibleExits = getPossibleExits();
 	std::random_shuffle(possibleExits.begin(), possibleExits.end());
 
-	for (int i = 0; i < exits; i++) {
+	for (int i = 0; i < noOfExits; i++) {
 		possibleExits.at(i)->nodeType = 'E';
 		possibleExits.at(i)->passable = true;
-
+		exits.emplace_back(possibleExits.at(i));
 	}
 
 	
@@ -333,8 +336,8 @@ void Maze::expandNode(std::vector<MazeNode*>& openList, MazeNode* bestNode, Maze
 
 bool Maze::isNodeValid(int x, int y, std::vector<MazeNode>& nodes)
 {
-	bool inXRange = 0 < x ? (x < width ? true : false) : false;
-	bool inYRange = 0 < y ? (y < height ? true : false) : false;
+	bool inXRange = 0 <= x ? (x < width ? true : false) : false;
+	bool inYRange = 0 <= y ? (y < height ? true : false) : false;
 	if (inXRange && inYRange) {
 		MazeNode* node = &nodes.at(getNodesPos(x, y));
 		
