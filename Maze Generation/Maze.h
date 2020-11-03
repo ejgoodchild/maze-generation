@@ -33,6 +33,7 @@ class Maze
 
 		void getBestExitPaths();
 
+		void clearSolutions();
 
 
 	private:

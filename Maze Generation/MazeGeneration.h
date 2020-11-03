@@ -1,7 +1,7 @@
 #pragma once
 #include "Maze.h"
 #include "SaveLoad.h"
-enum class UserOptions {GENERATE = 1, LOAD = 2, SAVE = 3, EXIT = 4};
+enum class UserOptions {GENERATE = 1, LOAD = 2, SAVE = 3, EXIT = 4, SOLVE = 5, CLEAR = 6, CHANGE_MAZE = 7};
 class MazeGeneration {
 
 	public:
@@ -20,6 +20,7 @@ class MazeGeneration {
 		void saveMaze();
 		void loadMaze();
 		void getUserMaze();
-		void promptSave();
-		
+		void promptUserOptions();
+		void performUserOption(UserOptions options);
+
 };

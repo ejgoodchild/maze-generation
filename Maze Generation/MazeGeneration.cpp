@@ -1,6 +1,7 @@
 #include "MazeGeneration.h"
 #include <iostream>
 #include <time.h>
+#include <stdlib.h>
 
 using namespace std;
 int main()
@@ -8,6 +9,7 @@ int main()
     srand(time(NULL)); // For randomness effect
     MazeGeneration mazeGen;
     mazeGen.start();
+    return 0;
 }
 
 /**
@@ -35,6 +37,7 @@ void MazeGeneration::loadMaze()
     
     SaveLoad saveload;
     curMaze = saveload.load();
+
     curMaze->printMaze();
 }
 
@@ -46,40 +49,75 @@ void MazeGeneration::getUserMaze()
         delete curMaze;
     }
     cout << "Please type the number for the option you'd like to pick..." << endl;
-    cout << "| Generate Maze (1) | Load Maze (2) |" << endl;
+    cout << "| Generate Maze (1) | Load Maze (2) | Exit (3)" << endl;
     int option;
     cin >> option;
 
     UserOptions mode = option == 1 ? UserOptions::GENERATE : (option == 2 ? UserOptions::LOAD : UserOptions::EXIT);
-    mode == UserOptions::GENERATE ? generateMaze() : (mode == UserOptions::LOAD ? loadMaze() : (void)(cout << "No option selected" << endl));
+    performUserOption(mode);
 
 }
 
-void MazeGeneration::promptSave()
-{
-    cout << "Would you like to save this maze?" << endl;
-    cout << "| Yes | No |" << endl;
-    string input;
-    cin >> input;
-    bool result = input.length() > 0 ? (tolower(input.at(0)) == 'y' ? true : false) : false;
-    if (result) {
 
-        saveMaze();
+
+void MazeGeneration::promptUserOptions()
+{
+    cout << "Please type the number for the option you'd like to pick..." << endl;
+    cout << "| Solve Maze (1) | Clear Any Solutions (2) | Save Maze (3) | Change Maze (4) | Exit (5)" << endl;
+    
+    UserOptions userOptions[5]{ UserOptions::SOLVE, UserOptions::CLEAR, UserOptions::SAVE, UserOptions::CHANGE_MAZE, UserOptions::EXIT };
+
+    int option;
+    cin >> option;
+
+    option < sizeof(userOptions) / sizeof(userOptions[0]) ? performUserOption(userOptions[option-1]) : promptUserOptions();
+
+    promptUserOptions();
+
+
+
+}
+
+void MazeGeneration::performUserOption(UserOptions options)
+{
+    switch (options) {
+        case UserOptions::EXIT:
+            exit(0);
+            break;
+        case UserOptions::GENERATE:
+            generateMaze();
+            break;
+        case UserOptions::LOAD:
+            loadMaze();
+            break;
+        case UserOptions::SAVE:
+            saveMaze();
+            break;
+        case UserOptions::CHANGE_MAZE:
+            getUserMaze();
+            break;
+        case UserOptions::SOLVE:
+            curMaze->clearSolutions();
+            curMaze->getBestExitPaths();
+            break;
+        case UserOptions::CLEAR:
+            curMaze->clearSolutions();
+            curMaze->printMaze();
+            break;
+    
     }
 }
+
 
 void MazeGeneration::start()
 {
     getUserMaze();
-    promptSave();
+    promptUserOptions();
 
    
 
 
-    curMaze->getBestExitPaths();
-    //saveMaze();
     cout << endl << endl;
-    start();
 }
 
 /**

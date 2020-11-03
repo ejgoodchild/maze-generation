@@ -93,17 +93,22 @@ void Maze::generateMaze()
 void Maze::getBestExitPaths()
 {
 	for (int i = 0; i < exits.size(); i++) {
-		cout << "Exit" << i;
 		std::vector <MazeNode*> path = getBestPath(getStartNode() , exits.at(i));
 		for (int j = 1; j < path.size(); j++) {
-			cout << "o";
 
 			path.at(j)->nodeType = 'o';
 		}
 	}
-	cout << endl;
 
 	cout << toString();
+}
+
+void Maze::clearSolutions()
+{
+	for (int i = 0; i < nodes.size(); i++) {
+		char c = nodes.at(i).nodeType;
+		nodes.at(i).nodeType = c == 'o' ? ' ' : c;
+	}
 }
 
 
