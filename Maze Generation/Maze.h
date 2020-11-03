@@ -25,7 +25,15 @@ struct MazeProgression {
 		return str;
 	}
 };
-
+struct Player {
+	Player(MazeNode* curNode) {
+		this->curNode = curNode;
+		curNode->nodeType = 'P';
+	}
+	MazeNode* curNode = NULL;
+	bool hasMoved = false;
+	bool isFirstNode = true;
+};
 
 class Maze
 {
@@ -49,6 +57,15 @@ class Maze
 			return &progression;
 		}
 
+		void collabPathfinding() {
+			vector<Player*> players;
+			getStartNode()->nodeType = 'F';
+			progression.originalMaze = toString();
+			for (int i = 0; i < exits.size(); i++) {
+				players.emplace_back(new Player(exits.at(i)));
+			}
+			collabPathfinding(&players);
+		}
 
 	private:
 		int width, height;
@@ -96,6 +113,7 @@ class Maze
 			return abs(a->x - b->x) + abs(a->y - b->y);
 		}
 		
-		
+		void collabPathfinding(vector<Player*>*);
+		void movePlayer(Player*);
 };
 

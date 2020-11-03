@@ -310,6 +310,37 @@ vector<MazeNode*> Maze::getBestPath(MazeNode* start, MazeNode* end)
 	return vector<MazeNode*>(); // returns empty if no path found
 }
 
+void Maze::collabPathfinding(vector<Player*>* players)
+{
+	bool hasFinished = true;
+	for (int i = 0; i < (*players).size(); i++) {
+		movePlayer((*players).at(i));	
+		hasFinished = hasFinished ? !(*players).at(i)->hasMoved : false;
+		progression.progress.emplace_back(toString());
+	}
+	
+
+	
+	if (!hasFinished) { collabPathfinding(players); }
+}
+
+void Maze::movePlayer(Player* player)
+{
+	vector<MazeNode*> path = getBestPath(player->curNode, getStartNode());
+	player->hasMoved = path.size() > 0 ? true : false;
+	if (player->hasMoved) {
+		player->curNode->nodeType = player->isFirstNode ? 'E' : 'o';
+		player->curNode->passable = true;
+		player->isFirstNode = false;
+		player->curNode = path.at(path.size()-1);
+		
+		
+		player->curNode->passable = getStartNode() == player->curNode ? true : false ;
+
+		player->curNode->nodeType = 'P';
+	}
+}
+
 MazeNode* Maze::getBestNode(std::vector<MazeNode*>& openList)
 {
 	MazeNode* bestNode = openList.at(0);

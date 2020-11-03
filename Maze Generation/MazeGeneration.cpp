@@ -117,7 +117,8 @@ void MazeGeneration::performUserOption(UserOptions options)
             curMazeProg->progress.clear();
             break;
         case UserOptions::COLLAB_PATHFINDING:
-            cout << "Not Implemented yet..." << endl;
+            curMaze->collabPathfinding();
+            cout << curMazeProg->toString();
             break;
         case UserOptions::EXITS_PATHFINDING:
             curMaze->getBestExitPaths();
