@@ -17,10 +17,13 @@ int main()
  */
 void MazeGeneration::generateMaze()
 {
-    curMaze = new Maze(getMazeWidth(), getMazeHeight());
+    int width = getMazeWidth();
+    int height = getMazeHeight();
+    curMaze = new Maze(width, height);
     curMaze->setExits(getNumberOfExits());
     curMaze->printMazeSize();
     curMaze->generateMaze();
+    curMazeProg = curMaze->getProgression();
     curMaze->printMaze();
     
 
@@ -29,7 +32,17 @@ void MazeGeneration::generateMaze()
 void MazeGeneration::saveMaze()
 {
     SaveLoad saveload;
-    saveload.save(curMaze);
+
+    if (curMazeProg) {
+        cout << "Please type the number for the option you'd like to pick..." << endl;
+        cout << "| Save Maze (1) | Save Progression (2)" << endl;
+        int option;
+        cin >> option;
+        option == 1 ? saveload.save(curMazeProg->originalMaze) : saveload.save(curMazeProg->toString());
+        return;
+    }
+    
+    saveload.save(curMaze->toString());
 }
 
 void MazeGeneration::loadMaze()
@@ -37,7 +50,7 @@ void MazeGeneration::loadMaze()
     
     SaveLoad saveload;
     curMaze = saveload.load();
-
+    curMazeProg = curMaze->getProgression();
     curMaze->printMaze();
 }
 
@@ -63,7 +76,7 @@ void MazeGeneration::getUserMaze()
 void MazeGeneration::promptUserOptions()
 {
     cout << "Please type the number for the option you'd like to pick..." << endl;
-    cout << "| Solve Maze (1) | Clear Any Solutions (2) | Save Maze (3) | Change Maze (4) | Exit (5)" << endl;
+    cout << "| Solve Maze (1) | Clear Progression (2) | Save Maze (3) | Change Maze (4) | Exit (5)" << endl;
     
     UserOptions userOptions[5]{ UserOptions::SOLVE, UserOptions::CLEAR, UserOptions::SAVE, UserOptions::CHANGE_MAZE, UserOptions::EXIT };
 
@@ -97,15 +110,34 @@ void MazeGeneration::performUserOption(UserOptions options)
             getUserMaze();
             break;
         case UserOptions::SOLVE:
-            curMaze->clearSolutions();
-            curMaze->getBestExitPaths();
+            performPathFinding();
             break;
         case UserOptions::CLEAR:
             curMaze->clearSolutions();
-            curMaze->printMaze();
+            curMazeProg->progress.clear();
+            break;
+        case UserOptions::COLLAB_PATHFINDING:
+            cout << "Not Implemented yet..." << endl;
+            break;
+        case UserOptions::EXITS_PATHFINDING:
+            curMaze->getBestExitPaths();
             break;
     
     }
+}
+
+void MazeGeneration::performPathFinding()
+{
+    performUserOption(UserOptions::CLEAR);
+    cout << "Please type the number for the option you'd like to pick..." << endl;
+    cout << "| Pathfinding For Each Exit (1) | Collaborative Pathfinding (2)" << endl;
+    int option;
+    cin >> option;
+    UserOptions method = option == 1 ? UserOptions::EXITS_PATHFINDING : UserOptions::COLLAB_PATHFINDING;
+    performUserOption(method);
+
+
+
 }
 
 
@@ -113,11 +145,6 @@ void MazeGeneration::start()
 {
     getUserMaze();
     promptUserOptions();
-
-   
-
-
-    cout << endl << endl;
 }
 
 /**

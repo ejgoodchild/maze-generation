@@ -1,6 +1,7 @@
 #pragma once
 #include <iostream>
 #include <vector>
+#include <string>
 
 using namespace std;
 enum class Directions {NORTH = 0, EAST = 1, SOUTH = 2, WEST = 3};
@@ -13,7 +14,17 @@ struct MazeNode {
 	bool closed = false;
 	MazeNode* bestParent = NULL;
 };
-
+struct MazeProgression {
+	string originalMaze;
+	std::vector<string> progress;
+	string toString() {
+		string str = originalMaze + "\n\n";
+		for (int i = 0; i < progress.size(); i++) {
+			str += "Step " + std::to_string(i+1) + "\n"+ progress.at(i) + "\n\n";			
+		}
+		return str;
+	}
+};
 
 
 class Maze
@@ -34,6 +45,9 @@ class Maze
 		void getBestExitPaths();
 
 		void clearSolutions();
+		MazeProgression* getProgression() {
+			return &progression;
+		}
 
 
 	private:
@@ -45,6 +59,8 @@ class Maze
 		}
 		std::vector <MazeNode> nodes;
 		std::vector <MazeNode*> exits;
+		MazeProgression progression;
+
 
 		void generateNodes();
 		void generatePaths() {

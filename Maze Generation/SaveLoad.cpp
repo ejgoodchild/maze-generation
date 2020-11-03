@@ -5,14 +5,14 @@
 
 using namespace std;
 
-void SaveLoad::save(Maze* maze)
+void SaveLoad::save(string data)
 {
 
 
     ofstream myfile(getFileNameSave());
     if (myfile.is_open())
     {
-        myfile << maze->toString();
+        myfile << data;
         myfile.close();
         cout << "Save successful!" << endl;
     }

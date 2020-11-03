@@ -3,7 +3,7 @@
  class SaveLoad
 {
 	public:
-		void save(Maze*);
+		void save(string);
 		Maze* load();
 
 	private:

@@ -16,6 +16,7 @@ Maze::Maze(int w, int h)
 	width = w;
 	height = h;
 	
+	
 }
 
 Maze::Maze(int w, int h, string str)
@@ -92,15 +93,18 @@ void Maze::generateMaze()
 
 void Maze::getBestExitPaths()
 {
+	progression.originalMaze = toString();
+
 	for (int i = 0; i < exits.size(); i++) {
 		std::vector <MazeNode*> path = getBestPath(getStartNode() , exits.at(i));
 		for (int j = 1; j < path.size(); j++) {
 
 			path.at(j)->nodeType = 'o';
+			progression.progress.emplace_back(toString());
 		}
 	}
 
-	cout << toString();
+	cout << progression.toString();
 }
 
 void Maze::clearSolutions()
@@ -109,6 +113,7 @@ void Maze::clearSolutions()
 		char c = nodes.at(i).nodeType;
 		nodes.at(i).nodeType = c == 'o' ? ' ' : c;
 	}
+	progression.progress.clear();
 }
 
 
