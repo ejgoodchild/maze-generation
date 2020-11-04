@@ -33,16 +33,13 @@ void MazeGeneration::saveMaze()
 {
     SaveLoad saveload;
 
-    if (curMazeProg) {
+    
         cout << "Please type the number for the option you'd like to pick..." << endl;
         cout << "| Save Maze (1) | Save Progression (2)" << endl;
         int option;
         cin >> option;
-        option == 1 ? saveload.save(curMazeProg->originalMaze) : saveload.save(curMazeProg->toString());
-        return;
-    }
-    
-    saveload.save(curMaze->toString());
+        option == 1 ? saveload.save(curMaze->toString()) : saveload.save(curMazeProg->toString());
+        
 }
 
 void MazeGeneration::loadMaze()

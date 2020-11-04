@@ -38,6 +38,13 @@ Maze::Maze(int w, int h, string str)
 
 }
 
+Maze::Maze(int w, int h, string mazeData, std::vector<string> progress) : Maze(w, h, mazeData)
+{
+	progression.originalMaze = mazeData;
+	progression.progress = progress;
+	cout << progression.toString();
+}
+
 Maze::~Maze()
 {
 	nodes.clear();
@@ -326,18 +333,17 @@ void Maze::collabPathfinding(vector<Player*>* players)
 
 void Maze::movePlayer(Player* player)
 {
-	vector<MazeNode*> path = getBestPath(player->curNode, getStartNode());
-	player->hasMoved = path.size() > 0 ? true : false;
+	//vector<MazeNode*> path = getBestPath(player->curNode, getStartNode());
+	player->hasMoved = player->path.size() > 0 ? (player->path.back()->passable) : false;
 	if (player->hasMoved) {
 		player->curNode->nodeType = player->isFirstNode ? 'E' : 'o';
 		player->curNode->passable = true;
 		player->isFirstNode = false;
-		player->curNode = path.at(path.size()-1);
-		
+		player->curNode = player->path.back();
+		player->path.pop_back();
 		
 		player->curNode->passable = getStartNode() == player->curNode ? true : false ;
-
-		player->curNode->nodeType = 'P';
+		player->curNode->nodeType = getStartNode() == player->curNode ? 'F':'P';
 	}
 }
 

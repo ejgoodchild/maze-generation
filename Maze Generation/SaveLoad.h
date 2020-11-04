@@ -8,7 +8,6 @@
 
 	private:
 	
-
 		string getFileNameSave();
 		 string getFileNameLoad();
 		string checkExtension(string*);

@@ -24,21 +24,53 @@ Maze* SaveLoad::load()
 {
     string line;
     ifstream myfile(getFileNameLoad());
-    string data;
+    string mazeData, tempData;
+    std::vector<string> progressData;
     Maze* maze = NULL;
+
+    bool foundMaze = false;
     int x = 0, y = 0;
     if (myfile.is_open())
     {
-        
         while ( getline(myfile, line) )
         {
-            data += line;
-            cout << line << endl;
-            x = line.length();
-            y++;
+            
+            if (y == 0) { x = line.length(); mazeData += line;
+            }
+            
+            if (y > 0 && !foundMaze) {
+                if(line.length() != x) { 
+                    foundMaze = true;
+                }
+                else {
+                    mazeData += line;
+                }
+            
+            }
+
+            if (foundMaze) {
+                if (line.length() == x) {
+                    tempData += line + "\n";
+                }
+                else if(tempData.length() > 0) {
+                    progressData.emplace_back(tempData);
+                    tempData.clear();
+                }
+            }else{
+                y++;
+            }
+           // foundMaze ? updateProgress() : updateMaze();
+            /*mazeData += line;
+                cout << line << endl;
+                x = line.length();
+                y++;
+         */
+           
+
         }
         myfile.close();
-        maze = new Maze(x, y, data);
+        
+        maze = foundMaze ? new Maze(x, y, mazeData, progressData) : new Maze(x, y, mazeData);;
         cout << "Maze sucessfully loaded" << endl;
 
     }
@@ -47,6 +79,7 @@ Maze* SaveLoad::load()
     
     return maze;
 }
+
 
 string SaveLoad::getFileNameSave()
 {

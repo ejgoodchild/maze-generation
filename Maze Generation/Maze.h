@@ -29,10 +29,13 @@ struct Player {
 	Player(MazeNode* curNode) {
 		this->curNode = curNode;
 		curNode->nodeType = 'P';
+		curNode->passable = false;
 	}
 	MazeNode* curNode = NULL;
 	bool hasMoved = false;
 	bool isFirstNode = true;
+	vector<MazeNode*> path;
+
 };
 
 class Maze
@@ -40,6 +43,7 @@ class Maze
 	public:
 		Maze(int, int);
 		Maze(int, int, string);
+		Maze(int, int, string, std::vector<string>);
 		~Maze();
 		void printMazeSize();
 		int getMaxNumOfExits();
@@ -63,6 +67,8 @@ class Maze
 			progression.originalMaze = toString();
 			for (int i = 0; i < exits.size(); i++) {
 				players.emplace_back(new Player(exits.at(i)));
+				players.at(i)->path = getBestPath(players.at(i)->curNode, getStartNode());
+
 			}
 			collabPathfinding(&players);
 		}
