@@ -326,9 +326,20 @@ void Maze::collabPathfinding(vector<Player*>* players)
 		progression.progress.emplace_back(toString());
 	}
 	
-
+	hasFinished ? updateCPOutcome(players) : collabPathfinding(players);
 	
-	if (!hasFinished) { collabPathfinding(players); }
+}
+
+void Maze::updateCPOutcome(vector<Player*>* players)
+{
+	int playersAtEnd = 0;
+	for (int i = 0; i < (*players).size(); i++) {
+		playersAtEnd += (*players).at(i)->curNode == getStartNode() ? 1 : 0;
+	}
+	progression.outcome = playersAtEnd == (*players).size() ? "A maze is fully solvable as all players can reach the finishing point" :
+		(playersAtEnd > 0 ? "A maze is partially solvable as some players can reach the finishing point" :
+			"A maze is not solvable due to all players blocking each other");
+	
 }
 
 void Maze::movePlayer(Player* player)

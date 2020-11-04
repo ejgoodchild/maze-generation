@@ -16,12 +16,14 @@ struct MazeNode {
 };
 struct MazeProgression {
 	string originalMaze;
+	string outcome;
 	std::vector<string> progress;
 	string toString() {
 		string str = originalMaze + "\n\n";
 		for (int i = 0; i < progress.size(); i++) {
 			str += "Step " + std::to_string(i+1) + "\n"+ progress.at(i) + "\n\n";			
 		}
+		str += outcome + "\n\n";
 		return str;
 	}
 };
@@ -120,6 +122,9 @@ class Maze
 		}
 		
 		void collabPathfinding(vector<Player*>*);
+		void updateCPOutcome(vector<Player*>*);
+		
 		void movePlayer(Player*);
+
 };
 
