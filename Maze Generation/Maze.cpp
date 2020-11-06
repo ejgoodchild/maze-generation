@@ -28,11 +28,13 @@ Maze::Maze(int w, int h, string str)
 			mNode->x = x;
 			mNode->y = y;
 			mNode->nodeType = str.at(getNodesPos(x, y));
-			mNode->passable = mNode->nodeType == 'X' ? false : true;
+			mNode->passable = mNode->nodeType == 'X' ? false : true;			
 			nodes.emplace_back(*mNode);
+
+			if (mNode->nodeType == 'E') exits.emplace_back(&*mNode);
 		}
 	}
-
+	noOfExits = exits.size();
 }
 
 Maze::Maze(int w, int h, string mazeData, std::vector<string> progress) : Maze(w, h, mazeData)

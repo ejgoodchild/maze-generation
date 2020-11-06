@@ -31,7 +31,7 @@ struct MazeProgression {
 		return outcome == Outcome::SOLVABLE ? "A maze is fully solvable as all players can reach the finishing point" :
 			(outcome == Outcome::PARTIAL ? "A maze is partially solvable as some players can reach the finishing point" :
 				(outcome == Outcome::UNSOLVABLE ? "A maze is not solvable due to all players blocking each other" :
-					"No outcome defined"));
+					""));
 	}
 };
 struct Player {

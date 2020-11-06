@@ -31,56 +31,55 @@ void SaveLoad::save(string filename, string msg)
  */
 Maze* SaveLoad::load(string filename)
 {
-    string line;
     ifstream myfile(filename);
-    string mazeData, tempData;
-    std::vector<string> progressData;
     Maze* maze = NULL;
 
-    bool foundMaze = false;
-    int x = 0, y = 0;
     if (myfile.is_open())
     {
-        while (getline(myfile, line))
-        {
-
-            if (y == 0) {
-                x = line.length(); mazeData += line;
-            }
-
-            if (y > 0 && !foundMaze) {
-                if (line.length() != x) {
-                    foundMaze = true;
-                }
-                else {
-                    mazeData += line;
-                }
-
-            }
-
-            if (foundMaze) {
-                if (line.length() == x) {
-                    tempData += line + "\n";
-                }
-                else if (tempData.length() > 0) {
-                    progressData.emplace_back(tempData);
-                    tempData.clear();
-                }
-            }
-            else {
-                y++;
-            }
-
-
-        }
+        maze = load(&myfile);
         myfile.close();
-
-        maze = foundMaze ? new Maze(x, y, mazeData, progressData) : new Maze(x, y, mazeData);;
-        cout << "Maze sucessfully loaded" << endl;
-
+        return maze;
     }
 
-    else cout << "Unable to open file";
-
+    cout << "Unable to open file";
     return maze;
 }
+
+void SaveLoad::updateMazeData(string ln, int* x, int* y, bool* foundMaze, string* mazeData)
+{
+    if (*y == 0) { *x = ln.length(); };
+    *foundMaze = ln.length() != *x;
+    if (*foundMaze) { return; }
+    (*y)++;
+    *mazeData += ln;
+}
+
+void SaveLoad::updateTempData(string ln, int* x, string* tempData, vector<string>* progData)
+{
+    ln.length() == *x ? (void)(*tempData += ln + '\n') : updateProgData(tempData, progData);
+}
+
+void SaveLoad::updateProgData(string* tempData, vector<string>* progData)
+{
+    if (tempData->size() <= 0) { return; }
+    progData->emplace_back(*tempData);
+    tempData->clear();
+}
+
+Maze* SaveLoad::load(ifstream* file)
+{
+    string line;
+    string mazeData, tempData;
+    vector<string> progressData;
+    bool foundMaze = false;
+    int x = 0, y = 0;
+
+    while (getline(*file, line))
+    {
+        foundMaze ? updateTempData(line, &x, &tempData, &progressData) : updateMazeData(line, &x, &y, &foundMaze, &mazeData);
+    }
+    cout << "Maze sucessfully loaded" << endl;
+    return foundMaze ? new Maze(x, y, mazeData, progressData) : new Maze(x, y, mazeData);
+}
+
+

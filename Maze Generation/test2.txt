@@ -1,45 +1,13 @@
-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-XX      X     X   X    X               X    X
-X X X X X X X X X X X X X X X X XXXXXXX X X X
-X    X  X  X    X   X     X  X  X         X X
-X X X X X X XXXXXXXXXXXXX X X XXX XXXXXXXXX X
-X  X    X     X   X     X X             X   X
-X X XXXXXXXXX X X X XXX X XXXXXXXXXXX X X X X
-X     X       X X X X   X     X      X  X  XX
-X XXX X XXXXX X X X X XXXXXXX X XXX X X X X E
-X   X   X    X  X X X X      X    X    X    E
-XXX XXXXX X X X X X X X X X X XXX X X X XXX X
-X   X     X   X X   X    X         X    X   X
-X X X XXXXXXX X XXXXXXXXX X XXXXX X XXX X X X
-E  X  X   X   X         X X X   X X   X   X X
-X X XXX X X X XXXXXXXXX X X X X X X X XXXXX X
-X   X   X X X       X   X   X X  X  X   X   X
-X X X X X X XXXXXXX X XXX XXX X X X XXX X XXX
-XX     X  X X     X X   X X   X     X   X   X
-X X XXX X X X X X X XXX X X XXXXX XXX XXXXX X
-X  X      X X  X      X  X    X  X    X   X X
-X X X XXXXX XXX XXXXX X X XXX X X X XXX X X X
-X X   X   X         X         X   X   X X   X
-X X X X X X X XXXXX X S XXX XXXXX X X X XXX X
-X X  X  X X  X            X     X  X  X    XX
-X X X X X X X X XXXXX XXX XXX X X X X X X X X
-X   X X X X   X     X   X X  X  X X    X    X
-X XXX X X XXX XXXXX X X X X X X X X XXX XXX X
-X   X   X X   X     X X   X     X X   X X   X
-X X X X X X X X X XXX X XXX XXXXX X X X X X X
-XX  X  X     X  X X    X        X  X  X    XX
-X X XXX XXXXX X X X X X XXXXXXX X X X X XXX X
-X X       X   X X X  X      X     X   X     X
-X XXXXXXX X X X X X X X X X X XXXXX X XXXXX X
-X X       X X    X    X  X   X       X    X X
-X X XXXXXXX XXXXX XXX X X X X X XXXXX X X X X
-X X       X   X   X   X X X   X       X X   X
-X XXXXXXX XXX X X X XXX X XXX X X XXX X XXXXX
-X X     X     X X   X   X X   X  X    X X   X
-X X X X XXXXX X X XXX X X X XXXXX X X X X X X
-X   X X X     X  X     X    X        X    X X
-XXXXX X X XXXXX X XXX X X X X X XXXXX XXXXX X
-X      X      X X     X    X   X      X     X
-X XXXXX XXXXX X X X XXX XXX X X X X X X XXX X
-X             X    X          X    X       XX
-XXXXXXXXXXXXEXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXEXXXXXXXXXXXXXXXXX
+X  X                 X       XX
+X X X XXXXX X XXXXX X XXX X X X
+X     X    X      X       X X X
+X XXXXX X X XXX X XXXXXXXXX X X
+X   X   X             X   X   X
+XXX X XXXXX XX S  X X X X XXX X
+X    X      X      X  X  X    X
+X XXX X X XXX X XXX X X X X X X
+X X     X X    X    X X X    XX
+E X X XXX X XXX X X X X X XXX X
+X    X    X       X   X       X
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
