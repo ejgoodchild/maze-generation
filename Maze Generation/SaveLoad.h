@@ -3,13 +3,13 @@
  class SaveLoad
 {
 	public:
-		void save(string);
-		Maze* load();
+		static void save(string);
+		static Maze* load();
 
 	private:
 	
-		string getFileNameSave();
-		 string getFileNameLoad();
-		string checkExtension(string*);
+		static string getFileNameSave();
+		 static string getFileNameLoad();
+		static string checkExtension(string*);
 };
 

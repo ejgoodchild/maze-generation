@@ -1,10 +1,5 @@
-﻿  Maze.cpp
+﻿  MazeGeneration.cpp
 C:\Users\Ethan\Documents\GitHub\maze-generation\Maze Generation\Maze.h(29,21): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Ethan\Documents\GitHub\maze-generation\Maze Generation\Maze.cpp(107,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Ethan\Documents\GitHub\maze-generation\Maze Generation\Maze.cpp(109,21): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Ethan\Documents\GitHub\maze-generation\Maze Generation\Maze.cpp(121,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Ethan\Documents\GitHub\maze-generation\Maze Generation\Maze.cpp(330,29): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\Ethan\Documents\GitHub\maze-generation\Maze Generation\Maze.cpp(353,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Ethan\Documents\GitHub\maze-generation\Maze Generation\Maze.cpp(366,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Ethan\Documents\GitHub\maze-generation\Maze Generation\Maze.cpp(417,28): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Ethan\Documents\GitHub\maze-generation\Maze Generation\MazeGeneration.cpp(9,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\Ethan\Documents\GitHub\maze-generation\Maze Generation\MazeGeneration.cpp(85): warning C4717: 'MazeGeneration::promptUserOptions': recursive on all control paths, function will cause runtime stack overflow
   Maze Generation.vcxproj -> C:\Users\Ethan\Documents\GitHub\maze-generation\Maze Generation\Debug\Maze Generation.exe

@@ -30,23 +30,19 @@ void MazeGeneration::generateMaze()
 }
 
 void MazeGeneration::saveMaze()
-{
-    SaveLoad saveload;
-
-    
+{ 
         cout << "Please type the number for the option you'd like to pick..." << endl;
         cout << "| Save Maze (1) | Save Progression (2)" << endl;
         int option;
-        cin >> option;
-        option == 1 ? saveload.save(curMaze->toString()) : saveload.save(curMazeProg->toString());
+        cin >> option;       
+        option == 1 ? SaveLoad::save(curMaze->toString()) : SaveLoad::save(curMazeProg->toString());;
         
 }
 
 void MazeGeneration::loadMaze()
 {
     
-    SaveLoad saveload;
-    curMaze = saveload.load();
+    curMaze = SaveLoad::load();
     curMazeProg = curMaze->getProgression();
     curMaze->printMaze();
 }
