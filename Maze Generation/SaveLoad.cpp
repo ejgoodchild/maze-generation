@@ -5,10 +5,14 @@
 
 using namespace std;
 
+
+/**
+ * Saves a string to a text file
+ *
+ * @param the string to save
+ */
 void SaveLoad::save(string data)
 {
-
-
     ofstream myfile(getFileNameSave());
     if (myfile.is_open())
     {
@@ -20,6 +24,11 @@ void SaveLoad::save(string data)
 
 }
 
+/**
+ * Loads a Maze and if any progression that is loaded too
+ *
+ * @return Maze* of the maze being loaded
+ */
 Maze* SaveLoad::load()
 {
     string line;
@@ -59,13 +68,7 @@ Maze* SaveLoad::load()
             }else{
                 y++;
             }
-           // foundMaze ? updateProgress() : updateMaze();
-            /*mazeData += line;
-                cout << line << endl;
-                x = line.length();
-                y++;
-         */
-           
+
 
         }
         myfile.close();
@@ -80,23 +83,40 @@ Maze* SaveLoad::load()
     return maze;
 }
 
-
+/**
+ * Gets what the user wants to save the file name as
+ * 
+ * @return the name of the file to save
+ */
 string SaveLoad::getFileNameSave()
 {
     cout << "What would you like to name the file?" << endl;
     string fname;
     cin >> fname;
-    return checkExtension(&fname);
+    return checkExtension(&fname); //Make sure name is valid
 }
 
+
+/**
+ * Gets what file the user wants to open
+ * 
+ * @return the name of file to load
+ */
 string SaveLoad::getFileNameLoad()
 {
     cout << "What file would you like to open?" << endl;
     string fname;
     cin >> fname;
-    return checkExtension(&fname);
+    return checkExtension(&fname);//Make sure name is valid
 }
 
+/**
+ * Checks to see if a .txt extension has been specified
+ * if not then adds the extension
+ * 
+ * @param string to check for extension
+ * @return string to return with extension
+ */
 string SaveLoad::checkExtension(string* str)
 {
     int size = str->length();
