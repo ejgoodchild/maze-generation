@@ -2,9 +2,14 @@
 #include <iostream>
 #include <vector>
 #include <string>
+#include <algorithm>
+#include <random>
+#include <chrono>       // std::chrono::system_clock
+#include <array>        // std::array
 
 using namespace std;
 enum class Directions {NORTH = 0, EAST = 1, SOUTH = 2, WEST = 3};
+enum class Outcome {SOLVABLE =0, PARTIAL = 1, UNSOLVABLE =2};
 struct MazeNode {
 	int x, y;
 	char nodeType = NULL;
@@ -16,15 +21,22 @@ struct MazeNode {
 };
 struct MazeProgression {
 	string originalMaze;
-	string outcome;
+	Outcome outcome;
 	std::vector<string> progress;
+	
 	string toString() {
 		string str = originalMaze + "\n\n";
 		for (int i = 0; i < progress.size(); i++) {
 			str += "Step " + std::to_string(i+1) + "\n"+ progress.at(i) + "\n\n";			
 		}
-		str += outcome + "\n\n";
+		str += getOutcomeStatment(outcome) + "\n\n";
 		return str;
+	}
+	string getOutcomeStatment(Outcome outcome) {
+		return outcome == Outcome::SOLVABLE ? "A maze is fully solvable as all players can reach the finishing point" :
+			(outcome == Outcome::PARTIAL ? "A maze is partially solvable as some players can reach the finishing point" :
+				(outcome == Outcome::PARTIAL ? "A maze is not solvable due to all players blocking each other" :
+					"No outcome defined"));
 	}
 };
 struct Player {
@@ -63,11 +75,14 @@ class Maze
 			return &progression;
 		}
 
-		void collabPathfinding() {
+		void collabPathfinding(int noOfPlayers) {
+						
 			vector<Player*> players;
 			getStartNode()->nodeType = 'F';
 			progression.originalMaze = toString();
-			for (int i = 0; i < exits.size(); i++) {
+			std::random_shuffle(exits.begin(), exits.end());
+
+			for (int i = 0; i < noOfPlayers; i++) {
 				players.emplace_back(new Player(exits.at(i)));
 				players.at(i)->path = getBestPath(players.at(i)->curNode, getStartNode());
 
@@ -75,6 +90,7 @@ class Maze
 			collabPathfinding(&players);
 		}
 
+		int getNoOfExits() { return noOfExits; }
 	private:
 		int width, height;
 		int noOfExits = 1;
@@ -99,6 +115,9 @@ class Maze
 		void generateStartPoint();
 		void generateWalls();
 		void generateExits();
+		void generateAdditionalPaths();
+
+
 
 		MazeNode* getStartNode(){
 			return &nodes.at(getNodesPos((width - 1) / 2, (height - 1) / 2));
@@ -125,6 +144,8 @@ class Maze
 		void updateCPOutcome(vector<Player*>*);
 		
 		void movePlayer(Player*);
+
+		
 
 };
 

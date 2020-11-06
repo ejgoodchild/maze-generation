@@ -59,12 +59,12 @@ void MazeGeneration::getUserMaze()
         delete curMaze;
     }
     cout << "Please type the number for the option you'd like to pick..." << endl;
-    cout << "| Generate Maze (1) | Load Maze (2) | Exit (3)" << endl;
+    cout << "| Generate Maze (1) | Load Maze (2) | Analyse Mazes (3) | Exit (4)" << endl;
     int option;
     cin >> option;
+    UserOptions userOptions[4]{ UserOptions::GENERATE, UserOptions::LOAD, UserOptions::ANALYSIS, UserOptions::EXIT };
 
-    UserOptions mode = option == 1 ? UserOptions::GENERATE : (option == 2 ? UserOptions::LOAD : UserOptions::EXIT);
-    performUserOption(mode);
+    option <= sizeof(userOptions) / sizeof(userOptions[0]) ? performUserOption(userOptions[option - 1]) : getUserMaze();
 
 }
 
@@ -73,14 +73,14 @@ void MazeGeneration::getUserMaze()
 void MazeGeneration::promptUserOptions()
 {
     cout << "Please type the number for the option you'd like to pick..." << endl;
-    cout << "| Solve Maze (1) | Clear Progression (2) | Save Maze (3) | Change Maze (4) | Exit (5)" << endl;
+    cout << "| Solve Maze (1) | Clear Progression (2) | Save Maze (3) | Change Maze (4) | Analyse Mazes (5) | Exit (6)" << endl;
     
-    UserOptions userOptions[5]{ UserOptions::SOLVE, UserOptions::CLEAR, UserOptions::SAVE, UserOptions::CHANGE_MAZE, UserOptions::EXIT };
+    UserOptions userOptions[6]{ UserOptions::SOLVE, UserOptions::CLEAR, UserOptions::SAVE, UserOptions::CHANGE_MAZE, UserOptions::ANALYSIS , UserOptions::EXIT };
 
     int option;
     cin >> option;
 
-    option < sizeof(userOptions) / sizeof(userOptions[0]) ? performUserOption(userOptions[option-1]) : promptUserOptions();
+    option <= sizeof(userOptions) / sizeof(userOptions[0]) ? performUserOption(userOptions[option-1]) : promptUserOptions();
 
     promptUserOptions();
 
@@ -114,11 +114,14 @@ void MazeGeneration::performUserOption(UserOptions options)
             curMazeProg->progress.clear();
             break;
         case UserOptions::COLLAB_PATHFINDING:
-            curMaze->collabPathfinding();
+            performCollabPathfinding();
             cout << curMazeProg->toString();
             break;
         case UserOptions::EXITS_PATHFINDING:
             curMaze->getBestExitPaths();
+            break;
+        case UserOptions::ANALYSIS:
+            analyseMazes();
             break;
     
     }
@@ -133,6 +136,69 @@ void MazeGeneration::performPathFinding()
     cin >> option;
     UserOptions method = option == 1 ? UserOptions::EXITS_PATHFINDING : UserOptions::COLLAB_PATHFINDING;
     performUserOption(method);
+
+
+
+}
+
+void MazeGeneration::performCollabPathfinding()
+{
+    cout << "How many players would you like in the game?" << endl << "Must be between the range of 2 and " << curMaze->getNoOfExits() << endl;
+
+    int numOfPlayers;
+    cin >> numOfPlayers;
+    numOfPlayers > 2 && numOfPlayers <= curMaze->getNoOfExits() ? curMaze->collabPathfinding(numOfPlayers) : performCollabPathfinding();
+
+
+
+}
+
+void MazeGeneration::analyseMazes()
+{
+    int players, width, height;
+    cout << "Please define the upper limit for the maze height..." << endl;
+    cin >> height;
+    cout << "Please define the upper limit for the maze width..." << endl;
+    cin >> width;
+    cout << "Please define the upper limit for the number of players..." << endl;
+    cin >> players;
+
+    for (int x = MIN_MAZE_LENGTH; x <= width; x++) {
+        for (int y = MIN_MAZE_LENGTH; y <= height; y++) {
+            for (int p = 2; p <= players; p++) {
+                analyseMazes(x, y, p);
+
+            }
+        }
+    }
+
+}
+
+void MazeGeneration::analyseMazes(int width, int height, int players)
+{
+    MazeAnalysis ma =  MazeAnalysis(width, height, players);
+    for (int i = 0; i < 100; i++) {
+        generateMaze(width, height, players);
+        curMaze->collabPathfinding(players);
+        ma.solvable += curMazeProg->outcome == Outcome::SOLVABLE ? 1: 0;
+        ma.partial += curMazeProg->outcome == Outcome::PARTIAL ? 1 : 0;
+        ma.unsolvable += curMazeProg->outcome == Outcome::UNSOLVABLE ? 1 : 0;
+
+    }
+    cout << ma.toString();
+}
+
+void MazeGeneration::generateMaze(int width, int height, int players)
+{
+    if (curMaze) {
+        delete curMaze;
+    }
+    curMaze = new Maze(width, height);
+    
+
+    curMaze->setExits(randInt(players, curMaze->getMaxNumOfExits()/2));
+    curMaze->generateMaze();
+    curMazeProg = curMaze->getProgression();
 
 
 

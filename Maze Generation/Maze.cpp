@@ -1,8 +1,5 @@
 #include "Maze.h"
-#include <algorithm>
-#include <random>
-#include <chrono>       // std::chrono::system_clock
-#include <array>        // std::array
+
 
 
 
@@ -44,6 +41,8 @@ Maze::Maze(int w, int h, string mazeData, std::vector<string> progress) : Maze(w
 	progression.progress = progress;
 	cout << progression.toString();
 }
+
+
 
 Maze::~Maze()
 {
@@ -93,9 +92,12 @@ void Maze::generateMaze()
 {
 	generateNodes();
 	generatePaths();
+	
 	generateStartPoint();
 	generateWalls();
+	generateAdditionalPaths();
 	generateExits();
+	
 }
 
 void Maze::getBestExitPaths()
@@ -103,7 +105,7 @@ void Maze::getBestExitPaths()
 	progression.originalMaze = toString();
 
 	for (int i = 0; i < exits.size(); i++) {
-		std::vector <MazeNode*> path = getBestPath(getStartNode() , exits.at(i));
+		std::vector <MazeNode*> path = getBestPath(exits.at(i), getStartNode());
 		for (int j = 1; j < path.size(); j++) {
 
 			path.at(j)->nodeType = 'o';
@@ -194,6 +196,34 @@ void Maze::generateExits()
 	
 }
 
+void Maze::generateAdditionalPaths()
+{
+	int exitsPossible = getPossibleExits().size();
+	if (exitsPossible >= noOfExits) {
+		return;
+	}
+
+	std::vector <MazeNode*> nodes;
+	for (int y = 0; y < height; y++) {
+		nodes.emplace_back(&this->nodes.at(getNodesPos(1, y)));
+		nodes.emplace_back(&this->nodes.at(getNodesPos(width - 2, y)));
+	}
+	for (int x = 1; x < width - 1; x++) {		
+			nodes.emplace_back(&this->nodes.at(getNodesPos(x, 1)));
+			nodes.emplace_back(&this->nodes.at(getNodesPos(x, height - 2)));
+	}
+
+	std::random_shuffle(std::begin(nodes), std::end(nodes));
+	int additionalRoutes = (noOfExits - exitsPossible) % nodes.size();
+	int i = 0;
+	while (additionalRoutes >= 0) {
+		nodes.at(i)->nodeType == ' ' ? generatePaths(nodes.at(i)), (void)additionalRoutes-- : (void) i++ ;
+	}
+	
+	
+
+}
+
 /**
  * Recursively generates a random path around the maze until an invalid end node is founf
  *
@@ -263,7 +293,7 @@ MazeNode* Maze::getPathEndNode(MazeNode* curNode, Directions dir)
 	y += isYIncrementable ? (curNode->y < height / 2 ? (curNode->y % 2 == 0 ? -1 : 0) : (curNode->y % 2 == 1 ? 1 : 0)) : 0; 
 
 	MazeNode* endNode = &nodes.at(getNodesPos(curNode->x + x, curNode->y + y));
-	endNode = endNode->nodeType ? NULL : endNode; //if end node has already had its type defined then return null
+	endNode = endNode->nodeType == ' ' ? NULL : endNode; //if end node has already had its type defined then return null
 
 	return curNode == endNode ? NULL : endNode ;
 }
@@ -336,9 +366,8 @@ void Maze::updateCPOutcome(vector<Player*>* players)
 	for (int i = 0; i < (*players).size(); i++) {
 		playersAtEnd += (*players).at(i)->curNode == getStartNode() ? 1 : 0;
 	}
-	progression.outcome = playersAtEnd == (*players).size() ? "A maze is fully solvable as all players can reach the finishing point" :
-		(playersAtEnd > 0 ? "A maze is partially solvable as some players can reach the finishing point" :
-			"A maze is not solvable due to all players blocking each other");
+	progression.outcome = playersAtEnd == (*players).size() ? Outcome::SOLVABLE :
+		(playersAtEnd > 0 ? Outcome::PARTIAL : Outcome::UNSOLVABLE);
 	
 }
 
