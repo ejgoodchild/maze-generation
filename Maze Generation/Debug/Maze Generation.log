@@ -1,8 +1,8 @@
-﻿  UserInterface.cpp
-C:\Users\Ethan\Documents\GitHub\maze-generation\Maze Generation\Maze.h(29,21): warning C4018: '<': signed/unsigned mismatch
+﻿  SaveLoad.cpp
+C:\Users\Ethan\Documents\GitHub\maze-generation\Maze Generation\Maze.h(24,21): warning C4018: '<': signed/unsigned mismatch
+  UserInterface.cpp
+C:\Users\Ethan\Documents\GitHub\maze-generation\Maze Generation\Maze.h(24,21): warning C4018: '<': signed/unsigned mismatch
 C:\Users\Ethan\Documents\GitHub\maze-generation\Maze Generation\UserInterface.cpp(9,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-  SaveLoad.cpp
-C:\Users\Ethan\Documents\GitHub\maze-generation\Maze Generation\Maze.h(29,21): warning C4018: '<': signed/unsigned mismatch
   Generating Code...
-C:\Users\Ethan\Documents\GitHub\maze-generation\Maze Generation\UserInterface.cpp(85): warning C4717: 'UserInterface::promptUserOptions': recursive on all control paths, function will cause runtime stack overflow
+C:\Users\Ethan\Documents\GitHub\maze-generation\Maze Generation\UserInterface.cpp(72): warning C4717: 'UserInterface::promptUserOptions': recursive on all control paths, function will cause runtime stack overflow
   Maze Generation.vcxproj -> C:\Users\Ethan\Documents\GitHub\maze-generation\Maze Generation\Debug\Maze Generation.exe

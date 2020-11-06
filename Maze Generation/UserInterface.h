@@ -23,7 +23,7 @@ struct MazeAnalysis {
 	}
 };
 
-class UserInterface {
+class UserInterface : protected MazeGeneration {
 
 	public:
 		
@@ -53,4 +53,6 @@ class UserInterface {
 		int randInt(int min, int max) {
 			return min + (rand() % (max - min + 1));
 		}
+		int getUserUpperLimit(string, int, int);
+		
 };

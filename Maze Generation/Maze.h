@@ -1,15 +1,10 @@
 #pragma once
-#include <iostream>
-#include <vector>
-#include <string>
-#include <algorithm>
-#include <random>
-#include <chrono>       // std::chrono::system_clock
-#include <array>        // std::array
+
+#include "MazeGeneration.h"
 
 using namespace std;
 enum class Directions {NORTH = 0, EAST = 1, SOUTH = 2, WEST = 3};
-enum class Outcome {SOLVABLE =0, PARTIAL = 1, UNSOLVABLE =2};
+enum class Outcome {SOLVABLE =0, PARTIAL = 1, UNSOLVABLE =2, UNKNOWN = 3};
 struct MazeNode {
 	int x, y;
 	char nodeType = NULL;
@@ -21,7 +16,7 @@ struct MazeNode {
 };
 struct MazeProgression {
 	string originalMaze;
-	Outcome outcome;
+	Outcome outcome = Outcome::UNKNOWN;
 	std::vector<string> progress;
 	
 	string toString() {
@@ -35,7 +30,7 @@ struct MazeProgression {
 	string getOutcomeStatment(Outcome outcome) {
 		return outcome == Outcome::SOLVABLE ? "A maze is fully solvable as all players can reach the finishing point" :
 			(outcome == Outcome::PARTIAL ? "A maze is partially solvable as some players can reach the finishing point" :
-				(outcome == Outcome::PARTIAL ? "A maze is not solvable due to all players blocking each other" :
+				(outcome == Outcome::UNSOLVABLE ? "A maze is not solvable due to all players blocking each other" :
 					"No outcome defined"));
 	}
 };
@@ -52,7 +47,7 @@ struct Player {
 
 };
 
-class Maze
+class Maze : protected MazeGeneration
 {
 	public:
 		Maze(int, int);

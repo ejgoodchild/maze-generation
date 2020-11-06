@@ -7,8 +7,8 @@ using namespace std;
 int main()
 {
     srand(time(NULL)); // For randomness effect
-    UserInterface mazeGen;
-    mazeGen.start();
+    UserInterface ui;
+    ui.start();
     return 0;
 }
 
@@ -31,18 +31,18 @@ void UserInterface::generateMaze()
 
 void UserInterface::saveMaze()
 { 
-        cout << "Please type the number for the option you'd like to pick..." << endl;
-        cout << "| Save Maze (1) | Save Progression (2)" << endl;
-        int option;
-        cin >> option;       
-        option == 1 ? SaveLoad::save(curMaze->toString()) : SaveLoad::save(curMazeProg->toString());;
-        
+    string msg = "Please type the number for the option you'd like to pick...\n| Save Maze (1) | Save Progression (2)";
+    string msgSave = "What would you like to name the file?";
+    outputln(msg);
+
+    getUserInt(msg, 1, 2) == 1 ? SaveLoad::save(getUserFileName(msgSave),curMaze->toString()) : 
+        SaveLoad::save(getUserFileName(msgSave),curMazeProg->toString());
 }
 
 void UserInterface::loadMaze()
 {
-    
-    curMaze = SaveLoad::load();
+    string msg = "What file would you like to load?";
+    curMaze = SaveLoad::load(getUserFileName(msg));
     curMazeProg = curMaze->getProgression();
     curMaze->printMaze();
 }
@@ -51,16 +51,11 @@ void UserInterface::loadMaze()
 
 void UserInterface::getUserMaze()
 {
-    if (curMaze) {
-        delete curMaze;
-    }
-    cout << "Please type the number for the option you'd like to pick..." << endl;
-    cout << "| Generate Maze (1) | Load Maze (2) | Analyse Mazes (3) | Exit (4)" << endl;
-    int option;
-    cin >> option;
+    if (curMaze) { delete curMaze; }
+    string msg = "Please type the number for the option you'd like to pick...\n| Generate Maze (1) | Load Maze (2) | Analyse Mazes (3) | Exit (4)";
+    outputln(msg);
     UserOptions userOptions[4]{ UserOptions::GENERATE, UserOptions::LOAD, UserOptions::ANALYSIS, UserOptions::EXIT };
-
-    option <= sizeof(userOptions) / sizeof(userOptions[0]) ? performUserOption(userOptions[option - 1]) : getUserMaze();
+    performUserOption(userOptions[getUserInt(msg, 1, 4) - 1]);
 
 }
 
@@ -68,20 +63,12 @@ void UserInterface::getUserMaze()
 
 void UserInterface::promptUserOptions()
 {
-    cout << "Please type the number for the option you'd like to pick..." << endl;
-    cout << "| Solve Maze (1) | Clear Progression (2) | Save Maze (3) | Change Maze (4) | Analyse Mazes (5) | Exit (6)" << endl;
-    
+    string msg = "Please type the number for the option you'd like to pick...\n"
+        "| Solve Maze (1) | Clear Progression (2) | Save Maze (3) | Change Maze (4) | Analyse Mazes (5) | Exit (6)";
+    outputln(msg);
     UserOptions userOptions[6]{ UserOptions::SOLVE, UserOptions::CLEAR, UserOptions::SAVE, UserOptions::CHANGE_MAZE, UserOptions::ANALYSIS , UserOptions::EXIT };
-
-    int option;
-    cin >> option;
-
-    option <= sizeof(userOptions) / sizeof(userOptions[0]) ? performUserOption(userOptions[option-1]) : promptUserOptions();
-
+    performUserOption(userOptions[getUserInt(msg, 1, 6) - 1]);
     promptUserOptions();
-
-
-
 }
 
 void UserInterface::performUserOption(UserOptions options)
@@ -126,38 +113,32 @@ void UserInterface::performUserOption(UserOptions options)
 void UserInterface::performPathFinding()
 {
     performUserOption(UserOptions::CLEAR);
-    cout << "Please type the number for the option you'd like to pick..." << endl;
-    cout << "| Pathfinding For Each Exit (1) | Collaborative Pathfinding (2)" << endl;
-    int option;
-    cin >> option;
-    UserOptions method = option == 1 ? UserOptions::EXITS_PATHFINDING : UserOptions::COLLAB_PATHFINDING;
+    string msg = "Please type the number for the option you'd like to pick... \n| Pathfinding For Each Exit (1) | Collaborative Pathfinding (2)";
+    outputln(msg);
+    UserOptions method = getUserInt(msg, 1, 2) == 1 ? UserOptions::EXITS_PATHFINDING : UserOptions::COLLAB_PATHFINDING;
     performUserOption(method);
-
-
-
 }
 
 void UserInterface::performCollabPathfinding()
 {
-    cout << "How many players would you like in the game?" << endl << "Must be between the range of 2 and " << curMaze->getNoOfExits() << endl;
-
-    int numOfPlayers;
-    cin >> numOfPlayers;
-    numOfPlayers > 2 && numOfPlayers <= curMaze->getNoOfExits() ? curMaze->collabPathfinding(numOfPlayers) : performCollabPathfinding();
-
-
+    string msg = "How many players would you like in the game?";
+    outputln(msg);
+    curMaze->collabPathfinding(getUserInt(msg, 2, curMaze->getNoOfExits()));   
 
 }
-
+int UserInterface::getUserUpperLimit(string msgEnd, int min, int max)
+{
+    string msg = "Please define the upper limit for the " + msgEnd;
+    outputln(msg);
+    return getUserInt(msg, min, max);
+}
 void UserInterface::analyseMazes()
 {
-    int players, width, height;
-    cout << "Please define the upper limit for the maze height..." << endl;
-    cin >> height;
-    cout << "Please define the upper limit for the maze width..." << endl;
-    cin >> width;
-    cout << "Please define the upper limit for the number of players..." << endl;
-    cin >> players;
+
+    int width = getUserUpperLimit("maze width...", MIN_MAZE_LENGTH, 250);
+    int height = getUserUpperLimit("maze height...", MIN_MAZE_LENGTH, 250);
+    int players = getUserUpperLimit("number of players...", 2, 10);
+    
 
     for (int x = MIN_MAZE_LENGTH; x <= width; x++) {
         for (int y = MIN_MAZE_LENGTH; y <= height; y++) {
@@ -201,6 +182,10 @@ void UserInterface::generateMaze(int width, int height, int players)
 }
 
 
+
+
+
+
 void UserInterface::start()
 {
     getUserMaze();
@@ -215,16 +200,10 @@ void UserInterface::start()
  */
 int UserInterface::getMazeWidth()
 {
-    int width;
-    cout << "Enter the width of the maze..." << endl;
-    cin >> width;
+    string msg = "Enter the width of the maze...";
+    outputln(msg);
+    return getUserInt(msg, MIN_MAZE_LENGTH, 250);
 
-    
-    if (width < MIN_MAZE_LENGTH) {
-        cout << "The width is too small, it must be at least a size of " << MIN_MAZE_LENGTH << endl;
-        return getMazeWidth();
-    }
-    return width;
 }
 
 /**
@@ -235,16 +214,9 @@ int UserInterface::getMazeWidth()
  */
 int UserInterface::getMazeHeight()
 {
-    int height;
-    cout << "Enter the height of the maze..." << endl;
-    cin >> height;
-
-
-    if (height < MIN_MAZE_LENGTH) {
-        cout << "The height is too small, it must be at least a size of " << MIN_MAZE_LENGTH << endl;
-        return getMazeHeight();
-    }
-    return height;
+    string msg = "Enter the height of the maze...";
+    outputln(msg);
+    return getUserInt(msg, MIN_MAZE_LENGTH, 250);
 }
 
 /**
@@ -255,15 +227,10 @@ int UserInterface::getMazeHeight()
  */
 int UserInterface::getNumberOfExits()
 {
-    int edges;
-    cout << "Enter the number of edges in the maze" << endl;
-    cin >> edges;
-    if (edges > 1 && edges <= curMaze->getMaxNumOfExits()) {
-        return edges;
-    }
-    cout << "The number of edges is outside the range, the number of edges must be between 1 and " << curMaze->getMaxNumOfExits() << endl;
-
-    return getNumberOfExits();
+    string msg = "Enter the number of edges in the maze...";
+    outputln(msg);
+    return getUserInt(msg, 2, curMaze->getMaxNumOfExits());
+   
 }
 
 

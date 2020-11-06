@@ -1,15 +1,11 @@
 #pragma once
 #include "Maze.h"
- class SaveLoad
+ class SaveLoad : MazeGeneration
 {
 	public:
-		static void save(string);
-		static Maze* load();
+		static void save(string, string);
+		static Maze* load(string);
 
-	private:
-	
-		static string getFileNameSave();
-		 static string getFileNameLoad();
-		static string checkExtension(string*);
+
 };
 
