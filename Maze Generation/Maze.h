@@ -80,9 +80,13 @@ class Maze : protected MazeGeneration
 		MazeProgression progression;
 
 		/* Getters */
-		int getNodesPos(int x, int y) { return x + (y * width); }
-		MazeNode* getStartNode() { return &nodes.at(getNodesPos((width - 1) / 2, (height - 1) / 2)); }
-		std::vector <MazeNode*> getPossibleExits();
+		vector <MazeNode*> getPossibleExits();
+		vector <MazeNode*> getInnerBorder();
+		vector <MazeNode*> getPathInnerBorder();
+		vector <MazeNode*> getRow(int y, int start, int end);
+		vector <MazeNode*> getRow(int y) { return getRow(y, 0, width); };
+		vector <MazeNode*> getCol(int x, int start, int end);
+		vector <MazeNode*> getCol(int x) { return getCol(x, 0, height); };
 
 
 		/* Maze Generation */
@@ -101,11 +105,15 @@ class Maze : protected MazeGeneration
 		int getDirDistOffset(int,int);
 		void fillPathNodes(MazeNode*, MazeNode*);
 		void expandNode(std::vector<MazeNode*>& openList, MazeNode* bestNode, MazeNode* endNode, std::vector <MazeNode>& nodes);
+		std::vector<MazeNode*> getValidNeighbours(MazeNode* bestNode, std::vector<MazeNode>& nodes);
+		void addNeighbour(int x, int y, vector<MazeNode>& nodes, vector<MazeNode*>* neighbours);
 		bool isNodeValid(int, int, std::vector<MazeNode>&);
 		vector<MazeNode*> getPathResults(MazeNode*, MazeNode*);
 		MazeNode* getBestNode(std::vector<MazeNode*>& openList);
+		void updateBestNode(MazeNode* node, MazeNode* bestNode, float* bestF);
 		vector<MazeNode*> getBestPath(MazeNode* start, MazeNode* end);
 		int ManhattanDistance(MazeNode* a, MazeNode* b) {return abs(a->x - b->x) + abs(a->y - b->y);}		
+
 
 		/* Math */
 		bool inRange(int val, int min, int max);
@@ -114,14 +122,19 @@ class Maze : protected MazeGeneration
 
 		/* Nodes */
 		bool isPathNode(MazeNode* node) { return node->nodeType == ' ';  }
-
+		int getNodesPos(int x, int y) { return x + (y * width); }
+		MazeNode* getNode(int x, int y) { return  &nodes.at(getNodesPos(x, y)); }
+		MazeNode* getStartNode() { return getNode((width - 1) / 2, (height - 1) / 2); }
+		void findPossibleExits(vector<MazeNode*> inner, vector<MazeNode*> outer, vector<MazeNode*>* exits);
 
 		/* Collab Pathfinding */
 		void collabPathfinding(vector<Player*>*);
 		void updateCPOutcome(vector<Player*>*);	
 		void movePlayer(Player*);
 
-		
-
+		/* Player */
+		bool hasPlayerMoved(Player* player) { return player->path.size() > 0 ? (player->path.back()->passable) : false; };
+		void onPlayerLeaveNode(Player* player);
+		void onPlayerEnterNode(Player* player);
 };
 

@@ -113,7 +113,6 @@ void Maze::collabPathfinding(int noOfPlayers)
 {
 	vector<Player*> players;
 	getStartNode()->nodeType = 'F';
-	//progression.originalMaze = toString();
 	std::random_shuffle(exits.begin(), exits.end());
 
 	for (int i = 0; i < noOfPlayers; i++) {
@@ -157,7 +156,7 @@ void Maze::generatePaths()
 	MazeNode* start = getStartNode();
 	int x = (width % 2 == 1) ? (((width - 1) / 2) % 2 == 0 ? start->x + 1 : start->x) : start->x;
 	int y = (height % 2 == 1) ? (((height - 1) / 2) % 2 == 0 ? start->y + 1 : start->y) : start->y;
-	generatePaths(&nodes.at(getNodesPos(x, y)));
+	generatePaths(getNode(x, y));
 }
 
 
@@ -172,7 +171,7 @@ void Maze::generateStartPoint()
 	MazeNode* mNode;
 	for (int y = startPoint->y - 1; y <= startPoint->y + 1; y++) {
 		for (int x = startPoint->x - 1; x <= startPoint->x + 1; x++) {
-			mNode = &nodes.at(getNodesPos(x, y));
+			mNode = getNode(x, y);
 			mNode->nodeType = mNode == startPoint ? 'S' : ' ';
 		}
 	}
@@ -187,7 +186,7 @@ void Maze::generateWalls()
 	MazeNode* mNode;
 	for (int y = 0; y < height; y++) {
 		for (int x = 0; x < width; x++) {
-			mNode = &nodes.at(getNodesPos(x, y));
+			mNode = getNode(x, y);
 			if(!mNode->nodeType){ 
 				mNode->nodeType = 'X';
 				mNode->passable = false;
@@ -213,33 +212,16 @@ void Maze::generateExits()
 void Maze::generateAdditionalPaths()
 {
 	int exitsPossible = getPossibleExits().size();
-	if (exitsPossible >= noOfExits) {
-		return;
-	}
-
-	std::vector <MazeNode*> nodes;
-	for (int y = 0; y < height; y++) {
-		nodes.emplace_back(&this->nodes.at(getNodesPos(1, y)));
-		nodes.emplace_back(&this->nodes.at(getNodesPos(width - 2, y)));
-	}
-	for (int x = 1; x < width - 1; x++) {		
-			nodes.emplace_back(&this->nodes.at(getNodesPos(x, 1)));
-			nodes.emplace_back(&this->nodes.at(getNodesPos(x, height - 2)));
-	}
-
+	if (exitsPossible >= noOfExits) return;
+	std::vector <MazeNode*> nodes = getPathInnerBorder();
 	std::random_shuffle(std::begin(nodes), std::end(nodes));
-	int additionalRoutes = (noOfExits - exitsPossible) % nodes.size();
-	int i = 0;
-	while (additionalRoutes >= 0) {
-		isPathNode(nodes.at(i)) ? generatePaths(nodes.at(i)), (void)additionalRoutes-- : (void) i++ ;
-	}
-	
-	
 
+	int additionalRoutes = (noOfExits - exitsPossible) % nodes.size();
+	for (int i = additionalRoutes; i >= 0; i--) generatePaths(nodes.at(i));
 }
 
 /**
- * Recursively generates a random path around the maze until an invalid end node is founf
+ * Recursively generates a random path around the maze until an invalid end node is found
  *
  * @param the starting node
  */
@@ -258,27 +240,58 @@ void Maze::generatePaths(MazeNode* curNode)
 	}
 }
 
-std::vector<MazeNode*> Maze::getPossibleExits()
+vector<MazeNode*> Maze::getPossibleExits()
 {
 	std::vector <MazeNode*> possibleExits;
+	findPossibleExits(getCol(1),getCol(0), &possibleExits);
+	findPossibleExits(getCol(width-2),getCol(width-1), &possibleExits);
+	findPossibleExits(getRow(1, 1, width-1), getRow(0, 1, width - 1), &possibleExits);
+	findPossibleExits(getRow(height-2, 1, width-1), getRow(height-1, 1, width - 1), &possibleExits);
 
+	return possibleExits;
+}
+
+vector<MazeNode*> Maze::getInnerBorder()
+{
+	vector <MazeNode*> nodes;
 	for (int y = 0; y < height; y++) {
-		if (nodes.at(getNodesPos(1, y)).passable) {
-			possibleExits.emplace_back(&nodes.at(getNodesPos(0, y)));
-		}
-		if (nodes.at(getNodesPos(width - 2, y)).passable) {
-			possibleExits.emplace_back(&nodes.at(getNodesPos(width - 1, y)));
-		}
+		nodes.emplace_back(getNode(1, y));
+		nodes.emplace_back(getNode(width - 2, y));
 	}
 	for (int x = 1; x < width - 1; x++) {
-		if (nodes.at(getNodesPos(x, 1)).passable) {
-			possibleExits.emplace_back(&nodes.at(getNodesPos(x, 0)));
-		}
-		if (nodes.at(getNodesPos(x, height -2)).passable) {
-			possibleExits.emplace_back(&nodes.at(getNodesPos(x, height-1)));
-		}
+		nodes.emplace_back(getNode(x, 1));
+		nodes.emplace_back(getNode(x, height - 2));
 	}
-	return possibleExits;
+	return nodes;
+}
+
+vector<MazeNode*> Maze::getPathInnerBorder()
+{
+	vector <MazeNode*> inner = getInnerBorder();
+	vector <MazeNode*> nodes;
+	for (int i = 0; i < inner.size(); i++) 
+		if (isPathNode(inner.at(i))) 
+			nodes.emplace_back(inner.at(i));
+
+	return nodes;
+}
+
+vector<MazeNode*> Maze::getRow(int y, int start, int end)
+{
+	vector <MazeNode*> nodes;
+	for (int x = start; x < end; x++) 
+		nodes.emplace_back(getNode(x, y));
+
+	return nodes;
+}
+
+vector<MazeNode*> Maze::getCol(int x, int start, int end)
+{
+	vector <MazeNode*> nodes;
+	for (int y = start; y < end; y++)
+		nodes.emplace_back(getNode(x, y));
+
+	return nodes;
 }
 
 
@@ -296,7 +309,7 @@ MazeNode* Maze::getPathEndNode(MazeNode* curNode, Directions dir)
 	int x = getDirDistX(curNode, &dir, 2);
 	int y = getDirDistY(curNode, &dir, 2);
 
-	MazeNode* endNode = &nodes.at(getNodesPos(curNode->x + x, curNode->y + y));
+	MazeNode* endNode = getNode(curNode->x + x, curNode->y + y);
 	return isPathNode(endNode) ? NULL : curNode == endNode ? NULL : endNode; //if end node has already had its type defined then return null
 }
 
@@ -367,9 +380,8 @@ vector<MazeNode*> Maze::getBestPath(MazeNode* start, MazeNode* end)
 		best->closed = true;
 		openList.erase(std::remove(openList.begin(), openList.end(), best), openList.end());
 
-		if (best == to) {
-			return getPathResults(from, to);
-		}
+		if (best == to) return getPathResults(from, to);
+	
 		expandNode(openList, best, to, nodes);
 
 	}
@@ -382,6 +394,13 @@ vector<MazeNode*> Maze::getBestPath(MazeNode* start, MazeNode* end)
 bool Maze::inRange(int val, int min, int max)
 {
 	return val <= max ? val >= min : false;
+}
+
+void Maze::findPossibleExits(vector<MazeNode*> inner, vector<MazeNode*> outer, vector<MazeNode*>* exits)
+{
+	for (int i = 0; i < inner.size(); i++) 
+		if (inner.at(i)->passable) exits->emplace_back(outer.at(i));
+	
 }
 
 void Maze::collabPathfinding(vector<Player*>* players)
@@ -409,18 +428,28 @@ void Maze::updateCPOutcome(vector<Player*>* players)
 }
 
 void Maze::movePlayer(Player* player)
-{
-	player->hasMoved = player->path.size() > 0 ? (player->path.back()->passable) : false;
-	if (player->hasMoved) {
-		player->curNode->nodeType = player->isFirstNode ? 'E' : 'o';
-		player->curNode->passable = true;
-		player->isFirstNode = false;
-		player->curNode = player->path.back();
-		player->path.pop_back();
+{	
+	player->hasMoved = hasPlayerMoved(player);
+	if (!player->hasMoved) return; 
 		
-		player->curNode->passable = getStartNode() == player->curNode ? true : false ;
-		player->curNode->nodeType = getStartNode() == player->curNode ? 'F':'P';
-	}
+	onPlayerLeaveNode(player);
+	onPlayerEnterNode(player);
+}
+
+void Maze::onPlayerLeaveNode(Player* player)
+{
+	player->curNode->nodeType = player->isFirstNode ? 'E' : 'o';
+	player->curNode->passable = true;
+	player->isFirstNode = false;
+	player->curNode = player->path.back();
+	player->path.pop_back();
+}
+
+void Maze::onPlayerEnterNode(Player* player)
+{
+	bool isStart = getStartNode() == player->curNode;
+	player->curNode->passable = isStart;
+	player->curNode->nodeType = isStart ? 'F' : 'P';
 }
 
 MazeNode* Maze::getBestNode(std::vector<MazeNode*>& openList)
@@ -429,46 +458,54 @@ MazeNode* Maze::getBestNode(std::vector<MazeNode*>& openList)
 	float bestF = bestNode->g + bestNode->h;
 
 	for (MazeNode* i : openList) {
-		float iF = i->g + i->h;
-		bestNode = iF < bestF ? i: bestNode ;
-		bestF = iF < bestF ? iF : bestF ;
+		updateBestNode(i, bestNode, &bestF);
 	}
 	return bestNode;
 }
 
+void Maze::updateBestNode(MazeNode* node, MazeNode* bestNode, float* bestF)
+{
+	float iF = node->g + node->h;
+	if (iF >= *bestF) return;
+	bestNode = node;
+	*bestF = iF;
+}
+
 void Maze::expandNode(std::vector<MazeNode*>& openList, MazeNode* bestNode, MazeNode* endNode, std::vector<MazeNode>& nodes)
 {
-
-	std::vector<MazeNode*> neighbours;
-	neighbours.emplace_back(isNodeValid(bestNode->x + 1, bestNode->y, nodes) ? &nodes.at(getNodesPos(bestNode->x + 1, bestNode->y)) : NULL);
-	neighbours.emplace_back(isNodeValid(bestNode->x, bestNode->y +1, nodes) ? &nodes.at(getNodesPos(bestNode->x, bestNode->y + 1)) : NULL);
-	neighbours.emplace_back(isNodeValid(bestNode->x - 1, bestNode->y, nodes) ? &nodes.at(getNodesPos(bestNode->x - 1, bestNode->y)) : NULL);
-	neighbours.emplace_back(isNodeValid(bestNode->x, bestNode->y -1, nodes) ? &nodes.at(getNodesPos(bestNode->x, bestNode->y - 1)) : NULL);
-
-
+	vector<MazeNode*> neighbours = getValidNeighbours(bestNode, nodes);
 	for (MazeNode* i : neighbours) {
-		if (i) {
-			i->bestParent = bestNode;
-			i->g = i->bestParent->g;
-			i->h = ManhattanDistance(i, endNode);
-			openList.emplace_back(i);
-		}
+		i->bestParent = bestNode;
+		i->g = i->bestParent->g;
+		i->h = ManhattanDistance(i, endNode);
+		openList.emplace_back(i);		
 	}
-
 }
+
+vector<MazeNode*> Maze::getValidNeighbours(MazeNode* bestNode, std::vector<MazeNode>& nodes)
+{
+	vector<MazeNode*> neighbours;
+	addNeighbour(bestNode->x + 1, bestNode->y, nodes, &neighbours);
+	addNeighbour(bestNode->x - 1, bestNode->y, nodes, &neighbours);
+	addNeighbour(bestNode->x, bestNode->y + 1, nodes, &neighbours);
+	addNeighbour(bestNode->x, bestNode->y - 1, nodes, &neighbours);
+
+	return neighbours;
+}
+
+void Maze::addNeighbour(int x, int y, vector<MazeNode>& nodes, vector<MazeNode*>* neighbours)
+{
+	if (!isNodeValid(x, y, nodes)) return;
+	(*neighbours).emplace_back(&nodes.at(getNodesPos(x, y)));
+}
+
+
 
 bool Maze::isNodeValid(int x, int y, std::vector<MazeNode>& nodes)
 {
-	//bool inXRange = 0 <= x ? (x < width ? true : false) : false;
-	//bool inYRange = 0 <= y ? (y < height ? true : false) : false;
-	//if (inXRange && inYRange) {
-	if (!inMazeRange(x, y)) return false;
-		MazeNode* node = &nodes.at(getNodesPos(x, y));
-		
-		return !node->closed ? node->passable : false;
-
-
-	//return false;
+	if (!inMazeRange(x, y)) return false; //if node out of range
+	MazeNode* node = &nodes.at(getNodesPos(x, y));	//get node	
+	return !node->closed ? node->passable : false;
 }
 
 vector<MazeNode*> Maze::getPathResults(MazeNode* start, MazeNode* end)
@@ -476,20 +513,17 @@ vector<MazeNode*> Maze::getPathResults(MazeNode* start, MazeNode* end)
 	std::vector<MazeNode*> path;
 	MazeNode* m = end;
 	while (m != start) {
-		path.emplace_back(&nodes.at(getNodesPos(m->x, m->y)));
+		path.emplace_back(getNode(m->x, m->y));
 		m = m->bestParent;
 	}
 	return path;
 }
 
-string MazeProgression::getOutcomeStatment(Outcome outcome)
-
-	{
-		return outcome == Outcome::SOLVABLE ? "A maze is fully solvable as all players can reach the finishing point" :
-			(outcome == Outcome::PARTIAL ? "A maze is partially solvable as some players can reach the finishing point" :
-				(outcome == Outcome::UNSOLVABLE ? "A maze is not solvable due to all players blocking each other" :
-					""));
-	}
+string MazeProgression::getOutcomeStatment(Outcome outcome){
+	return outcome == Outcome::SOLVABLE ? "A maze is fully solvable as all players can reach the finishing point" :
+	(outcome == Outcome::PARTIAL ? "A maze is partially solvable as some players can reach the finishing point" :
+	(outcome == Outcome::UNSOLVABLE ? "A maze is not solvable due to all players blocking each other" : ""));
+}
 
 MazeNode::MazeNode(int x, int y)
 {
