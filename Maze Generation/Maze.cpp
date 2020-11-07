@@ -17,14 +17,12 @@ Maze::Maze(int w, int h)
 }
 
 Maze::Maze(int w, int h, string str) : Maze(w,h)
-{
-	
+{	
 	MazeNode* mNode;
 	for (int y = 0; y < height; y++) {
 		for (int x = 0; x < width; x++) {
 			mNode = new MazeNode(x, y, str.at(getNodesPos(x, y)));		
 			nodes.emplace_back(*mNode);
-
 			if (mNode->nodeType == 'E') exits.emplace_back(&*mNode);
 		}
 	}
@@ -87,8 +85,7 @@ string Maze::toString()
 void Maze::generateMaze()
 {
 	generateNodes();
-	generatePaths();
-	
+	generatePaths();	
 	generateStartPoint();
 	generateWalls();
 	generateAdditionalPaths();
@@ -110,6 +107,21 @@ void Maze::getBestExitPaths()
 	}
 
 	cout << progression.toString();
+}
+
+void Maze::collabPathfinding(int noOfPlayers)
+{
+	vector<Player*> players;
+	getStartNode()->nodeType = 'F';
+	progression.originalMaze = toString();
+	std::random_shuffle(exits.begin(), exits.end());
+
+	for (int i = 0; i < noOfPlayers; i++) {
+		players.emplace_back(new Player(exits.at(i)));
+		players.at(i)->path = getBestPath(players.at(i)->curNode, getStartNode());
+
+	}
+	collabPathfinding(&players);
 }
 
 void Maze::clearSolutions()
@@ -138,6 +150,14 @@ void Maze::generateNodes()
 			delete mNode;
 		}
 	}
+}
+
+void Maze::generatePaths()
+{
+	MazeNode* start = getStartNode();
+	int x = (width % 2 == 1) ? (((width - 1) / 2) % 2 == 0 ? start->x + 1 : start->x) : start->x;
+	int y = (height % 2 == 1) ? (((height - 1) / 2) % 2 == 0 ? start->y + 1 : start->y) : start->y;
+	generatePaths(&nodes.at(getNodesPos(x, y)));
 }
 
 

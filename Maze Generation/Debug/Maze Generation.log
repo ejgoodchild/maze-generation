@@ -1,12 +1,12 @@
 ﻿  Maze.cpp
 C:\Users\Ethan\Documents\GitHub\maze-generation\Maze Generation\Maze.h(25,21): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Ethan\Documents\GitHub\maze-generation\Maze Generation\Maze.cpp(107,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Ethan\Documents\GitHub\maze-generation\Maze Generation\Maze.cpp(109,21): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Ethan\Documents\GitHub\maze-generation\Maze Generation\Maze.cpp(121,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Ethan\Documents\GitHub\maze-generation\Maze Generation\Maze.cpp(330,29): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\Ethan\Documents\GitHub\maze-generation\Maze Generation\Maze.cpp(353,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Ethan\Documents\GitHub\maze-generation\Maze Generation\Maze.cpp(366,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Ethan\Documents\GitHub\maze-generation\Maze Generation\Maze.cpp(417,28): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Ethan\Documents\GitHub\maze-generation\Maze Generation\Maze.cpp(100,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Ethan\Documents\GitHub\maze-generation\Maze Generation\Maze.cpp(102,21): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Ethan\Documents\GitHub\maze-generation\Maze Generation\Maze.cpp(129,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Ethan\Documents\GitHub\maze-generation\Maze Generation\Maze.cpp(344,29): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Ethan\Documents\GitHub\maze-generation\Maze Generation\Maze.cpp(367,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Ethan\Documents\GitHub\maze-generation\Maze Generation\Maze.cpp(380,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Ethan\Documents\GitHub\maze-generation\Maze Generation\Maze.cpp(430,28): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
   SaveLoad.cpp
 C:\Users\Ethan\Documents\GitHub\maze-generation\Maze Generation\Maze.h(25,21): warning C4018: '<': signed/unsigned mismatch
   UserInterface.cpp

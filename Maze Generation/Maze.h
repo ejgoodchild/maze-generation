@@ -46,94 +46,69 @@ struct Player {
 class Maze : protected MazeGeneration
 {
 	public:
+		/* Maze Constructors / Destructors */
 		Maze(int, int);
 		Maze(int, int, string);
 		Maze(int, int, string, std::vector<string>);
 		~Maze();
+
+		/* Printing / toString Functions */
 		void printMazeSize();
-		int getMaxNumOfExits();
-		void setExits(int exits) {
-			this->noOfExits = exits;
-		};
 		void printMaze();
 		string toString();
+
+		/* Getters / Setters */
+		int getMaxNumOfExits();
+		void setExits(int exits) { this->noOfExits = exits;};
+		int getNoOfExits() { return noOfExits; }
+		void clearSolutions();
+		MazeProgression* getProgression() { return &progression; }
+
+		/* Maze Generation */
 		void generateMaze();
 
+		/* Pathfinding */
 		void getBestExitPaths();
+		void collabPathfinding(int noOfPlayers);
 
-		void clearSolutions();
-		MazeProgression* getProgression() {
-			return &progression;
-		}
-
-		void collabPathfinding(int noOfPlayers) {
-						
-			vector<Player*> players;
-			getStartNode()->nodeType = 'F';
-			progression.originalMaze = toString();
-			std::random_shuffle(exits.begin(), exits.end());
-
-			for (int i = 0; i < noOfPlayers; i++) {
-				players.emplace_back(new Player(exits.at(i)));
-				players.at(i)->path = getBestPath(players.at(i)->curNode, getStartNode());
-
-			}
-			collabPathfinding(&players);
-		}
-
-		int getNoOfExits() { return noOfExits; }
 	private:
+		/* Constants */
+
+		
+		/* Variables */
 		int width, height;
 		int noOfExits = 1;
-		
-		int getNodesPos(int x, int y) {
-			return x + (y * width);
-		}
 		std::vector <MazeNode> nodes;
 		std::vector <MazeNode*> exits;
 		MazeProgression progression;
 
+		/* Getters */
+		int getNodesPos(int x, int y) { return x + (y * width); }
+		MazeNode* getStartNode() { return &nodes.at(getNodesPos((width - 1) / 2, (height - 1) / 2)); }
+		std::vector <MazeNode*> getPossibleExits();
 
+		/* Maze Generation */
 		void generateNodes();
-		void generatePaths() {
-			MazeNode* start = getStartNode();
-			int x = (width % 2 == 1) ? (((width-1)/2) % 2 == 0 ? start->x + 1 : start->x): start->x;
-			int y = (height % 2 == 1) ? (((height - 1) / 2) % 2 == 0 ? start->y + 1 : start->y) : start->y;
-			generatePaths(&nodes.at(getNodesPos(x,y)));
-		};
+		void generatePaths();
 		void generatePaths(MazeNode* node);
-
 		void generateStartPoint();
 		void generateWalls();
 		void generateExits();
 		void generateAdditionalPaths();
 
-
-
-		MazeNode* getStartNode(){
-			return &nodes.at(getNodesPos((width - 1) / 2, (height - 1) / 2));
-		}
-
-		std::vector <MazeNode*> getPossibleExits();
-
-
+		/* Pathfinding */
 		MazeNode* getPathEndNode(MazeNode*, Directions);
 		void fillPathNodes(MazeNode*, MazeNode*);
-
-
 		void expandNode(std::vector<MazeNode*>& openList, MazeNode* bestNode, MazeNode* endNode, std::vector <MazeNode>& nodes);
 		bool isNodeValid(int, int, std::vector<MazeNode>&);
 		vector<MazeNode*> getPathResults(MazeNode*, MazeNode*);
 		MazeNode* getBestNode(std::vector<MazeNode*>& openList);
 		vector<MazeNode*> getBestPath(MazeNode* start, MazeNode* end);
-
-		int ManhattanDistance(MazeNode* a, MazeNode* b) {
-			return abs(a->x - b->x) + abs(a->y - b->y);
-		}
+		int ManhattanDistance(MazeNode* a, MazeNode* b) {return abs(a->x - b->x) + abs(a->y - b->y);}		
 		
+		/* Collab Pathfinding */
 		void collabPathfinding(vector<Player*>*);
-		void updateCPOutcome(vector<Player*>*);
-		
+		void updateCPOutcome(vector<Player*>*);	
 		void movePlayer(Player*);
 
 		
