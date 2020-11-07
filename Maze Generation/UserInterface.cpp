@@ -35,7 +35,7 @@ void UserInterface::saveMaze()
     string msgSave = "What would you like to name the file?";
     outputln(msg);
 
-    getUserInt(msg, 1, 2) == 1 ? SaveLoad::save(getUserFileName(msgSave),curMaze->toString()) : 
+    getUserInt(msg, 1, 2) == 1 ? SaveLoad::save(getUserFileName(msgSave),curMazeProg->originalMaze) : 
         SaveLoad::save(getUserFileName(msgSave),curMazeProg->toString());
 }
 

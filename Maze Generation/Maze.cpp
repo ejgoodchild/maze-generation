@@ -90,12 +90,12 @@ void Maze::generateMaze()
 	generateWalls();
 	generateAdditionalPaths();
 	generateExits();
-	
+	progression.originalMaze = toString();
 }
 
 void Maze::getBestExitPaths()
 {
-	progression.originalMaze = toString();
+	//progression.originalMaze = toString();
 
 	for (int i = 0; i < exits.size(); i++) {
 		std::vector <MazeNode*> path = getBestPath(exits.at(i), getStartNode());
@@ -113,7 +113,7 @@ void Maze::collabPathfinding(int noOfPlayers)
 {
 	vector<Player*> players;
 	getStartNode()->nodeType = 'F';
-	progression.originalMaze = toString();
+	//progression.originalMaze = toString();
 	std::random_shuffle(exits.begin(), exits.end());
 
 	for (int i = 0; i < noOfPlayers; i++) {
@@ -459,15 +459,16 @@ void Maze::expandNode(std::vector<MazeNode*>& openList, MazeNode* bestNode, Maze
 
 bool Maze::isNodeValid(int x, int y, std::vector<MazeNode>& nodes)
 {
-	bool inXRange = 0 <= x ? (x < width ? true : false) : false;
-	bool inYRange = 0 <= y ? (y < height ? true : false) : false;
-	if (inXRange && inYRange) {
+	//bool inXRange = 0 <= x ? (x < width ? true : false) : false;
+	//bool inYRange = 0 <= y ? (y < height ? true : false) : false;
+	//if (inXRange && inYRange) {
+	if (!inMazeRange(x, y)) return false;
 		MazeNode* node = &nodes.at(getNodesPos(x, y));
 		
 		return !node->closed ? node->passable : false;
-	}
 
-	return false;
+
+	//return false;
 }
 
 vector<MazeNode*> Maze::getPathResults(MazeNode* start, MazeNode* end)

@@ -110,9 +110,11 @@ class Maze : protected MazeGeneration
 		/* Math */
 		bool inRange(int val, int min, int max);
 		bool isEven(int val) { return val % 2 == 0; }
+		bool inMazeRange(int x, int y) {	return inRange(x, 0, width - 1) && inRange(y, 0, height - 1);}
 
 		/* Nodes */
 		bool isPathNode(MazeNode* node) { return node->nodeType == ' ';  }
+
 
 		/* Collab Pathfinding */
 		void collabPathfinding(vector<Player*>*);
