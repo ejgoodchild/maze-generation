@@ -16,19 +16,13 @@ Maze::Maze(int w, int h)
 	
 }
 
-Maze::Maze(int w, int h, string str)
+Maze::Maze(int w, int h, string str) : Maze(w,h)
 {
-	width = w;
-	height = h;
-
+	
 	MazeNode* mNode;
 	for (int y = 0; y < height; y++) {
 		for (int x = 0; x < width; x++) {
-			mNode = new MazeNode();
-			mNode->x = x;
-			mNode->y = y;
-			mNode->nodeType = str.at(getNodesPos(x, y));
-			mNode->passable = mNode->nodeType == 'X' ? false : true;			
+			mNode = new MazeNode(x, y, str.at(getNodesPos(x, y)));		
 			nodes.emplace_back(*mNode);
 
 			if (mNode->nodeType == 'E') exits.emplace_back(&*mNode);
@@ -139,9 +133,7 @@ void Maze::generateNodes()
 	MazeNode* mNode;
 	for (int y = 0; y < height; y++) {
 		for (int x = 0; x < width; x++) {
-			mNode = new MazeNode();
-			mNode->x = x;
-			mNode->y = y;
+			mNode = new MazeNode(x, y);
 			nodes.emplace_back(*mNode);
 			delete mNode;
 		}
@@ -375,7 +367,6 @@ void Maze::updateCPOutcome(vector<Player*>* players)
 
 void Maze::movePlayer(Player* player)
 {
-	//vector<MazeNode*> path = getBestPath(player->curNode, getStartNode());
 	player->hasMoved = player->path.size() > 0 ? (player->path.back()->passable) : false;
 	if (player->hasMoved) {
 		player->curNode->nodeType = player->isFirstNode ? 'E' : 'o';
@@ -445,4 +436,26 @@ vector<MazeNode*> Maze::getPathResults(MazeNode* start, MazeNode* end)
 		m = m->bestParent;
 	}
 	return path;
+}
+
+string MazeProgression::getOutcomeStatment(Outcome outcome)
+
+	{
+		return outcome == Outcome::SOLVABLE ? "A maze is fully solvable as all players can reach the finishing point" :
+			(outcome == Outcome::PARTIAL ? "A maze is partially solvable as some players can reach the finishing point" :
+				(outcome == Outcome::UNSOLVABLE ? "A maze is not solvable due to all players blocking each other" :
+					""));
+	}
+
+MazeNode::MazeNode(int x, int y)
+{
+	this->x = x;
+	this->y = y;
+}
+
+MazeNode::MazeNode(int x, int y, char nodeType) : MazeNode(x, y)
+{
+	this->nodeType = nodeType;
+	this->passable = nodeType == 'X' ? false : true;
+
 }

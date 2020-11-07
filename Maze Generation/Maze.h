@@ -10,9 +10,10 @@ struct MazeNode {
 	char nodeType = NULL;
 	float g, h;
 	bool passable = true;
-	void print() { cout << "[" <<x <<"," << y << "]"; };
 	bool closed = false;
 	MazeNode* bestParent = NULL;
+	MazeNode(int x, int y);
+	MazeNode(int x, int y, char nodeType);
 };
 struct MazeProgression {
 	string originalMaze;
@@ -27,12 +28,7 @@ struct MazeProgression {
 		str += getOutcomeStatment(outcome) + "\n\n";
 		return str;
 	}
-	string getOutcomeStatment(Outcome outcome) {
-		return outcome == Outcome::SOLVABLE ? "A maze is fully solvable as all players can reach the finishing point" :
-			(outcome == Outcome::PARTIAL ? "A maze is partially solvable as some players can reach the finishing point" :
-				(outcome == Outcome::UNSOLVABLE ? "A maze is not solvable due to all players blocking each other" :
-					""));
-	}
+	string getOutcomeStatment(Outcome outcome);
 };
 struct Player {
 	Player(MazeNode* curNode) {
