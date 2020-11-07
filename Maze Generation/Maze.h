@@ -72,9 +72,6 @@ class Maze : protected MazeGeneration
 		void collabPathfinding(int noOfPlayers);
 
 	private:
-		/* Constants */
-
-		
 		/* Variables */
 		int width, height;
 		int noOfExits = 1;
@@ -87,6 +84,7 @@ class Maze : protected MazeGeneration
 		MazeNode* getStartNode() { return &nodes.at(getNodesPos((width - 1) / 2, (height - 1) / 2)); }
 		std::vector <MazeNode*> getPossibleExits();
 
+
 		/* Maze Generation */
 		void generateNodes();
 		void generatePaths();
@@ -98,6 +96,9 @@ class Maze : protected MazeGeneration
 
 		/* Pathfinding */
 		MazeNode* getPathEndNode(MazeNode*, Directions);
+		int getDirDistX(MazeNode*, Directions*, int);
+		int getDirDistY(MazeNode*, Directions*, int);
+		int getDirDistOffset(int,int);
 		void fillPathNodes(MazeNode*, MazeNode*);
 		void expandNode(std::vector<MazeNode*>& openList, MazeNode* bestNode, MazeNode* endNode, std::vector <MazeNode>& nodes);
 		bool isNodeValid(int, int, std::vector<MazeNode>&);
@@ -105,7 +106,14 @@ class Maze : protected MazeGeneration
 		MazeNode* getBestNode(std::vector<MazeNode*>& openList);
 		vector<MazeNode*> getBestPath(MazeNode* start, MazeNode* end);
 		int ManhattanDistance(MazeNode* a, MazeNode* b) {return abs(a->x - b->x) + abs(a->y - b->y);}		
-		
+
+		/* Math */
+		bool inRange(int val, int min, int max);
+		bool isEven(int val) { return val % 2 == 0; }
+
+		/* Nodes */
+		bool isPathNode(MazeNode* node) { return node->nodeType == ' ';  }
+
 		/* Collab Pathfinding */
 		void collabPathfinding(vector<Player*>*);
 		void updateCPOutcome(vector<Player*>*);	

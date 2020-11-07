@@ -3,10 +3,10 @@ C:\Users\Ethan\Documents\GitHub\maze-generation\Maze Generation\Maze.h(25,21): w
 C:\Users\Ethan\Documents\GitHub\maze-generation\Maze Generation\Maze.cpp(100,20): warning C4018: '<': signed/unsigned mismatch
 C:\Users\Ethan\Documents\GitHub\maze-generation\Maze Generation\Maze.cpp(102,21): warning C4018: '<': signed/unsigned mismatch
 C:\Users\Ethan\Documents\GitHub\maze-generation\Maze Generation\Maze.cpp(129,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Ethan\Documents\GitHub\maze-generation\Maze Generation\Maze.cpp(344,29): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\Ethan\Documents\GitHub\maze-generation\Maze Generation\Maze.cpp(367,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Ethan\Documents\GitHub\maze-generation\Maze Generation\Maze.cpp(380,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Ethan\Documents\GitHub\maze-generation\Maze Generation\Maze.cpp(430,28): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Ethan\Documents\GitHub\maze-generation\Maze Generation\Maze.cpp(360,29): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Ethan\Documents\GitHub\maze-generation\Maze Generation\Maze.cpp(390,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Ethan\Documents\GitHub\maze-generation\Maze Generation\Maze.cpp(403,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Ethan\Documents\GitHub\maze-generation\Maze Generation\Maze.cpp(453,28): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
   SaveLoad.cpp
 C:\Users\Ethan\Documents\GitHub\maze-generation\Maze Generation\Maze.h(25,21): warning C4018: '<': signed/unsigned mismatch
   UserInterface.cpp

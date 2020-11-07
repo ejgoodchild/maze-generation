@@ -231,7 +231,7 @@ void Maze::generateAdditionalPaths()
 	int additionalRoutes = (noOfExits - exitsPossible) % nodes.size();
 	int i = 0;
 	while (additionalRoutes >= 0) {
-		nodes.at(i)->nodeType == ' ' ? generatePaths(nodes.at(i)), (void)additionalRoutes-- : (void) i++ ;
+		isPathNode(nodes.at(i)) ? generatePaths(nodes.at(i)), (void)additionalRoutes-- : (void) i++ ;
 	}
 	
 	
@@ -283,6 +283,8 @@ std::vector<MazeNode*> Maze::getPossibleExits()
 
 
 
+
+
 /**
  * Finds where the end node will be positioned in a given the direction
  *
@@ -291,26 +293,40 @@ std::vector<MazeNode*> Maze::getPossibleExits()
  */
 MazeNode* Maze::getPathEndNode(MazeNode* curNode, Directions dir)
 {
-	int x = 0, y = 0;
-	int len =  2;
-
-	x += dir == Directions::EAST ? (curNode->x + len >= width - 1 ? 0 : len) : 0; // if direction is EAST and in range then x = len
-	x += dir == Directions::WEST ? (curNode->x - len <= 0 ? 0 : -len) : 0; // if direction is WEST and in range then x = -len
-	y += dir == Directions::NORTH ? (curNode->y - len <= 0 ? 0 : -len) : 0; // if direction is NORTH and in range then y = -len
-	y += dir == Directions::SOUTH ? (curNode->y + len >= height - 1 ? 0 : len) : 0; // if direction is SOUTH and in range then y = len
-
-	bool isXIncrementable = width % 2 == 0 ? (dir == Directions::EAST || dir == Directions::WEST) : false;
-	bool isYIncrementable = height % 2 == 0 ? (dir == Directions::NORTH || dir == Directions::SOUTH) : false;
-	//if x is incrementable then decrement if x is on left side of maze and if x is even otherwise if on right side then increment x if odd
-	x += isXIncrementable ? (curNode->x < width / 2 ? (curNode->x % 2 == 0 ? -1 : 0) : (curNode->x % 2 == 1 ? 1 : 0)) : 0;
-	//if y is incrementable then decrement if y is on top side of maze and if y is even otherwise if on bottom side then increment y if odd
-	y += isYIncrementable ? (curNode->y < height / 2 ? (curNode->y % 2 == 0 ? -1 : 0) : (curNode->y % 2 == 1 ? 1 : 0)) : 0; 
+	int x = getDirDistX(curNode, &dir, 2);
+	int y = getDirDistY(curNode, &dir, 2);
 
 	MazeNode* endNode = &nodes.at(getNodesPos(curNode->x + x, curNode->y + y));
-	endNode = endNode->nodeType == ' ' ? NULL : endNode; //if end node has already had its type defined then return null
-
-	return curNode == endNode ? NULL : endNode ;
+	return isPathNode(endNode) ? NULL : curNode == endNode ? NULL : endNode; //if end node has already had its type defined then return null
 }
+
+int Maze::getDirDistX(MazeNode* curNode, Directions* dir, int step)
+{
+	if(!(*dir == Directions::EAST || *dir == Directions::WEST)) return 0;
+	int x = *dir == Directions::EAST ? (inRange(curNode->x + step, 1, width-2) ? step : 0) :
+		(inRange(curNode->x - step, 1, width - 2)? -step : 0); //if east and in range return step, if west and in range return -step, otherwise 0
+	
+	return x + getDirDistOffset(curNode->x, width);
+}
+
+int Maze::getDirDistY(MazeNode* curNode, Directions* dir, int step)
+{
+	if (!(*dir == Directions::NORTH || *dir == Directions::SOUTH)) return 0;
+	int y = *dir == Directions::SOUTH ? (inRange(curNode->y + step, 1, height - 2) ? step : 0) :
+		(inRange(curNode->y - step, 1, height - 2) ? -step : 0); //if east and in range return step, if west and in range return -step, otherwise 0
+
+	return y + getDirDistOffset(curNode->y, height);
+}
+
+int Maze::getDirDistOffset(int val, int len)
+{
+	if (!isEven(len)) { return 0; } //if length not even return 0
+	return val < len/2 ? (isEven(val) ? -1 : 0) : (!isEven(val) ? 1 : 0); 
+	//if val if less than half the val and val is even return -1, if val is greater than half val and is odd return 1	
+}
+
+
+
 
 /**
  * Fills nodes between start node and end node with the space character
@@ -359,6 +375,13 @@ vector<MazeNode*> Maze::getBestPath(MazeNode* start, MazeNode* end)
 	}
 
 	return vector<MazeNode*>(); // returns empty if no path found
+}
+
+
+
+bool Maze::inRange(int val, int min, int max)
+{
+	return val <= max ? val >= min : false;
 }
 
 void Maze::collabPathfinding(vector<Player*>* players)
