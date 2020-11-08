@@ -1,4 +1,0 @@
-
-
-A maze is fully solvable as all players can reach the finishing point
-

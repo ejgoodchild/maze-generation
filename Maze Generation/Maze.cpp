@@ -1,5 +1,6 @@
 #include "Maze.h"
 
+
 /**
  * Constructor to instantiate the maze 
  * 
@@ -104,7 +105,6 @@ void Maze::generateMaze()
 	generatePaths();	
 	generateStartPoint();
 	generateWalls();
-	generateAdditionalPaths();
 	generateExits();
 	progression.originalMaze = toString();
 }
@@ -133,9 +133,10 @@ void Maze::collabPathfinding(int noOfPlayers)
 {
 	vector<Player*> players;
 	getStartNode()->nodeType = 'F';
+	
 	std::random_shuffle(exits.begin(), exits.end()); //Shuffles the exits, so that it is random which exit a player will be at
-
-	for (int i = 0; i < noOfPlayers; i++) {
+	int j = noOfPlayers <= noOfExits ? noOfPlayers : noOfExits;
+	for (int i = 0; i < j; i++) {
 		players.emplace_back(new Player(exits.at(i))); //Instantiates a new player at the decided exit
 		players.at(i)->path = getBestPath(players.at(i)->curNode, getStartNode()); //Calculates the best path to the start from the player
 
@@ -185,7 +186,13 @@ void Maze::generatePaths()
 	int x = !isEven(width) && isEven((width - 1) / 2) ?  start->x + 1 : start->x;
 	int y = !isEven(height) && isEven((height - 1) / 2) ?  start->y + 1 : start->y;
 
+	
 	generatePaths(getNode(x, y));
+	for (int i = 0; i < 10; i++) { //attempt up to 10 times to get correct size
+		generatePaths(getNode(x, y));
+		getPossibleExitsSize() < noOfExits ? (i == 9 ? (void)(noOfExits = getPossibleExitsSize()) : resetAllNodeTypes())  : (void)(i = 10);
+	}
+	
 }
 
 
@@ -230,7 +237,6 @@ void Maze::generateExits()
 {
 	std::vector<MazeNode*> possibleExits = getPossibleExits(); //gets possible exits
 	std::random_shuffle(possibleExits.begin(), possibleExits.end()); //shuffles
-
 	for (int i = 0; i < noOfExits; i++) { //sets up the exits
 		possibleExits.at(i)->nodeType = 'E';
 		possibleExits.at(i)->passable = true;
@@ -480,8 +486,13 @@ bool Maze::inRange(int val, int min, int max)
 void Maze::findPossibleExits(vector<MazeNode*> inner, vector<MazeNode*> outer, vector<MazeNode*>* exits)
 {
 	for (int i = 0; i < inner.size(); i++) 
-		if (inner.at(i)->passable) exits->emplace_back(outer.at(i));
+		if (isPathNode(inner.at(i))) exits->emplace_back(outer.at(i));
 	
+}
+void Maze::resetAllNodeTypes()
+{
+	for (int i = 0; i < nodes.size(); i++)
+		nodes.at(i).nodeType = NULL;
 }
 /**
  * Performs collaborative pathfinding until all players have stopped moving

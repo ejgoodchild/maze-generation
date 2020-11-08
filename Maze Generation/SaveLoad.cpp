@@ -42,7 +42,7 @@ Maze* SaveLoad::load(string filename)
         return maze;
     }
 
-    cout << "Unable to open file\n" ;
+    cout << "Unable to open file, please try again...\n" ;
     return maze;
 }
 /**

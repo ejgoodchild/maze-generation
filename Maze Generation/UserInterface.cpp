@@ -35,6 +35,7 @@ void UserInterface::saveMaze()
     string msgSave = "What would you like to name the file?";
     outputln(msg);
 
+    
     getUserInt(msg, 1, 2) == 1 ? SaveLoad::save(getUserFileName(msgSave),curMazeProg->originalMaze) : 
         SaveLoad::save(getUserFileName(msgSave),curMazeProg->toString());
 }
@@ -141,7 +142,7 @@ void UserInterface::analyseMazes()
 
     int width = getUserUpperLimit("maze width...", MIN_MAZE_LENGTH, 250);
     int height = getUserUpperLimit("maze height...", MIN_MAZE_LENGTH, 250);
-    int players = getUserUpperLimit("number of players...", 2, 10);
+    int players = getUserUpperLimit("number of players...", 2, (MIN_MAZE_LENGTH - 2) * 4);
     
 
     for (int x = MIN_MAZE_LENGTH; x <= width; x++) {
@@ -164,9 +165,10 @@ void UserInterface::analyseMazes(int width, int height, int players)
         ma.solvable += curMazeProg->outcome == Outcome::SOLVABLE ? 1: 0;
         ma.partial += curMazeProg->outcome == Outcome::PARTIAL ? 1 : 0;
         ma.unsolvable += curMazeProg->outcome == Outcome::UNSOLVABLE ? 1 : 0;
-
+        
     }
-    cout << ma.toString();
+
+    cout << ma.toString() ;
 }
 
 void UserInterface::generateMaze(int width, int height, int players)
@@ -177,7 +179,7 @@ void UserInterface::generateMaze(int width, int height, int players)
     curMaze = new Maze(width, height);
     
 
-    curMaze->setExits(randInt(players, curMaze->getMaxNumOfExits()/2));
+    curMaze->setExits(randInt(players, curMaze->getMaxNumOfExits()));
     curMaze->generateMaze();
     curMazeProg = curMaze->getProgression();
 

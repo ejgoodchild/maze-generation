@@ -45,33 +45,34 @@ struct Player {
 
 class Maze : protected MazeGeneration
 {
-	public:
-		/* Maze Constructors / Destructors */
-		Maze(int, int);
-		Maze(int, int, string);
-		Maze(int, int, string, std::vector<string>);
-		~Maze();
+public:
+	/* Maze Constructors / Destructors */
+	Maze(int, int);
+	Maze(int, int, string);
+	Maze(int, int, string, std::vector<string>);
+	~Maze();
 
-		/* Printing / toString Functions */
-		void printMazeSize();
-		void printMaze();
-		string toString();
+	/* Printing / toString Functions */
+	void printMazeSize();
+	void printMaze();
+	string toString();
 
-		/* Getters / Setters */
-		int getMaxNumOfExits();
-		void setExits(int exits) { this->noOfExits = exits;};
-		int getNoOfExits() { return noOfExits; }
-		void clearSolutions();
-		MazeProgression* getProgression() { return &progression; }
+	/* Getters / Setters */
+	int getMaxNumOfExits();
+	void setExits(int exits) { this->noOfExits = exits; };
+	int getNoOfExits() { return noOfExits; }
+	void clearSolutions();
+	MazeProgression* getProgression() { return &progression; }
 
-		/* Maze Generation */
-		void generateMaze();
+	/* Maze Generation */
+	void generateMaze();
 
-		/* Pathfinding */
-		void getBestExitPaths();
-		void collabPathfinding(int noOfPlayers);
+	/* Pathfinding */
+	void getBestExitPaths();
+	void collabPathfinding(int noOfPlayers);
 
-	
+	/* Testing */
+	int getPossibleExitsSize() { return getPossibleExits().size(); }
 
 	private:
 		/* Variables */
@@ -128,6 +129,7 @@ class Maze : protected MazeGeneration
 		MazeNode* getNode(int x, int y) { return  &nodes.at(getNodesPos(x, y)); }
 		MazeNode* getStartNode() { return getNode((width - 1) / 2, (height - 1) / 2); }
 		void findPossibleExits(vector<MazeNode*> inner, vector<MazeNode*> outer, vector<MazeNode*>* exits);
+		void resetAllNodeTypes();
 
 		/* Collab Pathfinding */
 		void collabPathfinding(vector<Player*>*);
