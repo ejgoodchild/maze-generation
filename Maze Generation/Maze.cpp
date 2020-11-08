@@ -239,7 +239,7 @@ void Maze::generateExits()
 	std::random_shuffle(possibleExits.begin(), possibleExits.end()); //shuffles
 	for (int i = 0; i < noOfExits; i++) { //sets up the exits
 		possibleExits.at(i)->nodeType = 'E';
-		possibleExits.at(i)->passable = true;
+		possibleExits.at(i)->passable = false;
 		exits.emplace_back(possibleExits.at(i));
 	}
 }

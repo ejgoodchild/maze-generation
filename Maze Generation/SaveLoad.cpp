@@ -95,16 +95,36 @@ Maze* SaveLoad::load(ifstream* file)
     string line;
     string mazeData, tempData;
     vector<string> progressData;
-    bool foundMaze = false;
+    bool foundMaze = false, isValid = true;
     int x = 0, y = 0;
 
     while (getline(*file, line))
     {
         foundMaze ? updateTempData(line, &x, &tempData, &progressData) : 
-            updateMazeData(line, &x, &y, &foundMaze, &mazeData); //if maze data found then find progression data
+            updateMazeData(line, &x, &y, &foundMaze, &mazeData), isValid = validateLine(line, &foundMaze); //if maze data found then find progression data
+        if (!isValid) {
+            cout << "File does not contain Maze Data Structure..." << endl; return NULL;
+        }
     }
     cout << "Maze sucessfully loaded" << endl;
     return foundMaze ? new Maze(x, y, mazeData, progressData) : new Maze(x, y, mazeData);
+}
+
+bool SaveLoad::validateLine(string ln, bool* foundMaze)
+{
+    for (int i = 0; i < ln.length(); i++)
+        if (!isMazeChar(&ln.at(i))) return *foundMaze;
+    return true;
+}
+
+bool SaveLoad::isMazeChar(char* c)
+{
+    char mazeChars[7]{ 'E',' ', 'S', 'X', 'P', 'o', 'F' };
+    
+    for(int i = 0; i < 7; i++) 
+        if (*c == mazeChars[i]) return true;
+
+    return false;
 }
 
 

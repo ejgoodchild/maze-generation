@@ -1,0 +1,2906 @@
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X               X          X   X
+X X XXXXX XXX X XXXXXX X X X X X
+X  X    X X  X          X  X X X
+X X X X X X X  XXXXX XXX X X X X
+X X   X X X X        X   X    XX
+X X X X X X X  X X XXX X XXXXX X
+X    X  X X X     X    X X     X
+X XXX X X X X XXXX X X X X X X X
+XX    X X X           X     X  X
+X X X X X XXX  XXX XXX XXX X X X
+X   X X X   X     X      X X X X
+X X X X XXX X   X  X X X X X X E
+X XX  X   X XX     X XX  X   X X
+E X X X X X           XX X X   X
+X X    X  X    S    XX X  XX XXX
+X X X     X X        X X XX    X
+X X       X        X X         X
+X  X  X           X      X    XX
+X X XXX X XXXXX X  XXXXX X X X X
+X       X      X   X   X   X   X
+XXXXXXXXX XXX  X XXX X X XXXXX X
+X     X  X           X X     X X
+X XXX X X X X XXX XXXX XXXXX X X
+X   X   X   X        X   X   X X
+X X X X X XXXXXXXX X X X X X X X
+X X  X  X X        X  X  X  X  X
+X X X XXX X X  X XXX X X X X X X
+X X X   X   X  XX    X    X    X
+X X X X XXXXX X X XX X XXX X X X
+XX    X           X  X        XX
+XXXEXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+Step 1
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X               X          X   X
+X X XXXXX XXX X XXXXXX X X X X X
+X  X    X X  X          X  X X X
+X X X X X X X  XXXXX XXX X X X X
+X X   X X X X        X   X    XX
+X X X X X X X  X X XXX X XXXXX X
+X    X  X X X     X    X X     X
+X XXX X X X X XXXX X X X X X X X
+XX    X X X           X     X  X
+X X X X X XXX  XXX XXX XXX X X X
+X   X X X   X     X      X X X X
+X X X X XXX X   X  X X X X X X E
+X XX  X   X XX     X XX  X   X X
+P X X X X X           XX X X   X
+X X    X  X    F    XX X  XX XXX
+X X X     X X        X X XX    X
+X X       X        X X         X
+X  X  X           X      X    XX
+X X XXX X XXXXX X  XXXXX X X X X
+X       X      X   X   X   X   X
+XXXXXXXXX XXX  X XXX X X XXXXX X
+X     X  X           X X     X X
+X XXX X X X X XXX XXXX XXXXX X X
+X   X   X   X        X   X   X X
+X X X X X XXXXXXXX X X X X X X X
+X X  X  X X        X  X  X  X  X
+X X X XXX X X  X XXX X X X X X X
+X X X   X   X  XX    X    X    X
+X X X X XXXXX X X XX X XXX X X X
+XX P  X           X  X        XX
+XXXEXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+Step 2
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X               X          X   X
+X X XXXXX XXX X XXXXXX X X X X X
+X  X    X X  X          X  X X X
+X X X X X X X  XXXXX XXX X X X X
+X X   X X X X        X   X    XX
+X X X X X X X  X X XXX X XXXXX X
+X    X  X X X     X    X X     X
+X XXX X X X X XXXX X X X X X X X
+XX    X X X           X     X  X
+X X X X X XXX  XXX XXX XXX X X X
+X   X X X   X     X      X X X X
+X X X X XXX X   X  X X X X X X E
+X XX  X   X XX     X XX  X   X X
+EPX X X X X           XX X X   X
+X X    X  X    F    XX X  XX XXX
+X X X     X X        X X XX    X
+X X       X        X X         X
+X  X  X           X      X    XX
+X X XXX X XXXXX X  XXXXX X X X X
+X       X      X   X   X   X   X
+XXXXXXXXX XXX  X XXX X X XXXXX X
+X     X  X           X X     X X
+X XXX X X X X XXX XXXX XXXXX X X
+X   X   X   X        X   X   X X
+X X X X X XXXXXXXX X X X X X X X
+X X  X  X X        X  X  X  X  X
+X X X XXX X X  X XXX X X X X X X
+X X X   X   X  XX    X    X    X
+X X X X XXXXX X X XX X XXX X X X
+XX P  X           X  X        XX
+XXXEXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+Step 3
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X               X          X   X
+X X XXXXX XXX X XXXXXX X X X X X
+X  X    X X  X          X  X X X
+X X X X X X X  XXXXX XXX X X X X
+X X   X X X X        X   X    XX
+X X X X X X X  X X XXX X XXXXX X
+X    X  X X X     X    X X     X
+X XXX X X X X XXXX X X X X X X X
+XX    X X X           X     X  X
+X X X X X XXX  XXX XXX XXX X X X
+X   X X X   X     X      X X X X
+X X X X XXX X   X  X X X X X X E
+X XX  X   X XX     X XX  X   X X
+EPX X X X X           XX X X   X
+X X    X  X    F    XX X  XX XXX
+X X X     X X        X X XX    X
+X X       X        X X         X
+X  X  X           X      X    XX
+X X XXX X XXXXX X  XXXXX X X X X
+X       X      X   X   X   X   X
+XXXXXXXXX XXX  X XXX X X XXXXX X
+X     X  X           X X     X X
+X XXX X X X X XXX XXXX XXXXX X X
+X   X   X   X        X   X   X X
+X X X X X XXXXXXXX X X X X X X X
+X X  X  X X        X  X  X  X  X
+X X X XXX X X  X XXX X X X X X X
+X X X   X   X  XX    X    X    X
+X X X X XXXXX X X XX X XXX X X X
+XX oP X           X  X        XX
+XXXEXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+Step 4
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X               X          X   X
+X X XXXXX XXX X XXXXXX X X X X X
+X  X    X X  X          X  X X X
+X X X X X X X  XXXXX XXX X X X X
+X X   X X X X        X   X    XX
+X X X X X X X  X X XXX X XXXXX X
+X    X  X X X     X    X X     X
+X XXX X X X X XXXX X X X X X X X
+XX    X X X           X     X  X
+X X X X X XXX  XXX XXX XXX X X X
+X   X X X   X     X      X X X X
+X X X X XXX X   X  X X X X X X E
+X XX  X   X XX     X XX  X   X X
+EoX X X X X           XX X X   X
+XPX    X  X    F    XX X  XX XXX
+X X X     X X        X X XX    X
+X X       X        X X         X
+X  X  X           X      X    XX
+X X XXX X XXXXX X  XXXXX X X X X
+X       X      X   X   X   X   X
+XXXXXXXXX XXX  X XXX X X XXXXX X
+X     X  X           X X     X X
+X XXX X X X X XXX XXXX XXXXX X X
+X   X   X   X        X   X   X X
+X X X X X XXXXXXXX X X X X X X X
+X X  X  X X        X  X  X  X  X
+X X X XXX X X  X XXX X X X X X X
+X X X   X   X  XX    X    X    X
+X X X X XXXXX X X XX X XXX X X X
+XX oP X           X  X        XX
+XXXEXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+Step 5
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X               X          X   X
+X X XXXXX XXX X XXXXXX X X X X X
+X  X    X X  X          X  X X X
+X X X X X X X  XXXXX XXX X X X X
+X X   X X X X        X   X    XX
+X X X X X X X  X X XXX X XXXXX X
+X    X  X X X     X    X X     X
+X XXX X X X X XXXX X X X X X X X
+XX    X X X           X     X  X
+X X X X X XXX  XXX XXX XXX X X X
+X   X X X   X     X      X X X X
+X X X X XXX X   X  X X X X X X E
+X XX  X   X XX     X XX  X   X X
+EoX X X X X           XX X X   X
+XPX    X  X    F    XX X  XX XXX
+X X X     X X        X X XX    X
+X X       X        X X         X
+X  X  X           X      X    XX
+X X XXX X XXXXX X  XXXXX X X X X
+X       X      X   X   X   X   X
+XXXXXXXXX XXX  X XXX X X XXXXX X
+X     X  X           X X     X X
+X XXX X X X X XXX XXXX XXXXX X X
+X   X   X   X        X   X   X X
+X X X X X XXXXXXXX X X X X X X X
+X X  X  X X        X  X  X  X  X
+X X X XXX X X  X XXX X X X X X X
+X X X   X   X  XX    X    X    X
+X X X X XXXXX X X XX X XXX X X X
+XX ooPX           X  X        XX
+XXXEXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+Step 6
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X               X          X   X
+X X XXXXX XXX X XXXXXX X X X X X
+X  X    X X  X          X  X X X
+X X X X X X X  XXXXX XXX X X X X
+X X   X X X X        X   X    XX
+X X X X X X X  X X XXX X XXXXX X
+X    X  X X X     X    X X     X
+X XXX X X X X XXXX X X X X X X X
+XX    X X X           X     X  X
+X X X X X XXX  XXX XXX XXX X X X
+X   X X X   X     X      X X X X
+X X X X XXX X   X  X X X X X X E
+X XX  X   X XX     X XX  X   X X
+EoX X X X X           XX X X   X
+XoX    X  X    F    XX X  XX XXX
+XPX X     X X        X X XX    X
+X X       X        X X         X
+X  X  X           X      X    XX
+X X XXX X XXXXX X  XXXXX X X X X
+X       X      X   X   X   X   X
+XXXXXXXXX XXX  X XXX X X XXXXX X
+X     X  X           X X     X X
+X XXX X X X X XXX XXXX XXXXX X X
+X   X   X   X        X   X   X X
+X X X X X XXXXXXXX X X X X X X X
+X X  X  X X        X  X  X  X  X
+X X X XXX X X  X XXX X X X X X X
+X X X   X   X  XX    X    X    X
+X X X X XXXXX X X XX X XXX X X X
+XX ooPX           X  X        XX
+XXXEXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+Step 7
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X               X          X   X
+X X XXXXX XXX X XXXXXX X X X X X
+X  X    X X  X          X  X X X
+X X X X X X X  XXXXX XXX X X X X
+X X   X X X X        X   X    XX
+X X X X X X X  X X XXX X XXXXX X
+X    X  X X X     X    X X     X
+X XXX X X X X XXXX X X X X X X X
+XX    X X X           X     X  X
+X X X X X XXX  XXX XXX XXX X X X
+X   X X X   X     X      X X X X
+X X X X XXX X   X  X X X X X X E
+X XX  X   X XX     X XX  X   X X
+EoX X X X X           XX X X   X
+XoX    X  X    F    XX X  XX XXX
+XPX X     X X        X X XX    X
+X X       X        X X         X
+X  X  X           X      X    XX
+X X XXX X XXXXX X  XXXXX X X X X
+X       X      X   X   X   X   X
+XXXXXXXXX XXX  X XXX X X XXXXX X
+X     X  X           X X     X X
+X XXX X X X X XXX XXXX XXXXX X X
+X   X   X   X        X   X   X X
+X X X X X XXXXXXXX X X X X X X X
+X X  X  X X        X  X  X  X  X
+X X X XXX X X  X XXX X X X X X X
+X X X   X   X  XX    X    X    X
+X X XPX XXXXX X X XX X XXX X X X
+XX oooX           X  X        XX
+XXXEXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+Step 8
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X               X          X   X
+X X XXXXX XXX X XXXXXX X X X X X
+X  X    X X  X          X  X X X
+X X X X X X X  XXXXX XXX X X X X
+X X   X X X X        X   X    XX
+X X X X X X X  X X XXX X XXXXX X
+X    X  X X X     X    X X     X
+X XXX X X X X XXXX X X X X X X X
+XX    X X X           X     X  X
+X X X X X XXX  XXX XXX XXX X X X
+X   X X X   X     X      X X X X
+X X X X XXX X   X  X X X X X X E
+X XX  X   X XX     X XX  X   X X
+EoX X X X X           XX X X   X
+XoX    X  X    F    XX X  XX XXX
+XoX X     X X        X X XX    X
+XPX       X        X X         X
+X  X  X           X      X    XX
+X X XXX X XXXXX X  XXXXX X X X X
+X       X      X   X   X   X   X
+XXXXXXXXX XXX  X XXX X X XXXXX X
+X     X  X           X X     X X
+X XXX X X X X XXX XXXX XXXXX X X
+X   X   X   X        X   X   X X
+X X X X X XXXXXXXX X X X X X X X
+X X  X  X X        X  X  X  X  X
+X X X XXX X X  X XXX X X X X X X
+X X X   X   X  XX    X    X    X
+X X XPX XXXXX X X XX X XXX X X X
+XX oooX           X  X        XX
+XXXEXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+Step 9
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X               X          X   X
+X X XXXXX XXX X XXXXXX X X X X X
+X  X    X X  X          X  X X X
+X X X X X X X  XXXXX XXX X X X X
+X X   X X X X        X   X    XX
+X X X X X X X  X X XXX X XXXXX X
+X    X  X X X     X    X X     X
+X XXX X X X X XXXX X X X X X X X
+XX    X X X           X     X  X
+X X X X X XXX  XXX XXX XXX X X X
+X   X X X   X     X      X X X X
+X X X X XXX X   X  X X X X X X E
+X XX  X   X XX     X XX  X   X X
+EoX X X X X           XX X X   X
+XoX    X  X    F    XX X  XX XXX
+XoX X     X X        X X XX    X
+XPX       X        X X         X
+X  X  X           X      X    XX
+X X XXX X XXXXX X  XXXXX X X X X
+X       X      X   X   X   X   X
+XXXXXXXXX XXX  X XXX X X XXXXX X
+X     X  X           X X     X X
+X XXX X X X X XXX XXXX XXXXX X X
+X   X   X   X        X   X   X X
+X X X X X XXXXXXXX X X X X X X X
+X X  X  X X        X  X  X  X  X
+X X X XXX X X  X XXX X X X X X X
+X X XP  X   X  XX    X    X    X
+X X XoX XXXXX X X XX X XXX X X X
+XX oooX           X  X        XX
+XXXEXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+Step 10
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X               X          X   X
+X X XXXXX XXX X XXXXXX X X X X X
+X  X    X X  X          X  X X X
+X X X X X X X  XXXXX XXX X X X X
+X X   X X X X        X   X    XX
+X X X X X X X  X X XXX X XXXXX X
+X    X  X X X     X    X X     X
+X XXX X X X X XXXX X X X X X X X
+XX    X X X           X     X  X
+X X X X X XXX  XXX XXX XXX X X X
+X   X X X   X     X      X X X X
+X X X X XXX X   X  X X X X X X E
+X XX  X   X XX     X XX  X   X X
+EoX X X X X           XX X X   X
+XoX    X  X    F    XX X  XX XXX
+XoX X     X X        X X XX    X
+XoX       X        X X         X
+XP X  X           X      X    XX
+X X XXX X XXXXX X  XXXXX X X X X
+X       X      X   X   X   X   X
+XXXXXXXXX XXX  X XXX X X XXXXX X
+X     X  X           X X     X X
+X XXX X X X X XXX XXXX XXXXX X X
+X   X   X   X        X   X   X X
+X X X X X XXXXXXXX X X X X X X X
+X X  X  X X        X  X  X  X  X
+X X X XXX X X  X XXX X X X X X X
+X X XP  X   X  XX    X    X    X
+X X XoX XXXXX X X XX X XXX X X X
+XX oooX           X  X        XX
+XXXEXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+Step 11
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X               X          X   X
+X X XXXXX XXX X XXXXXX X X X X X
+X  X    X X  X          X  X X X
+X X X X X X X  XXXXX XXX X X X X
+X X   X X X X        X   X    XX
+X X X X X X X  X X XXX X XXXXX X
+X    X  X X X     X    X X     X
+X XXX X X X X XXXX X X X X X X X
+XX    X X X           X     X  X
+X X X X X XXX  XXX XXX XXX X X X
+X   X X X   X     X      X X X X
+X X X X XXX X   X  X X X X X X E
+X XX  X   X XX     X XX  X   X X
+EoX X X X X           XX X X   X
+XoX    X  X    F    XX X  XX XXX
+XoX X     X X        X X XX    X
+XoX       X        X X         X
+XP X  X           X      X    XX
+X X XXX X XXXXX X  XXXXX X X X X
+X       X      X   X   X   X   X
+XXXXXXXXX XXX  X XXX X X XXXXX X
+X     X  X           X X     X X
+X XXX X X X X XXX XXXX XXXXX X X
+X   X   X   X        X   X   X X
+X X X X X XXXXXXXX X X X X X X X
+X X  X  X X        X  X  X  X  X
+X X X XXX X X  X XXX X X X X X X
+X X XoP X   X  XX    X    X    X
+X X XoX XXXXX X X XX X XXX X X X
+XX oooX           X  X        XX
+XXXEXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+Step 12
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X               X          X   X
+X X XXXXX XXX X XXXXXX X X X X X
+X  X    X X  X          X  X X X
+X X X X X X X  XXXXX XXX X X X X
+X X   X X X X        X   X    XX
+X X X X X X X  X X XXX X XXXXX X
+X    X  X X X     X    X X     X
+X XXX X X X X XXXX X X X X X X X
+XX    X X X           X     X  X
+X X X X X XXX  XXX XXX XXX X X X
+X   X X X   X     X      X X X X
+X X X X XXX X   X  X X X X X X E
+X XX  X   X XX     X XX  X   X X
+EoX X X X X           XX X X   X
+XoX    X  X    F    XX X  XX XXX
+XoX X     X X        X X XX    X
+XoX       X        X X         X
+Xo X  X           X      X    XX
+XPX XXX X XXXXX X  XXXXX X X X X
+X       X      X   X   X   X   X
+XXXXXXXXX XXX  X XXX X X XXXXX X
+X     X  X           X X     X X
+X XXX X X X X XXX XXXX XXXXX X X
+X   X   X   X        X   X   X X
+X X X X X XXXXXXXX X X X X X X X
+X X  X  X X        X  X  X  X  X
+X X X XXX X X  X XXX X X X X X X
+X X XoP X   X  XX    X    X    X
+X X XoX XXXXX X X XX X XXX X X X
+XX oooX           X  X        XX
+XXXEXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+Step 13
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X               X          X   X
+X X XXXXX XXX X XXXXXX X X X X X
+X  X    X X  X          X  X X X
+X X X X X X X  XXXXX XXX X X X X
+X X   X X X X        X   X    XX
+X X X X X X X  X X XXX X XXXXX X
+X    X  X X X     X    X X     X
+X XXX X X X X XXXX X X X X X X X
+XX    X X X           X     X  X
+X X X X X XXX  XXX XXX XXX X X X
+X   X X X   X     X      X X X X
+X X X X XXX X   X  X X X X X X E
+X XX  X   X XX     X XX  X   X X
+EoX X X X X           XX X X   X
+XoX    X  X    F    XX X  XX XXX
+XoX X     X X        X X XX    X
+XoX       X        X X         X
+Xo X  X           X      X    XX
+XPX XXX X XXXXX X  XXXXX X X X X
+X       X      X   X   X   X   X
+XXXXXXXXX XXX  X XXX X X XXXXX X
+X     X  X           X X     X X
+X XXX X X X X XXX XXXX XXXXX X X
+X   X   X   X        X   X   X X
+X X X X X XXXXXXXX X X X X X X X
+X X  X  X X        X  X  X  X  X
+X X X XXX X X  X XXX X X X X X X
+X X XooPX   X  XX    X    X    X
+X X XoX XXXXX X X XX X XXX X X X
+XX oooX           X  X        XX
+XXXEXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+Step 14
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X               X          X   X
+X X XXXXX XXX X XXXXXX X X X X X
+X  X    X X  X          X  X X X
+X X X X X X X  XXXXX XXX X X X X
+X X   X X X X        X   X    XX
+X X X X X X X  X X XXX X XXXXX X
+X    X  X X X     X    X X     X
+X XXX X X X X XXXX X X X X X X X
+XX    X X X           X     X  X
+X X X X X XXX  XXX XXX XXX X X X
+X   X X X   X     X      X X X X
+X X X X XXX X   X  X X X X X X E
+X XX  X   X XX     X XX  X   X X
+EoX X X X X           XX X X   X
+XoX    X  X    F    XX X  XX XXX
+XoX X     X X        X X XX    X
+XoX       X        X X         X
+Xo X  X           X      X    XX
+XoX XXX X XXXXX X  XXXXX X X X X
+XP      X      X   X   X   X   X
+XXXXXXXXX XXX  X XXX X X XXXXX X
+X     X  X           X X     X X
+X XXX X X X X XXX XXXX XXXXX X X
+X   X   X   X        X   X   X X
+X X X X X XXXXXXXX X X X X X X X
+X X  X  X X        X  X  X  X  X
+X X X XXX X X  X XXX X X X X X X
+X X XooPX   X  XX    X    X    X
+X X XoX XXXXX X X XX X XXX X X X
+XX oooX           X  X        XX
+XXXEXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+Step 15
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X               X          X   X
+X X XXXXX XXX X XXXXXX X X X X X
+X  X    X X  X          X  X X X
+X X X X X X X  XXXXX XXX X X X X
+X X   X X X X        X   X    XX
+X X X X X X X  X X XXX X XXXXX X
+X    X  X X X     X    X X     X
+X XXX X X X X XXXX X X X X X X X
+XX    X X X           X     X  X
+X X X X X XXX  XXX XXX XXX X X X
+X   X X X   X     X      X X X X
+X X X X XXX X   X  X X X X X X E
+X XX  X   X XX     X XX  X   X X
+EoX X X X X           XX X X   X
+XoX    X  X    F    XX X  XX XXX
+XoX X     X X        X X XX    X
+XoX       X        X X         X
+Xo X  X           X      X    XX
+XoX XXX X XXXXX X  XXXXX X X X X
+XP      X      X   X   X   X   X
+XXXXXXXXX XXX  X XXX X X XXXXX X
+X     X  X           X X     X X
+X XXX X X X X XXX XXXX XXXXX X X
+X   X   X   X        X   X   X X
+X X X X X XXXXXXXX X X X X X X X
+X X  X  X X        X  X  X  X  X
+X X X XXX X X  X XXX X X X X X X
+X X XoooX   X  XX    X    X    X
+X X XoXPXXXXX X X XX X XXX X X X
+XX oooX           X  X        XX
+XXXEXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+Step 16
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X               X          X   X
+X X XXXXX XXX X XXXXXX X X X X X
+X  X    X X  X          X  X X X
+X X X X X X X  XXXXX XXX X X X X
+X X   X X X X        X   X    XX
+X X X X X X X  X X XXX X XXXXX X
+X    X  X X X     X    X X     X
+X XXX X X X X XXXX X X X X X X X
+XX    X X X           X     X  X
+X X X X X XXX  XXX XXX XXX X X X
+X   X X X   X     X      X X X X
+X X X X XXX X   X  X X X X X X E
+X XX  X   X XX     X XX  X   X X
+EoX X X X X           XX X X   X
+XoX    X  X    F    XX X  XX XXX
+XoX X     X X        X X XX    X
+XoX       X        X X         X
+Xo X  X           X      X    XX
+XoX XXX X XXXXX X  XXXXX X X X X
+XoP     X      X   X   X   X   X
+XXXXXXXXX XXX  X XXX X X XXXXX X
+X     X  X           X X     X X
+X XXX X X X X XXX XXXX XXXXX X X
+X   X   X   X        X   X   X X
+X X X X X XXXXXXXX X X X X X X X
+X X  X  X X        X  X  X  X  X
+X X X XXX X X  X XXX X X X X X X
+X X XoooX   X  XX    X    X    X
+X X XoXPXXXXX X X XX X XXX X X X
+XX oooX           X  X        XX
+XXXEXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+Step 17
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X               X          X   X
+X X XXXXX XXX X XXXXXX X X X X X
+X  X    X X  X          X  X X X
+X X X X X X X  XXXXX XXX X X X X
+X X   X X X X        X   X    XX
+X X X X X X X  X X XXX X XXXXX X
+X    X  X X X     X    X X     X
+X XXX X X X X XXXX X X X X X X X
+XX    X X X           X     X  X
+X X X X X XXX  XXX XXX XXX X X X
+X   X X X   X     X      X X X X
+X X X X XXX X   X  X X X X X X E
+X XX  X   X XX     X XX  X   X X
+EoX X X X X           XX X X   X
+XoX    X  X    F    XX X  XX XXX
+XoX X     X X        X X XX    X
+XoX       X        X X         X
+Xo X  X           X      X    XX
+XoX XXX X XXXXX X  XXXXX X X X X
+XoP     X      X   X   X   X   X
+XXXXXXXXX XXX  X XXX X X XXXXX X
+X     X  X           X X     X X
+X XXX X X X X XXX XXXX XXXXX X X
+X   X   X   X        X   X   X X
+X X X X X XXXXXXXX X X X X X X X
+X X  X  X X        X  X  X  X  X
+X X X XXX X X  X XXX X X X X X X
+X X XoooX   X  XX    X    X    X
+X X XoXoXXXXX X X XX X XXX X X X
+XX oooXP          X  X        XX
+XXXEXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+Step 18
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X               X          X   X
+X X XXXXX XXX X XXXXXX X X X X X
+X  X    X X  X          X  X X X
+X X X X X X X  XXXXX XXX X X X X
+X X   X X X X        X   X    XX
+X X X X X X X  X X XXX X XXXXX X
+X    X  X X X     X    X X     X
+X XXX X X X X XXXX X X X X X X X
+XX    X X X           X     X  X
+X X X X X XXX  XXX XXX XXX X X X
+X   X X X   X     X      X X X X
+X X X X XXX X   X  X X X X X X E
+X XX  X   X XX     X XX  X   X X
+EoX X X X X           XX X X   X
+XoX    X  X    F    XX X  XX XXX
+XoX X     X X        X X XX    X
+XoX       X        X X         X
+Xo X  X           X      X    XX
+XoX XXX X XXXXX X  XXXXX X X X X
+XooP    X      X   X   X   X   X
+XXXXXXXXX XXX  X XXX X X XXXXX X
+X     X  X           X X     X X
+X XXX X X X X XXX XXXX XXXXX X X
+X   X   X   X        X   X   X X
+X X X X X XXXXXXXX X X X X X X X
+X X  X  X X        X  X  X  X  X
+X X X XXX X X  X XXX X X X X X X
+X X XoooX   X  XX    X    X    X
+X X XoXoXXXXX X X XX X XXX X X X
+XX oooXP          X  X        XX
+XXXEXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+Step 19
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X               X          X   X
+X X XXXXX XXX X XXXXXX X X X X X
+X  X    X X  X          X  X X X
+X X X X X X X  XXXXX XXX X X X X
+X X   X X X X        X   X    XX
+X X X X X X X  X X XXX X XXXXX X
+X    X  X X X     X    X X     X
+X XXX X X X X XXXX X X X X X X X
+XX    X X X           X     X  X
+X X X X X XXX  XXX XXX XXX X X X
+X   X X X   X     X      X X X X
+X X X X XXX X   X  X X X X X X E
+X XX  X   X XX     X XX  X   X X
+EoX X X X X           XX X X   X
+XoX    X  X    F    XX X  XX XXX
+XoX X     X X        X X XX    X
+XoX       X        X X         X
+Xo X  X           X      X    XX
+XoX XXX X XXXXX X  XXXXX X X X X
+XooP    X      X   X   X   X   X
+XXXXXXXXX XXX  X XXX X X XXXXX X
+X     X  X           X X     X X
+X XXX X X X X XXX XXXX XXXXX X X
+X   X   X   X        X   X   X X
+X X X X X XXXXXXXX X X X X X X X
+X X  X  X X        X  X  X  X  X
+X X X XXX X X  X XXX X X X X X X
+X X XoooX   X  XX    X    X    X
+X X XoXoXXXXX X X XX X XXX X X X
+XX oooXoP         X  X        XX
+XXXEXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+Step 20
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X               X          X   X
+X X XXXXX XXX X XXXXXX X X X X X
+X  X    X X  X          X  X X X
+X X X X X X X  XXXXX XXX X X X X
+X X   X X X X        X   X    XX
+X X X X X X X  X X XXX X XXXXX X
+X    X  X X X     X    X X     X
+X XXX X X X X XXXX X X X X X X X
+XX    X X X           X     X  X
+X X X X X XXX  XXX XXX XXX X X X
+X   X X X   X     X      X X X X
+X X X X XXX X   X  X X X X X X E
+X XX  X   X XX     X XX  X   X X
+EoX X X X X           XX X X   X
+XoX    X  X    F    XX X  XX XXX
+XoX X     X X        X X XX    X
+XoX       X        X X         X
+Xo X  X           X      X    XX
+XoX XXX X XXXXX X  XXXXX X X X X
+XoooP   X      X   X   X   X   X
+XXXXXXXXX XXX  X XXX X X XXXXX X
+X     X  X           X X     X X
+X XXX X X X X XXX XXXX XXXXX X X
+X   X   X   X        X   X   X X
+X X X X X XXXXXXXX X X X X X X X
+X X  X  X X        X  X  X  X  X
+X X X XXX X X  X XXX X X X X X X
+X X XoooX   X  XX    X    X    X
+X X XoXoXXXXX X X XX X XXX X X X
+XX oooXoP         X  X        XX
+XXXEXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+Step 21
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X               X          X   X
+X X XXXXX XXX X XXXXXX X X X X X
+X  X    X X  X          X  X X X
+X X X X X X X  XXXXX XXX X X X X
+X X   X X X X        X   X    XX
+X X X X X X X  X X XXX X XXXXX X
+X    X  X X X     X    X X     X
+X XXX X X X X XXXX X X X X X X X
+XX    X X X           X     X  X
+X X X X X XXX  XXX XXX XXX X X X
+X   X X X   X     X      X X X X
+X X X X XXX X   X  X X X X X X E
+X XX  X   X XX     X XX  X   X X
+EoX X X X X           XX X X   X
+XoX    X  X    F    XX X  XX XXX
+XoX X     X X        X X XX    X
+XoX       X        X X         X
+Xo X  X           X      X    XX
+XoX XXX X XXXXX X  XXXXX X X X X
+XoooP   X      X   X   X   X   X
+XXXXXXXXX XXX  X XXX X X XXXXX X
+X     X  X           X X     X X
+X XXX X X X X XXX XXXX XXXXX X X
+X   X   X   X        X   X   X X
+X X X X X XXXXXXXX X X X X X X X
+X X  X  X X        X  X  X  X  X
+X X X XXX X X  X XXX X X X X X X
+X X XoooX   X  XX    X    X    X
+X X XoXoXXXXX X X XX X XXX X X X
+XX oooXooP        X  X        XX
+XXXEXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+Step 22
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X               X          X   X
+X X XXXXX XXX X XXXXXX X X X X X
+X  X    X X  X          X  X X X
+X X X X X X X  XXXXX XXX X X X X
+X X   X X X X        X   X    XX
+X X X X X X X  X X XXX X XXXXX X
+X    X  X X X     X    X X     X
+X XXX X X X X XXXX X X X X X X X
+XX    X X X           X     X  X
+X X X X X XXX  XXX XXX XXX X X X
+X   X X X   X     X      X X X X
+X X X X XXX X   X  X X X X X X E
+X XX  X   X XX     X XX  X   X X
+EoX X X X X           XX X X   X
+XoX    X  X    F    XX X  XX XXX
+XoX X     X X        X X XX    X
+XoX       X        X X         X
+Xo X  X           X      X    XX
+XoX XXX X XXXXX X  XXXXX X X X X
+XooooP  X      X   X   X   X   X
+XXXXXXXXX XXX  X XXX X X XXXXX X
+X     X  X           X X     X X
+X XXX X X X X XXX XXXX XXXXX X X
+X   X   X   X        X   X   X X
+X X X X X XXXXXXXX X X X X X X X
+X X  X  X X        X  X  X  X  X
+X X X XXX X X  X XXX X X X X X X
+X X XoooX   X  XX    X    X    X
+X X XoXoXXXXX X X XX X XXX X X X
+XX oooXooP        X  X        XX
+XXXEXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+Step 23
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X               X          X   X
+X X XXXXX XXX X XXXXXX X X X X X
+X  X    X X  X          X  X X X
+X X X X X X X  XXXXX XXX X X X X
+X X   X X X X        X   X    XX
+X X X X X X X  X X XXX X XXXXX X
+X    X  X X X     X    X X     X
+X XXX X X X X XXXX X X X X X X X
+XX    X X X           X     X  X
+X X X X X XXX  XXX XXX XXX X X X
+X   X X X   X     X      X X X X
+X X X X XXX X   X  X X X X X X E
+X XX  X   X XX     X XX  X   X X
+EoX X X X X           XX X X   X
+XoX    X  X    F    XX X  XX XXX
+XoX X     X X        X X XX    X
+XoX       X        X X         X
+Xo X  X           X      X    XX
+XoX XXX X XXXXX X  XXXXX X X X X
+XooooP  X      X   X   X   X   X
+XXXXXXXXX XXX  X XXX X X XXXXX X
+X     X  X           X X     X X
+X XXX X X X X XXX XXXX XXXXX X X
+X   X   X   X        X   X   X X
+X X X X X XXXXXXXX X X X X X X X
+X X  X  X X        X  X  X  X  X
+X X X XXX X X  X XXX X X X X X X
+X X XoooX   X  XX    X    X    X
+X X XoXoXXXXX X X XX X XXX X X X
+XX oooXoooP       X  X        XX
+XXXEXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+Step 24
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X               X          X   X
+X X XXXXX XXX X XXXXXX X X X X X
+X  X    X X  X          X  X X X
+X X X X X X X  XXXXX XXX X X X X
+X X   X X X X        X   X    XX
+X X X X X X X  X X XXX X XXXXX X
+X    X  X X X     X    X X     X
+X XXX X X X X XXXX X X X X X X X
+XX    X X X           X     X  X
+X X X X X XXX  XXX XXX XXX X X X
+X   X X X   X     X      X X X X
+X X X X XXX X   X  X X X X X X E
+X XX  X   X XX     X XX  X   X X
+EoX X X X X           XX X X   X
+XoX    X  X    F    XX X  XX XXX
+XoX X     X X        X X XX    X
+XoX       X        X X         X
+Xo X  X           X      X    XX
+XoX XXX X XXXXX X  XXXXX X X X X
+XoooooP X      X   X   X   X   X
+XXXXXXXXX XXX  X XXX X X XXXXX X
+X     X  X           X X     X X
+X XXX X X X X XXX XXXX XXXXX X X
+X   X   X   X        X   X   X X
+X X X X X XXXXXXXX X X X X X X X
+X X  X  X X        X  X  X  X  X
+X X X XXX X X  X XXX X X X X X X
+X X XoooX   X  XX    X    X    X
+X X XoXoXXXXX X X XX X XXX X X X
+XX oooXoooP       X  X        XX
+XXXEXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+Step 25
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X               X          X   X
+X X XXXXX XXX X XXXXXX X X X X X
+X  X    X X  X          X  X X X
+X X X X X X X  XXXXX XXX X X X X
+X X   X X X X        X   X    XX
+X X X X X X X  X X XXX X XXXXX X
+X    X  X X X     X    X X     X
+X XXX X X X X XXXX X X X X X X X
+XX    X X X           X     X  X
+X X X X X XXX  XXX XXX XXX X X X
+X   X X X   X     X      X X X X
+X X X X XXX X   X  X X X X X X E
+X XX  X   X XX     X XX  X   X X
+EoX X X X X           XX X X   X
+XoX    X  X    F    XX X  XX XXX
+XoX X     X X        X X XX    X
+XoX       X        X X         X
+Xo X  X           X      X    XX
+XoX XXX X XXXXX X  XXXXX X X X X
+XoooooP X      X   X   X   X   X
+XXXXXXXXX XXX  X XXX X X XXXXX X
+X     X  X           X X     X X
+X XXX X X X X XXX XXXX XXXXX X X
+X   X   X   X        X   X   X X
+X X X X X XXXXXXXX X X X X X X X
+X X  X  X X        X  X  X  X  X
+X X X XXX X X  X XXX X X X X X X
+X X XoooX   X  XX    X    X    X
+X X XoXoXXXXX X X XX X XXX X X X
+XX oooXooooP      X  X        XX
+XXXEXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+Step 26
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X               X          X   X
+X X XXXXX XXX X XXXXXX X X X X X
+X  X    X X  X          X  X X X
+X X X X X X X  XXXXX XXX X X X X
+X X   X X X X        X   X    XX
+X X X X X X X  X X XXX X XXXXX X
+X    X  X X X     X    X X     X
+X XXX X X X X XXXX X X X X X X X
+XX    X X X           X     X  X
+X X X X X XXX  XXX XXX XXX X X X
+X   X X X   X     X      X X X X
+X X X X XXX X   X  X X X X X X E
+X XX  X   X XX     X XX  X   X X
+EoX X X X X           XX X X   X
+XoX    X  X    F    XX X  XX XXX
+XoX X     X X        X X XX    X
+XoX       X        X X         X
+Xo X  X           X      X    XX
+XoX XXX X XXXXX X  XXXXX X X X X
+XooooooPX      X   X   X   X   X
+XXXXXXXXX XXX  X XXX X X XXXXX X
+X     X  X           X X     X X
+X XXX X X X X XXX XXXX XXXXX X X
+X   X   X   X        X   X   X X
+X X X X X XXXXXXXX X X X X X X X
+X X  X  X X        X  X  X  X  X
+X X X XXX X X  X XXX X X X X X X
+X X XoooX   X  XX    X    X    X
+X X XoXoXXXXX X X XX X XXX X X X
+XX oooXooooP      X  X        XX
+XXXEXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+Step 27
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X               X          X   X
+X X XXXXX XXX X XXXXXX X X X X X
+X  X    X X  X          X  X X X
+X X X X X X X  XXXXX XXX X X X X
+X X   X X X X        X   X    XX
+X X X X X X X  X X XXX X XXXXX X
+X    X  X X X     X    X X     X
+X XXX X X X X XXXX X X X X X X X
+XX    X X X           X     X  X
+X X X X X XXX  XXX XXX XXX X X X
+X   X X X   X     X      X X X X
+X X X X XXX X   X  X X X X X X E
+X XX  X   X XX     X XX  X   X X
+EoX X X X X           XX X X   X
+XoX    X  X    F    XX X  XX XXX
+XoX X     X X        X X XX    X
+XoX       X        X X         X
+Xo X  X           X      X    XX
+XoX XXX X XXXXX X  XXXXX X X X X
+XooooooPX      X   X   X   X   X
+XXXXXXXXX XXX  X XXX X X XXXXX X
+X     X  X           X X     X X
+X XXX X X X X XXX XXXX XXXXX X X
+X   X   X   X        X   X   X X
+X X X X X XXXXXXXX X X X X X X X
+X X  X  X X        X  X  X  X  X
+X X X XXX X X  X XXX X X X X X X
+X X XoooX   X  XX    X    X    X
+X X XoXoXXXXX X X XX X XXX X X X
+XX oooXoooooP     X  X        XX
+XXXEXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+Step 28
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X               X          X   X
+X X XXXXX XXX X XXXXXX X X X X X
+X  X    X X  X          X  X X X
+X X X X X X X  XXXXX XXX X X X X
+X X   X X X X        X   X    XX
+X X X X X X X  X X XXX X XXXXX X
+X    X  X X X     X    X X     X
+X XXX X X X X XXXX X X X X X X X
+XX    X X X           X     X  X
+X X X X X XXX  XXX XXX XXX X X X
+X   X X X   X     X      X X X X
+X X X X XXX X   X  X X X X X X E
+X XX  X   X XX     X XX  X   X X
+EoX X X X X           XX X X   X
+XoX    X  X    F    XX X  XX XXX
+XoX X     X X        X X XX    X
+XoX       X        X X         X
+Xo X  X           X      X    XX
+XoX XXXPX XXXXX X  XXXXX X X X X
+XoooooooX      X   X   X   X   X
+XXXXXXXXX XXX  X XXX X X XXXXX X
+X     X  X           X X     X X
+X XXX X X X X XXX XXXX XXXXX X X
+X   X   X   X        X   X   X X
+X X X X X XXXXXXXX X X X X X X X
+X X  X  X X        X  X  X  X  X
+X X X XXX X X  X XXX X X X X X X
+X X XoooX   X  XX    X    X    X
+X X XoXoXXXXX X X XX X XXX X X X
+XX oooXoooooP     X  X        XX
+XXXEXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+Step 29
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X               X          X   X
+X X XXXXX XXX X XXXXXX X X X X X
+X  X    X X  X          X  X X X
+X X X X X X X  XXXXX XXX X X X X
+X X   X X X X        X   X    XX
+X X X X X X X  X X XXX X XXXXX X
+X    X  X X X     X    X X     X
+X XXX X X X X XXXX X X X X X X X
+XX    X X X           X     X  X
+X X X X X XXX  XXX XXX XXX X X X
+X   X X X   X     X      X X X X
+X X X X XXX X   X  X X X X X X E
+X XX  X   X XX     X XX  X   X X
+EoX X X X X           XX X X   X
+XoX    X  X    F    XX X  XX XXX
+XoX X     X X        X X XX    X
+XoX       X        X X         X
+Xo X  X           X      X    XX
+XoX XXXPX XXXXX X  XXXXX X X X X
+XoooooooX      X   X   X   X   X
+XXXXXXXXX XXX  X XXX X X XXXXX X
+X     X  X           X X     X X
+X XXX X X X X XXX XXXX XXXXX X X
+X   X   X   X        X   X   X X
+X X X X X XXXXXXXX X X X X X X X
+X X  X  X X        X  X  X  X  X
+X X X XXX X X  X XXX X X X X X X
+X X XoooX   X  XX    X    X    X
+X X XoXoXXXXX X X XX X XXX X X X
+XX oooXooooooP    X  X        XX
+XXXEXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+Step 30
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X               X          X   X
+X X XXXXX XXX X XXXXXX X X X X X
+X  X    X X  X          X  X X X
+X X X X X X X  XXXXX XXX X X X X
+X X   X X X X        X   X    XX
+X X X X X X X  X X XXX X XXXXX X
+X    X  X X X     X    X X     X
+X XXX X X X X XXXX X X X X X X X
+XX    X X X           X     X  X
+X X X X X XXX  XXX XXX XXX X X X
+X   X X X   X     X      X X X X
+X X X X XXX X   X  X X X X X X E
+X XX  X   X XX     X XX  X   X X
+EoX X X X X           XX X X   X
+XoX    X  X    F    XX X  XX XXX
+XoX X     X X        X X XX    X
+XoX       X        X X         X
+Xo X  XP          X      X    XX
+XoX XXXoX XXXXX X  XXXXX X X X X
+XoooooooX      X   X   X   X   X
+XXXXXXXXX XXX  X XXX X X XXXXX X
+X     X  X           X X     X X
+X XXX X X X X XXX XXXX XXXXX X X
+X   X   X   X        X   X   X X
+X X X X X XXXXXXXX X X X X X X X
+X X  X  X X        X  X  X  X  X
+X X X XXX X X  X XXX X X X X X X
+X X XoooX   X  XX    X    X    X
+X X XoXoXXXXX X X XX X XXX X X X
+XX oooXooooooP    X  X        XX
+XXXEXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+Step 31
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X               X          X   X
+X X XXXXX XXX X XXXXXX X X X X X
+X  X    X X  X          X  X X X
+X X X X X X X  XXXXX XXX X X X X
+X X   X X X X        X   X    XX
+X X X X X X X  X X XXX X XXXXX X
+X    X  X X X     X    X X     X
+X XXX X X X X XXXX X X X X X X X
+XX    X X X           X     X  X
+X X X X X XXX  XXX XXX XXX X X X
+X   X X X   X     X      X X X X
+X X X X XXX X   X  X X X X X X E
+X XX  X   X XX     X XX  X   X X
+EoX X X X X           XX X X   X
+XoX    X  X    F    XX X  XX XXX
+XoX X     X X        X X XX    X
+XoX       X        X X         X
+Xo X  XP          X      X    XX
+XoX XXXoX XXXXX X  XXXXX X X X X
+XoooooooX      X   X   X   X   X
+XXXXXXXXX XXX  X XXX X X XXXXX X
+X     X  X           X X     X X
+X XXX X X X X XXX XXXX XXXXX X X
+X   X   X   X        X   X   X X
+X X X X X XXXXXXXX X X X X X X X
+X X  X  X X        X  X  X  X  X
+X X X XXX X X  X XXX X X X X X X
+X X XoooX   X  XX    X    X    X
+X X XoXoXXXXXPX X XX X XXX X X X
+XX oooXooooooo    X  X        XX
+XXXEXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+Step 32
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X               X          X   X
+X X XXXXX XXX X XXXXXX X X X X X
+X  X    X X  X          X  X X X
+X X X X X X X  XXXXX XXX X X X X
+X X   X X X X        X   X    XX
+X X X X X X X  X X XXX X XXXXX X
+X    X  X X X     X    X X     X
+X XXX X X X X XXXX X X X X X X X
+XX    X X X           X     X  X
+X X X X X XXX  XXX XXX XXX X X X
+X   X X X   X     X      X X X X
+X X X X XXX X   X  X X X X X X E
+X XX  X   X XX     X XX  X   X X
+EoX X X X X           XX X X   X
+XoX    X  X    F    XX X  XX XXX
+XoX X     X X        X X XX    X
+XoX       X        X X         X
+Xo X  XoP         X      X    XX
+XoX XXXoX XXXXX X  XXXXX X X X X
+XoooooooX      X   X   X   X   X
+XXXXXXXXX XXX  X XXX X X XXXXX X
+X     X  X           X X     X X
+X XXX X X X X XXX XXXX XXXXX X X
+X   X   X   X        X   X   X X
+X X X X X XXXXXXXX X X X X X X X
+X X  X  X X        X  X  X  X  X
+X X X XXX X X  X XXX X X X X X X
+X X XoooX   X  XX    X    X    X
+X X XoXoXXXXXPX X XX X XXX X X X
+XX oooXooooooo    X  X        XX
+XXXEXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+Step 33
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X               X          X   X
+X X XXXXX XXX X XXXXXX X X X X X
+X  X    X X  X          X  X X X
+X X X X X X X  XXXXX XXX X X X X
+X X   X X X X        X   X    XX
+X X X X X X X  X X XXX X XXXXX X
+X    X  X X X     X    X X     X
+X XXX X X X X XXXX X X X X X X X
+XX    X X X           X     X  X
+X X X X X XXX  XXX XXX XXX X X X
+X   X X X   X     X      X X X X
+X X X X XXX X   X  X X X X X X E
+X XX  X   X XX     X XX  X   X X
+EoX X X X X           XX X X   X
+XoX    X  X    F    XX X  XX XXX
+XoX X     X X        X X XX    X
+XoX       X        X X         X
+Xo X  XoP         X      X    XX
+XoX XXXoX XXXXX X  XXXXX X X X X
+XoooooooX      X   X   X   X   X
+XXXXXXXXX XXX  X XXX X X XXXXX X
+X     X  X           X X     X X
+X XXX X X X X XXX XXXX XXXXX X X
+X   X   X   X        X   X   X X
+X X X X X XXXXXXXX X X X X X X X
+X X  X  X X        X  X  X  X  X
+X X X XXX X X  X XXX X X X X X X
+X X XoooX   XP XX    X    X    X
+X X XoXoXXXXXoX X XX X XXX X X X
+XX oooXooooooo    X  X        XX
+XXXEXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+Step 34
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X               X          X   X
+X X XXXXX XXX X XXXXXX X X X X X
+X  X    X X  X          X  X X X
+X X X X X X X  XXXXX XXX X X X X
+X X   X X X X        X   X    XX
+X X X X X X X  X X XXX X XXXXX X
+X    X  X X X     X    X X     X
+X XXX X X X X XXXX X X X X X X X
+XX    X X X           X     X  X
+X X X X X XXX  XXX XXX XXX X X X
+X   X X X   X     X      X X X X
+X X X X XXX X   X  X X X X X X E
+X XX  X   X XX     X XX  X   X X
+EoX X X X X           XX X X   X
+XoX    X  X    F    XX X  XX XXX
+XoX X     X X        X X XX    X
+XoX       X        X X         X
+Xo X  XooP        X      X    XX
+XoX XXXoX XXXXX X  XXXXX X X X X
+XoooooooX      X   X   X   X   X
+XXXXXXXXX XXX  X XXX X X XXXXX X
+X     X  X           X X     X X
+X XXX X X X X XXX XXXX XXXXX X X
+X   X   X   X        X   X   X X
+X X X X X XXXXXXXX X X X X X X X
+X X  X  X X        X  X  X  X  X
+X X X XXX X X  X XXX X X X X X X
+X X XoooX   XP XX    X    X    X
+X X XoXoXXXXXoX X XX X XXX X X X
+XX oooXooooooo    X  X        XX
+XXXEXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+Step 35
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X               X          X   X
+X X XXXXX XXX X XXXXXX X X X X X
+X  X    X X  X          X  X X X
+X X X X X X X  XXXXX XXX X X X X
+X X   X X X X        X   X    XX
+X X X X X X X  X X XXX X XXXXX X
+X    X  X X X     X    X X     X
+X XXX X X X X XXXX X X X X X X X
+XX    X X X           X     X  X
+X X X X X XXX  XXX XXX XXX X X X
+X   X X X   X     X      X X X X
+X X X X XXX X   X  X X X X X X E
+X XX  X   X XX     X XX  X   X X
+EoX X X X X           XX X X   X
+XoX    X  X    F    XX X  XX XXX
+XoX X     X X        X X XX    X
+XoX       X        X X         X
+Xo X  XooP        X      X    XX
+XoX XXXoX XXXXX X  XXXXX X X X X
+XoooooooX      X   X   X   X   X
+XXXXXXXXX XXX  X XXX X X XXXXX X
+X     X  X           X X     X X
+X XXX X X X X XXX XXXX XXXXX X X
+X   X   X   X        X   X   X X
+X X X X X XXXXXXXX X X X X X X X
+X X  X  X X        X  X  X  X  X
+X X X XXX X XP X XXX X X X X X X
+X X XoooX   Xo XX    X    X    X
+X X XoXoXXXXXoX X XX X XXX X X X
+XX oooXooooooo    X  X        XX
+XXXEXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+Step 36
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X               X          X   X
+X X XXXXX XXX X XXXXXX X X X X X
+X  X    X X  X          X  X X X
+X X X X X X X  XXXXX XXX X X X X
+X X   X X X X        X   X    XX
+X X X X X X X  X X XXX X XXXXX X
+X    X  X X X     X    X X     X
+X XXX X X X X XXXX X X X X X X X
+XX    X X X           X     X  X
+X X X X X XXX  XXX XXX XXX X X X
+X   X X X   X     X      X X X X
+X X X X XXX X   X  X X X X X X E
+X XX  X   X XX     X XX  X   X X
+EoX X X X X           XX X X   X
+XoX    X  X    F    XX X  XX XXX
+XoX X     X X        X X XX    X
+XoX       X        X X         X
+Xo X  XoooP       X      X    XX
+XoX XXXoX XXXXX X  XXXXX X X X X
+XoooooooX      X   X   X   X   X
+XXXXXXXXX XXX  X XXX X X XXXXX X
+X     X  X           X X     X X
+X XXX X X X X XXX XXXX XXXXX X X
+X   X   X   X        X   X   X X
+X X X X X XXXXXXXX X X X X X X X
+X X  X  X X        X  X  X  X  X
+X X X XXX X XP X XXX X X X X X X
+X X XoooX   Xo XX    X    X    X
+X X XoXoXXXXXoX X XX X XXX X X X
+XX oooXooooooo    X  X        XX
+XXXEXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+Step 37
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X               X          X   X
+X X XXXXX XXX X XXXXXX X X X X X
+X  X    X X  X          X  X X X
+X X X X X X X  XXXXX XXX X X X X
+X X   X X X X        X   X    XX
+X X X X X X X  X X XXX X XXXXX X
+X    X  X X X     X    X X     X
+X XXX X X X X XXXX X X X X X X X
+XX    X X X           X     X  X
+X X X X X XXX  XXX XXX XXX X X X
+X   X X X   X     X      X X X X
+X X X X XXX X   X  X X X X X X E
+X XX  X   X XX     X XX  X   X X
+EoX X X X X           XX X X   X
+XoX    X  X    F    XX X  XX XXX
+XoX X     X X        X X XX    X
+XoX       X        X X         X
+Xo X  XoooP       X      X    XX
+XoX XXXoX XXXXX X  XXXXX X X X X
+XoooooooX      X   X   X   X   X
+XXXXXXXXX XXX  X XXX X X XXXXX X
+X     X  X           X X     X X
+X XXX X X X X XXX XXXX XXXXX X X
+X   X   X   X        X   X   X X
+X X X X X XXXXXXXX X X X X X X X
+X X  X  X X  P     X  X  X  X  X
+X X X XXX X Xo X XXX X X X X X X
+X X XoooX   Xo XX    X    X    X
+X X XoXoXXXXXoX X XX X XXX X X X
+XX oooXooooooo    X  X        XX
+XXXEXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+Step 38
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X               X          X   X
+X X XXXXX XXX X XXXXXX X X X X X
+X  X    X X  X          X  X X X
+X X X X X X X  XXXXX XXX X X X X
+X X   X X X X        X   X    XX
+X X X X X X X  X X XXX X XXXXX X
+X    X  X X X     X    X X     X
+X XXX X X X X XXXX X X X X X X X
+XX    X X X           X     X  X
+X X X X X XXX  XXX XXX XXX X X X
+X   X X X   X     X      X X X X
+X X X X XXX X   X  X X X X X X E
+X XX  X   X XX     X XX  X   X X
+EoX X X X X           XX X X   X
+XoX    X  X    F    XX X  XX XXX
+XoX X     X X        X X XX    X
+XoX       X        X X         X
+Xo X  XooooP      X      X    XX
+XoX XXXoX XXXXX X  XXXXX X X X X
+XoooooooX      X   X   X   X   X
+XXXXXXXXX XXX  X XXX X X XXXXX X
+X     X  X           X X     X X
+X XXX X X X X XXX XXXX XXXXX X X
+X   X   X   X        X   X   X X
+X X X X X XXXXXXXX X X X X X X X
+X X  X  X X  P     X  X  X  X  X
+X X X XXX X Xo X XXX X X X X X X
+X X XoooX   Xo XX    X    X    X
+X X XoXoXXXXXoX X XX X XXX X X X
+XX oooXooooooo    X  X        XX
+XXXEXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+Step 39
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X               X          X   X
+X X XXXXX XXX X XXXXXX X X X X X
+X  X    X X  X          X  X X X
+X X X X X X X  XXXXX XXX X X X X
+X X   X X X X        X   X    XX
+X X X X X X X  X X XXX X XXXXX X
+X    X  X X X     X    X X     X
+X XXX X X X X XXXX X X X X X X X
+XX    X X X           X     X  X
+X X X X X XXX  XXX XXX XXX X X X
+X   X X X   X     X      X X X X
+X X X X XXX X   X  X X X X X X E
+X XX  X   X XX     X XX  X   X X
+EoX X X X X           XX X X   X
+XoX    X  X    F    XX X  XX XXX
+XoX X     X X        X X XX    X
+XoX       X        X X         X
+Xo X  XooooP      X      X    XX
+XoX XXXoX XXXXX X  XXXXX X X X X
+XoooooooX      X   X   X   X   X
+XXXXXXXXX XXX  X XXX X X XXXXX X
+X     X  X           X X     X X
+X XXX X X X X XXX XXXX XXXXX X X
+X   X   X   X        X   X   X X
+X X X X X XXXXXXXX X X X X X X X
+X X  X  X X  oP    X  X  X  X  X
+X X X XXX X Xo X XXX X X X X X X
+X X XoooX   Xo XX    X    X    X
+X X XoXoXXXXXoX X XX X XXX X X X
+XX oooXooooooo    X  X        XX
+XXXEXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+Step 40
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X               X          X   X
+X X XXXXX XXX X XXXXXX X X X X X
+X  X    X X  X          X  X X X
+X X X X X X X  XXXXX XXX X X X X
+X X   X X X X        X   X    XX
+X X X X X X X  X X XXX X XXXXX X
+X    X  X X X     X    X X     X
+X XXX X X X X XXXX X X X X X X X
+XX    X X X           X     X  X
+X X X X X XXX  XXX XXX XXX X X X
+X   X X X   X     X      X X X X
+X X X X XXX X   X  X X X X X X E
+X XX  X   X XX     X XX  X   X X
+EoX X X X X           XX X X   X
+XoX    X  X    F    XX X  XX XXX
+XoX X     X X        X X XX    X
+XoX       XP       X X         X
+Xo X  Xooooo      X      X    XX
+XoX XXXoX XXXXX X  XXXXX X X X X
+XoooooooX      X   X   X   X   X
+XXXXXXXXX XXX  X XXX X X XXXXX X
+X     X  X           X X     X X
+X XXX X X X X XXX XXXX XXXXX X X
+X   X   X   X        X   X   X X
+X X X X X XXXXXXXX X X X X X X X
+X X  X  X X  oP    X  X  X  X  X
+X X X XXX X Xo X XXX X X X X X X
+X X XoooX   Xo XX    X    X    X
+X X XoXoXXXXXoX X XX X XXX X X X
+XX oooXooooooo    X  X        XX
+XXXEXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+Step 41
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X               X          X   X
+X X XXXXX XXX X XXXXXX X X X X X
+X  X    X X  X          X  X X X
+X X X X X X X  XXXXX XXX X X X X
+X X   X X X X        X   X    XX
+X X X X X X X  X X XXX X XXXXX X
+X    X  X X X     X    X X     X
+X XXX X X X X XXXX X X X X X X X
+XX    X X X           X     X  X
+X X X X X XXX  XXX XXX XXX X X X
+X   X X X   X     X      X X X X
+X X X X XXX X   X  X X X X X X E
+X XX  X   X XX     X XX  X   X X
+EoX X X X X           XX X X   X
+XoX    X  X    F    XX X  XX XXX
+XoX X     X X        X X XX    X
+XoX       XP       X X         X
+Xo X  Xooooo      X      X    XX
+XoX XXXoX XXXXX X  XXXXX X X X X
+XoooooooX      X   X   X   X   X
+XXXXXXXXX XXX  X XXX X X XXXXX X
+X     X  X           X X     X X
+X XXX X X X X XXX XXXX XXXXX X X
+X   X   X   X        X   X   X X
+X X X X X XXXXXXXX X X X X X X X
+X X  X  X X  ooP   X  X  X  X  X
+X X X XXX X Xo X XXX X X X X X X
+X X XoooX   Xo XX    X    X    X
+X X XoXoXXXXXoX X XX X XXX X X X
+XX oooXooooooo    X  X        XX
+XXXEXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+Step 42
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X               X          X   X
+X X XXXXX XXX X XXXXXX X X X X X
+X  X    X X  X          X  X X X
+X X X X X X X  XXXXX XXX X X X X
+X X   X X X X        X   X    XX
+X X X X X X X  X X XXX X XXXXX X
+X    X  X X X     X    X X     X
+X XXX X X X X XXXX X X X X X X X
+XX    X X X           X     X  X
+X X X X X XXX  XXX XXX XXX X X X
+X   X X X   X     X      X X X X
+X X X X XXX X   X  X X X X X X E
+X XX  X   X XX     X XX  X   X X
+EoX X X X X           XX X X   X
+XoX    X  X    F    XX X  XX XXX
+XoX X     XPX        X X XX    X
+XoX       Xo       X X         X
+Xo X  Xooooo      X      X    XX
+XoX XXXoX XXXXX X  XXXXX X X X X
+XoooooooX      X   X   X   X   X
+XXXXXXXXX XXX  X XXX X X XXXXX X
+X     X  X           X X     X X
+X XXX X X X X XXX XXXX XXXXX X X
+X   X   X   X        X   X   X X
+X X X X X XXXXXXXX X X X X X X X
+X X  X  X X  ooP   X  X  X  X  X
+X X X XXX X Xo X XXX X X X X X X
+X X XoooX   Xo XX    X    X    X
+X X XoXoXXXXXoX X XX X XXX X X X
+XX oooXooooooo    X  X        XX
+XXXEXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+Step 43
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X               X          X   X
+X X XXXXX XXX X XXXXXX X X X X X
+X  X    X X  X          X  X X X
+X X X X X X X  XXXXX XXX X X X X
+X X   X X X X        X   X    XX
+X X X X X X X  X X XXX X XXXXX X
+X    X  X X X     X    X X     X
+X XXX X X X X XXXX X X X X X X X
+XX    X X X           X     X  X
+X X X X X XXX  XXX XXX XXX X X X
+X   X X X   X     X      X X X X
+X X X X XXX X   X  X X X X X X E
+X XX  X   X XX     X XX  X   X X
+EoX X X X X           XX X X   X
+XoX    X  X    F    XX X  XX XXX
+XoX X     XPX        X X XX    X
+XoX       Xo       X X         X
+Xo X  Xooooo      X      X    XX
+XoX XXXoX XXXXX X  XXXXX X X X X
+XoooooooX      X   X   X   X   X
+XXXXXXXXX XXX  X XXX X X XXXXX X
+X     X  X           X X     X X
+X XXX X X X X XXX XXXX XXXXX X X
+X   X   X   X        X   X   X X
+X X X X X XXXXXXXX X X X X X X X
+X X  X  X X  oooP  X  X  X  X  X
+X X X XXX X Xo X XXX X X X X X X
+X X XoooX   Xo XX    X    X    X
+X X XoXoXXXXXoX X XX X XXX X X X
+XX oooXooooooo    X  X        XX
+XXXEXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+Step 44
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X               X          X   X
+X X XXXXX XXX X XXXXXX X X X X X
+X  X    X X  X          X  X X X
+X X X X X X X  XXXXX XXX X X X X
+X X   X X X X        X   X    XX
+X X X X X X X  X X XXX X XXXXX X
+X    X  X X X     X    X X     X
+X XXX X X X X XXXX X X X X X X X
+XX    X X X           X     X  X
+X X X X X XXX  XXX XXX XXX X X X
+X   X X X   X     X      X X X X
+X X X X XXX X   X  X X X X X X E
+X XX  X   X XX     X XX  X   X X
+EoX X X X X           XX X X   X
+XoX    X  XP   F    XX X  XX XXX
+XoX X     XoX        X X XX    X
+XoX       Xo       X X         X
+Xo X  Xooooo      X      X    XX
+XoX XXXoX XXXXX X  XXXXX X X X X
+XoooooooX      X   X   X   X   X
+XXXXXXXXX XXX  X XXX X X XXXXX X
+X     X  X           X X     X X
+X XXX X X X X XXX XXXX XXXXX X X
+X   X   X   X        X   X   X X
+X X X X X XXXXXXXX X X X X X X X
+X X  X  X X  oooP  X  X  X  X  X
+X X X XXX X Xo X XXX X X X X X X
+X X XoooX   Xo XX    X    X    X
+X X XoXoXXXXXoX X XX X XXX X X X
+XX oooXooooooo    X  X        XX
+XXXEXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+Step 45
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X               X          X   X
+X X XXXXX XXX X XXXXXX X X X X X
+X  X    X X  X          X  X X X
+X X X X X X X  XXXXX XXX X X X X
+X X   X X X X        X   X    XX
+X X X X X X X  X X XXX X XXXXX X
+X    X  X X X     X    X X     X
+X XXX X X X X XXXX X X X X X X X
+XX    X X X           X     X  X
+X X X X X XXX  XXX XXX XXX X X X
+X   X X X   X     X      X X X X
+X X X X XXX X   X  X X X X X X E
+X XX  X   X XX     X XX  X   X X
+EoX X X X X           XX X X   X
+XoX    X  XP   F    XX X  XX XXX
+XoX X     XoX        X X XX    X
+XoX       Xo       X X         X
+Xo X  Xooooo      X      X    XX
+XoX XXXoX XXXXX X  XXXXX X X X X
+XoooooooX      X   X   X   X   X
+XXXXXXXXX XXX  X XXX X X XXXXX X
+X     X  X           X X     X X
+X XXX X X X X XXX XXXX XXXXX X X
+X   X   X   X        X   X   X X
+X X X X X XXXXXXXX X X X X X X X
+X X  X  X X  ooooP X  X  X  X  X
+X X X XXX X Xo X XXX X X X X X X
+X X XoooX   Xo XX    X    X    X
+X X XoXoXXXXXoX X XX X XXX X X X
+XX oooXooooooo    X  X        XX
+XXXEXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+Step 46
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X               X          X   X
+X X XXXXX XXX X XXXXXX X X X X X
+X  X    X X  X          X  X X X
+X X X X X X X  XXXXX XXX X X X X
+X X   X X X X        X   X    XX
+X X X X X X X  X X XXX X XXXXX X
+X    X  X X X     X    X X     X
+X XXX X X X X XXXX X X X X X X X
+XX    X X X           X     X  X
+X X X X X XXX  XXX XXX XXX X X X
+X   X X X   X     X      X X X X
+X X X X XXX X   X  X X X X X X E
+X XX  X   X XX     X XX  X   X X
+EoX X X X X           XX X X   X
+XoX    X  XoP  F    XX X  XX XXX
+XoX X     XoX        X X XX    X
+XoX       Xo       X X         X
+Xo X  Xooooo      X      X    XX
+XoX XXXoX XXXXX X  XXXXX X X X X
+XoooooooX      X   X   X   X   X
+XXXXXXXXX XXX  X XXX X X XXXXX X
+X     X  X           X X     X X
+X XXX X X X X XXX XXXX XXXXX X X
+X   X   X   X        X   X   X X
+X X X X X XXXXXXXX X X X X X X X
+X X  X  X X  ooooP X  X  X  X  X
+X X X XXX X Xo X XXX X X X X X X
+X X XoooX   Xo XX    X    X    X
+X X XoXoXXXXXoX X XX X XXX X X X
+XX oooXooooooo    X  X        XX
+XXXEXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+Step 47
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X               X          X   X
+X X XXXXX XXX X XXXXXX X X X X X
+X  X    X X  X          X  X X X
+X X X X X X X  XXXXX XXX X X X X
+X X   X X X X        X   X    XX
+X X X X X X X  X X XXX X XXXXX X
+X    X  X X X     X    X X     X
+X XXX X X X X XXXX X X X X X X X
+XX    X X X           X     X  X
+X X X X X XXX  XXX XXX XXX X X X
+X   X X X   X     X      X X X X
+X X X X XXX X   X  X X X X X X E
+X XX  X   X XX     X XX  X   X X
+EoX X X X X           XX X X   X
+XoX    X  XoP  F    XX X  XX XXX
+XoX X     XoX        X X XX    X
+XoX       Xo       X X         X
+Xo X  Xooooo      X      X    XX
+XoX XXXoX XXXXX X  XXXXX X X X X
+XoooooooX      X   X   X   X   X
+XXXXXXXXX XXX  X XXX X X XXXXX X
+X     X  X           X X     X X
+X XXX X X X X XXX XXXX XXXXX X X
+X   X   X   X        X   X   X X
+X X X X X XXXXXXXX X X X X X X X
+X X  X  X X  oooooPX  X  X  X  X
+X X X XXX X Xo X XXX X X X X X X
+X X XoooX   Xo XX    X    X    X
+X X XoXoXXXXXoX X XX X XXX X X X
+XX oooXooooooo    X  X        XX
+XXXEXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+Step 48
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X               X          X   X
+X X XXXXX XXX X XXXXXX X X X X X
+X  X    X X  X          X  X X X
+X X X X X X X  XXXXX XXX X X X X
+X X   X X X X        X   X    XX
+X X X X X X X  X X XXX X XXXXX X
+X    X  X X X     X    X X     X
+X XXX X X X X XXXX X X X X X X X
+XX    X X X           X     X  X
+X X X X X XXX  XXX XXX XXX X X X
+X   X X X   X     X      X X X X
+X X X X XXX X   X  X X X X X X E
+X XX  X   X XX     X XX  X   X X
+EoX X X X X           XX X X   X
+XoX    X  XooP F    XX X  XX XXX
+XoX X     XoX        X X XX    X
+XoX       Xo       X X         X
+Xo X  Xooooo      X      X    XX
+XoX XXXoX XXXXX X  XXXXX X X X X
+XoooooooX      X   X   X   X   X
+XXXXXXXXX XXX  X XXX X X XXXXX X
+X     X  X           X X     X X
+X XXX X X X X XXX XXXX XXXXX X X
+X   X   X   X        X   X   X X
+X X X X X XXXXXXXX X X X X X X X
+X X  X  X X  oooooPX  X  X  X  X
+X X X XXX X Xo X XXX X X X X X X
+X X XoooX   Xo XX    X    X    X
+X X XoXoXXXXXoX X XX X XXX X X X
+XX oooXooooooo    X  X        XX
+XXXEXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+Step 49
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X               X          X   X
+X X XXXXX XXX X XXXXXX X X X X X
+X  X    X X  X          X  X X X
+X X X X X X X  XXXXX XXX X X X X
+X X   X X X X        X   X    XX
+X X X X X X X  X X XXX X XXXXX X
+X    X  X X X     X    X X     X
+X XXX X X X X XXXX X X X X X X X
+XX    X X X           X     X  X
+X X X X X XXX  XXX XXX XXX X X X
+X   X X X   X     X      X X X X
+X X X X XXX X   X  X X X X X X E
+X XX  X   X XX     X XX  X   X X
+EoX X X X X           XX X X   X
+XoX    X  XooP F    XX X  XX XXX
+XoX X     XoX        X X XX    X
+XoX       Xo       X X         X
+Xo X  Xooooo      X      X    XX
+XoX XXXoX XXXXX X  XXXXX X X X X
+XoooooooX      X   X   X   X   X
+XXXXXXXXX XXX  X XXX X X XXXXX X
+X     X  X           X X     X X
+X XXX X X X X XXX XXXX XXXXX X X
+X   X   X   X        X   X   X X
+X X X X X XXXXXXXXPX X X X X X X
+X X  X  X X  ooooooX  X  X  X  X
+X X X XXX X Xo X XXX X X X X X X
+X X XoooX   Xo XX    X    X    X
+X X XoXoXXXXXoX X XX X XXX X X X
+XX oooXooooooo    X  X        XX
+XXXEXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+Step 50
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X               X          X   X
+X X XXXXX XXX X XXXXXX X X X X X
+X  X    X X  X          X  X X X
+X X X X X X X  XXXXX XXX X X X X
+X X   X X X X        X   X    XX
+X X X X X X X  X X XXX X XXXXX X
+X    X  X X X     X    X X     X
+X XXX X X X X XXXX X X X X X X X
+XX    X X X           X     X  X
+X X X X X XXX  XXX XXX XXX X X X
+X   X X X   X     X      X X X X
+X X X X XXX X   X  X X X X X X E
+X XX  X   X XX     X XX  X   X X
+EoX X X X X           XX X X   X
+XoX    X  XoooPF    XX X  XX XXX
+XoX X     XoX        X X XX    X
+XoX       Xo       X X         X
+Xo X  Xooooo      X      X    XX
+XoX XXXoX XXXXX X  XXXXX X X X X
+XoooooooX      X   X   X   X   X
+XXXXXXXXX XXX  X XXX X X XXXXX X
+X     X  X           X X     X X
+X XXX X X X X XXX XXXX XXXXX X X
+X   X   X   X        X   X   X X
+X X X X X XXXXXXXXPX X X X X X X
+X X  X  X X  ooooooX  X  X  X  X
+X X X XXX X Xo X XXX X X X X X X
+X X XoooX   Xo XX    X    X    X
+X X XoXoXXXXXoX X XX X XXX X X X
+XX oooXooooooo    X  X        XX
+XXXEXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+Step 51
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X               X          X   X
+X X XXXXX XXX X XXXXXX X X X X X
+X  X    X X  X          X  X X X
+X X X X X X X  XXXXX XXX X X X X
+X X   X X X X        X   X    XX
+X X X X X X X  X X XXX X XXXXX X
+X    X  X X X     X    X X     X
+X XXX X X X X XXXX X X X X X X X
+XX    X X X           X     X  X
+X X X X X XXX  XXX XXX XXX X X X
+X   X X X   X     X      X X X X
+X X X X XXX X   X  X X X X X X E
+X XX  X   X XX     X XX  X   X X
+EoX X X X X           XX X X   X
+XoX    X  XoooPF    XX X  XX XXX
+XoX X     XoX        X X XX    X
+XoX       Xo       X X         X
+Xo X  Xooooo      X      X    XX
+XoX XXXoX XXXXX X  XXXXX X X X X
+XoooooooX      X   X   X   X   X
+XXXXXXXXX XXX  X XXX X X XXXXX X
+X     X  X           X X     X X
+X XXX X X X X XXX XXXX XXXXX X X
+X   X   X   X     P  X   X   X X
+X X X X X XXXXXXXXoX X X X X X X
+X X  X  X X  ooooooX  X  X  X  X
+X X X XXX X Xo X XXX X X X X X X
+X X XoooX   Xo XX    X    X    X
+X X XoXoXXXXXoX X XX X XXX X X X
+XX oooXooooooo    X  X        XX
+XXXEXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+Step 52
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X               X          X   X
+X X XXXXX XXX X XXXXXX X X X X X
+X  X    X X  X          X  X X X
+X X X X X X X  XXXXX XXX X X X X
+X X   X X X X        X   X    XX
+X X X X X X X  X X XXX X XXXXX X
+X    X  X X X     X    X X     X
+X XXX X X X X XXXX X X X X X X X
+XX    X X X           X     X  X
+X X X X X XXX  XXX XXX XXX X X X
+X   X X X   X     X      X X X X
+X X X X XXX X   X  X X X X X X E
+X XX  X   X XX     X XX  X   X X
+EoX X X X X           XX X X   X
+XoX    X  XooooF    XX X  XX XXX
+XoX X     XoX        X X XX    X
+XoX       Xo       X X         X
+Xo X  Xooooo      X      X    XX
+XoX XXXoX XXXXX X  XXXXX X X X X
+XoooooooX      X   X   X   X   X
+XXXXXXXXX XXX  X XXX X X XXXXX X
+X     X  X           X X     X X
+X XXX X X X X XXX XXXX XXXXX X X
+X   X   X   X     P  X   X   X X
+X X X X X XXXXXXXXoX X X X X X X
+X X  X  X X  ooooooX  X  X  X  X
+X X X XXX X Xo X XXX X X X X X X
+X X XoooX   Xo XX    X    X    X
+X X XoXoXXXXXoX X XX X XXX X X X
+XX oooXooooooo    X  X        XX
+XXXEXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+Step 53
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X               X          X   X
+X X XXXXX XXX X XXXXXX X X X X X
+X  X    X X  X          X  X X X
+X X X X X X X  XXXXX XXX X X X X
+X X   X X X X        X   X    XX
+X X X X X X X  X X XXX X XXXXX X
+X    X  X X X     X    X X     X
+X XXX X X X X XXXX X X X X X X X
+XX    X X X           X     X  X
+X X X X X XXX  XXX XXX XXX X X X
+X   X X X   X     X      X X X X
+X X X X XXX X   X  X X X X X X E
+X XX  X   X XX     X XX  X   X X
+EoX X X X X           XX X X   X
+XoX    X  XooooF    XX X  XX XXX
+XoX X     XoX        X X XX    X
+XoX       Xo       X X         X
+Xo X  Xooooo      X      X    XX
+XoX XXXoX XXXXX X  XXXXX X X X X
+XoooooooX      X   X   X   X   X
+XXXXXXXXX XXX  X XXX X X XXXXX X
+X     X  X           X X     X X
+X XXX X X X X XXX XXXX XXXXX X X
+X   X   X   X    Po  X   X   X X
+X X X X X XXXXXXXXoX X X X X X X
+X X  X  X X  ooooooX  X  X  X  X
+X X X XXX X Xo X XXX X X X X X X
+X X XoooX   Xo XX    X    X    X
+X X XoXoXXXXXoX X XX X XXX X X X
+XX oooXooooooo    X  X        XX
+XXXEXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+Step 54
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X               X          X   X
+X X XXXXX XXX X XXXXXX X X X X X
+X  X    X X  X          X  X X X
+X X X X X X X  XXXXX XXX X X X X
+X X   X X X X        X   X    XX
+X X X X X X X  X X XXX X XXXXX X
+X    X  X X X     X    X X     X
+X XXX X X X X XXXX X X X X X X X
+XX    X X X           X     X  X
+X X X X X XXX  XXX XXX XXX X X X
+X   X X X   X     X      X X X X
+X X X X XXX X   X  X X X X X X E
+X XX  X   X XX     X XX  X   X X
+EoX X X X X           XX X X   X
+XoX    X  XooooF    XX X  XX XXX
+XoX X     XoX        X X XX    X
+XoX       Xo       X X         X
+Xo X  Xooooo      X      X    XX
+XoX XXXoX XXXXX X  XXXXX X X X X
+XoooooooX      X   X   X   X   X
+XXXXXXXXX XXX  X XXX X X XXXXX X
+X     X  X           X X     X X
+X XXX X X X X XXX XXXX XXXXX X X
+X   X   X   X    Po  X   X   X X
+X X X X X XXXXXXXXoX X X X X X X
+X X  X  X X  ooooooX  X  X  X  X
+X X X XXX X Xo X XXX X X X X X X
+X X XoooX   Xo XX    X    X    X
+X X XoXoXXXXXoX X XX X XXX X X X
+XX oooXooooooo    X  X        XX
+XXXEXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+Step 55
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X               X          X   X
+X X XXXXX XXX X XXXXXX X X X X X
+X  X    X X  X          X  X X X
+X X X X X X X  XXXXX XXX X X X X
+X X   X X X X        X   X    XX
+X X X X X X X  X X XXX X XXXXX X
+X    X  X X X     X    X X     X
+X XXX X X X X XXXX X X X X X X X
+XX    X X X           X     X  X
+X X X X X XXX  XXX XXX XXX X X X
+X   X X X   X     X      X X X X
+X X X X XXX X   X  X X X X X X E
+X XX  X   X XX     X XX  X   X X
+EoX X X X X           XX X X   X
+XoX    X  XooooF    XX X  XX XXX
+XoX X     XoX        X X XX    X
+XoX       Xo       X X         X
+Xo X  Xooooo      X      X    XX
+XoX XXXoX XXXXX X  XXXXX X X X X
+XoooooooX      X   X   X   X   X
+XXXXXXXXX XXX  X XXX X X XXXXX X
+X     X  X           X X     X X
+X XXX X X X X XXXPXXXX XXXXX X X
+X   X   X   X    oo  X   X   X X
+X X X X X XXXXXXXXoX X X X X X X
+X X  X  X X  ooooooX  X  X  X  X
+X X X XXX X Xo X XXX X X X X X X
+X X XoooX   Xo XX    X    X    X
+X X XoXoXXXXXoX X XX X XXX X X X
+XX oooXooooooo    X  X        XX
+XXXEXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+Step 56
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X               X          X   X
+X X XXXXX XXX X XXXXXX X X X X X
+X  X    X X  X          X  X X X
+X X X X X X X  XXXXX XXX X X X X
+X X   X X X X        X   X    XX
+X X X X X X X  X X XXX X XXXXX X
+X    X  X X X     X    X X     X
+X XXX X X X X XXXX X X X X X X X
+XX    X X X           X     X  X
+X X X X X XXX  XXX XXX XXX X X X
+X   X X X   X     X      X X X X
+X X X X XXX X   X  X X X X X X E
+X XX  X   X XX     X XX  X   X X
+EoX X X X X           XX X X   X
+XoX    X  XooooF    XX X  XX XXX
+XoX X     XoX        X X XX    X
+XoX       Xo       X X         X
+Xo X  Xooooo      X      X    XX
+XoX XXXoX XXXXX X  XXXXX X X X X
+XoooooooX      X   X   X   X   X
+XXXXXXXXX XXX  X XXX X X XXXXX X
+X     X  X           X X     X X
+X XXX X X X X XXXPXXXX XXXXX X X
+X   X   X   X    oo  X   X   X X
+X X X X X XXXXXXXXoX X X X X X X
+X X  X  X X  ooooooX  X  X  X  X
+X X X XXX X Xo X XXX X X X X X X
+X X XoooX   Xo XX    X    X    X
+X X XoXoXXXXXoX X XX X XXX X X X
+XX oooXooooooo    X  X        XX
+XXXEXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+Step 57
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X               X          X   X
+X X XXXXX XXX X XXXXXX X X X X X
+X  X    X X  X          X  X X X
+X X X X X X X  XXXXX XXX X X X X
+X X   X X X X        X   X    XX
+X X X X X X X  X X XXX X XXXXX X
+X    X  X X X     X    X X     X
+X XXX X X X X XXXX X X X X X X X
+XX    X X X           X     X  X
+X X X X X XXX  XXX XXX XXX X X X
+X   X X X   X     X      X X X X
+X X X X XXX X   X  X X X X X X E
+X XX  X   X XX     X XX  X   X X
+EoX X X X X           XX X X   X
+XoX    X  XooooF    XX X  XX XXX
+XoX X     XoX        X X XX    X
+XoX       Xo       X X         X
+Xo X  Xooooo      X      X    XX
+XoX XXXoX XXXXX X  XXXXX X X X X
+XoooooooX      X   X   X   X   X
+XXXXXXXXX XXX  X XXX X X XXXXX X
+X     X  X       P   X X     X X
+X XXX X X X X XXXoXXXX XXXXX X X
+X   X   X   X    oo  X   X   X X
+X X X X X XXXXXXXXoX X X X X X X
+X X  X  X X  ooooooX  X  X  X  X
+X X X XXX X Xo X XXX X X X X X X
+X X XoooX   Xo XX    X    X    X
+X X XoXoXXXXXoX X XX X XXX X X X
+XX oooXooooooo    X  X        XX
+XXXEXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+Step 58
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X               X          X   X
+X X XXXXX XXX X XXXXXX X X X X X
+X  X    X X  X          X  X X X
+X X X X X X X  XXXXX XXX X X X X
+X X   X X X X        X   X    XX
+X X X X X X X  X X XXX X XXXXX X
+X    X  X X X     X    X X     X
+X XXX X X X X XXXX X X X X X X X
+XX    X X X           X     X  X
+X X X X X XXX  XXX XXX XXX X X X
+X   X X X   X     X      X X X X
+X X X X XXX X   X  X X X X X X E
+X XX  X   X XX     X XX  X   X X
+EoX X X X X           XX X X   X
+XoX    X  XooooF    XX X  XX XXX
+XoX X     XoX        X X XX    X
+XoX       Xo       X X         X
+Xo X  Xooooo      X      X    XX
+XoX XXXoX XXXXX X  XXXXX X X X X
+XoooooooX      X   X   X   X   X
+XXXXXXXXX XXX  X XXX X X XXXXX X
+X     X  X       P   X X     X X
+X XXX X X X X XXXoXXXX XXXXX X X
+X   X   X   X    oo  X   X   X X
+X X X X X XXXXXXXXoX X X X X X X
+X X  X  X X  ooooooX  X  X  X  X
+X X X XXX X Xo X XXX X X X X X X
+X X XoooX   Xo XX    X    X    X
+X X XoXoXXXXXoX X XX X XXX X X X
+XX oooXooooooo    X  X        XX
+XXXEXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+Step 59
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X               X          X   X
+X X XXXXX XXX X XXXXXX X X X X X
+X  X    X X  X          X  X X X
+X X X X X X X  XXXXX XXX X X X X
+X X   X X X X        X   X    XX
+X X X X X X X  X X XXX X XXXXX X
+X    X  X X X     X    X X     X
+X XXX X X X X XXXX X X X X X X X
+XX    X X X           X     X  X
+X X X X X XXX  XXX XXX XXX X X X
+X   X X X   X     X      X X X X
+X X X X XXX X   X  X X X X X X E
+X XX  X   X XX     X XX  X   X X
+EoX X X X X           XX X X   X
+XoX    X  XooooF    XX X  XX XXX
+XoX X     XoX        X X XX    X
+XoX       Xo       X X         X
+Xo X  Xooooo      X      X    XX
+XoX XXXoX XXXXX X  XXXXX X X X X
+XoooooooX      X   X   X   X   X
+XXXXXXXXX XXX  X XXX X X XXXXX X
+X     X  X      Po   X X     X X
+X XXX X X X X XXXoXXXX XXXXX X X
+X   X   X   X    oo  X   X   X X
+X X X X X XXXXXXXXoX X X X X X X
+X X  X  X X  ooooooX  X  X  X  X
+X X X XXX X Xo X XXX X X X X X X
+X X XoooX   Xo XX    X    X    X
+X X XoXoXXXXXoX X XX X XXX X X X
+XX oooXooooooo    X  X        XX
+XXXEXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+Step 60
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X               X          X   X
+X X XXXXX XXX X XXXXXX X X X X X
+X  X    X X  X          X  X X X
+X X X X X X X  XXXXX XXX X X X X
+X X   X X X X        X   X    XX
+X X X X X X X  X X XXX X XXXXX X
+X    X  X X X     X    X X     X
+X XXX X X X X XXXX X X X X X X X
+XX    X X X           X     X  X
+X X X X X XXX  XXX XXX XXX X X X
+X   X X X   X     X      X X X X
+X X X X XXX X   X  X X X X X X E
+X XX  X   X XX     X XX  X   X X
+EoX X X X X           XX X X   X
+XoX    X  XooooF    XX X  XX XXX
+XoX X     XoX        X X XX    X
+XoX       Xo       X X         X
+Xo X  Xooooo      X      X    XX
+XoX XXXoX XXXXX X  XXXXX X X X X
+XoooooooX      X   X   X   X   X
+XXXXXXXXX XXX  X XXX X X XXXXX X
+X     X  X      Po   X X     X X
+X XXX X X X X XXXoXXXX XXXXX X X
+X   X   X   X    oo  X   X   X X
+X X X X X XXXXXXXXoX X X X X X X
+X X  X  X X  ooooooX  X  X  X  X
+X X X XXX X Xo X XXX X X X X X X
+X X XoooX   Xo XX    X    X    X
+X X XoXoXXXXXoX X XX X XXX X X X
+XX oooXooooooo    X  X        XX
+XXXEXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+Step 61
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X               X          X   X
+X X XXXXX XXX X XXXXXX X X X X X
+X  X    X X  X          X  X X X
+X X X X X X X  XXXXX XXX X X X X
+X X   X X X X        X   X    XX
+X X X X X X X  X X XXX X XXXXX X
+X    X  X X X     X    X X     X
+X XXX X X X X XXXX X X X X X X X
+XX    X X X           X     X  X
+X X X X X XXX  XXX XXX XXX X X X
+X   X X X   X     X      X X X X
+X X X X XXX X   X  X X X X X X E
+X XX  X   X XX     X XX  X   X X
+EoX X X X X           XX X X   X
+XoX    X  XooooF    XX X  XX XXX
+XoX X     XoX        X X XX    X
+XoX       Xo       X X         X
+Xo X  Xooooo      X      X    XX
+XoX XXXoX XXXXX X  XXXXX X X X X
+XoooooooX      X   X   X   X   X
+XXXXXXXXX XXX  XPXXX X X XXXXX X
+X     X  X      oo   X X     X X
+X XXX X X X X XXXoXXXX XXXXX X X
+X   X   X   X    oo  X   X   X X
+X X X X X XXXXXXXXoX X X X X X X
+X X  X  X X  ooooooX  X  X  X  X
+X X X XXX X Xo X XXX X X X X X X
+X X XoooX   Xo XX    X    X    X
+X X XoXoXXXXXoX X XX X XXX X X X
+XX oooXooooooo    X  X        XX
+XXXEXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+Step 62
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X               X          X   X
+X X XXXXX XXX X XXXXXX X X X X X
+X  X    X X  X          X  X X X
+X X X X X X X  XXXXX XXX X X X X
+X X   X X X X        X   X    XX
+X X X X X X X  X X XXX X XXXXX X
+X    X  X X X     X    X X     X
+X XXX X X X X XXXX X X X X X X X
+XX    X X X           X     X  X
+X X X X X XXX  XXX XXX XXX X X X
+X   X X X   X     X      X X X X
+X X X X XXX X   X  X X X X X X E
+X XX  X   X XX     X XX  X   X X
+EoX X X X X           XX X X   X
+XoX    X  XooooF    XX X  XX XXX
+XoX X     XoX        X X XX    X
+XoX       Xo       X X         X
+Xo X  Xooooo      X      X    XX
+XoX XXXoX XXXXX X  XXXXX X X X X
+XoooooooX      X   X   X   X   X
+XXXXXXXXX XXX  XPXXX X X XXXXX X
+X     X  X      oo   X X     X X
+X XXX X X X X XXXoXXXX XXXXX X X
+X   X   X   X    oo  X   X   X X
+X X X X X XXXXXXXXoX X X X X X X
+X X  X  X X  ooooooX  X  X  X  X
+X X X XXX X Xo X XXX X X X X X X
+X X XoooX   Xo XX    X    X    X
+X X XoXoXXXXXoX X XX X XXX X X X
+XX oooXooooooo    X  X        XX
+XXXEXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+Step 63
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X               X          X   X
+X X XXXXX XXX X XXXXXX X X X X X
+X  X    X X  X          X  X X X
+X X X X X X X  XXXXX XXX X X X X
+X X   X X X X        X   X    XX
+X X X X X X X  X X XXX X XXXXX X
+X    X  X X X     X    X X     X
+X XXX X X X X XXXX X X X X X X X
+XX    X X X           X     X  X
+X X X X X XXX  XXX XXX XXX X X X
+X   X X X   X     X      X X X X
+X X X X XXX X   X  X X X X X X E
+X XX  X   X XX     X XX  X   X X
+EoX X X X X           XX X X   X
+XoX    X  XooooF    XX X  XX XXX
+XoX X     XoX        X X XX    X
+XoX       Xo       X X         X
+Xo X  Xooooo      X      X    XX
+XoX XXXoX XXXXX X  XXXXX X X X X
+XoooooooX      XP  X   X   X   X
+XXXXXXXXX XXX  XoXXX X X XXXXX X
+X     X  X      oo   X X     X X
+X XXX X X X X XXXoXXXX XXXXX X X
+X   X   X   X    oo  X   X   X X
+X X X X X XXXXXXXXoX X X X X X X
+X X  X  X X  ooooooX  X  X  X  X
+X X X XXX X Xo X XXX X X X X X X
+X X XoooX   Xo XX    X    X    X
+X X XoXoXXXXXoX X XX X XXX X X X
+XX oooXooooooo    X  X        XX
+XXXEXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+Step 64
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X               X          X   X
+X X XXXXX XXX X XXXXXX X X X X X
+X  X    X X  X          X  X X X
+X X X X X X X  XXXXX XXX X X X X
+X X   X X X X        X   X    XX
+X X X X X X X  X X XXX X XXXXX X
+X    X  X X X     X    X X     X
+X XXX X X X X XXXX X X X X X X X
+XX    X X X           X     X  X
+X X X X X XXX  XXX XXX XXX X X X
+X   X X X   X     X      X X X X
+X X X X XXX X   X  X X X X X X E
+X XX  X   X XX     X XX  X   X X
+EoX X X X X           XX X X   X
+XoX    X  XooooF    XX X  XX XXX
+XoX X     XoX        X X XX    X
+XoX       Xo       X X         X
+Xo X  Xooooo      X      X    XX
+XoX XXXoX XXXXX X  XXXXX X X X X
+XoooooooX      XP  X   X   X   X
+XXXXXXXXX XXX  XoXXX X X XXXXX X
+X     X  X      oo   X X     X X
+X XXX X X X X XXXoXXXX XXXXX X X
+X   X   X   X    oo  X   X   X X
+X X X X X XXXXXXXXoX X X X X X X
+X X  X  X X  ooooooX  X  X  X  X
+X X X XXX X Xo X XXX X X X X X X
+X X XoooX   Xo XX    X    X    X
+X X XoXoXXXXXoX X XX X XXX X X X
+XX oooXooooooo    X  X        XX
+XXXEXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+Step 65
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X               X          X   X
+X X XXXXX XXX X XXXXXX X X X X X
+X  X    X X  X          X  X X X
+X X X X X X X  XXXXX XXX X X X X
+X X   X X X X        X   X    XX
+X X X X X X X  X X XXX X XXXXX X
+X    X  X X X     X    X X     X
+X XXX X X X X XXXX X X X X X X X
+XX    X X X           X     X  X
+X X X X X XXX  XXX XXX XXX X X X
+X   X X X   X     X      X X X X
+X X X X XXX X   X  X X X X X X E
+X XX  X   X XX     X XX  X   X X
+EoX X X X X           XX X X   X
+XoX    X  XooooF    XX X  XX XXX
+XoX X     XoX        X X XX    X
+XoX       Xo       X X         X
+Xo X  Xooooo      X      X    XX
+XoX XXXoX XXXXX X  XXXXX X X X X
+XoooooooX      XoP X   X   X   X
+XXXXXXXXX XXX  XoXXX X X XXXXX X
+X     X  X      oo   X X     X X
+X XXX X X X X XXXoXXXX XXXXX X X
+X   X   X   X    oo  X   X   X X
+X X X X X XXXXXXXXoX X X X X X X
+X X  X  X X  ooooooX  X  X  X  X
+X X X XXX X Xo X XXX X X X X X X
+X X XoooX   Xo XX    X    X    X
+X X XoXoXXXXXoX X XX X XXX X X X
+XX oooXooooooo    X  X        XX
+XXXEXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+Step 66
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X               X          X   X
+X X XXXXX XXX X XXXXXX X X X X X
+X  X    X X  X          X  X X X
+X X X X X X X  XXXXX XXX X X X X
+X X   X X X X        X   X    XX
+X X X X X X X  X X XXX X XXXXX X
+X    X  X X X     X    X X     X
+X XXX X X X X XXXX X X X X X X X
+XX    X X X           X     X  X
+X X X X X XXX  XXX XXX XXX X X X
+X   X X X   X     X      X X X X
+X X X X XXX X   X  X X X X X X E
+X XX  X   X XX     X XX  X   X X
+EoX X X X X           XX X X   X
+XoX    X  XooooF    XX X  XX XXX
+XoX X     XoX        X X XX    X
+XoX       Xo       X X         X
+Xo X  Xooooo      X      X    XX
+XoX XXXoX XXXXX X  XXXXX X X X X
+XoooooooX      XoP X   X   X   X
+XXXXXXXXX XXX  XoXXX X X XXXXX X
+X     X  X      oo   X X     X X
+X XXX X X X X XXXoXXXX XXXXX X X
+X   X   X   X    oo  X   X   X X
+X X X X X XXXXXXXXoX X X X X X X
+X X  X  X X  ooooooX  X  X  X  X
+X X X XXX X Xo X XXX X X X X X X
+X X XoooX   Xo XX    X    X    X
+X X XoXoXXXXXoX X XX X XXX X X X
+XX oooXooooooo    X  X        XX
+XXXEXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+Step 67
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X               X          X   X
+X X XXXXX XXX X XXXXXX X X X X X
+X  X    X X  X          X  X X X
+X X X X X X X  XXXXX XXX X X X X
+X X   X X X X        X   X    XX
+X X X X X X X  X X XXX X XXXXX X
+X    X  X X X     X    X X     X
+X XXX X X X X XXXX X X X X X X X
+XX    X X X           X     X  X
+X X X X X XXX  XXX XXX XXX X X X
+X   X X X   X     X      X X X X
+X X X X XXX X   X  X X X X X X E
+X XX  X   X XX     X XX  X   X X
+EoX X X X X           XX X X   X
+XoX    X  XooooF    XX X  XX XXX
+XoX X     XoX        X X XX    X
+XoX       Xo       X X         X
+Xo X  Xooooo      X      X    XX
+XoX XXXoX XXXXX XP XXXXX X X X X
+XoooooooX      Xoo X   X   X   X
+XXXXXXXXX XXX  XoXXX X X XXXXX X
+X     X  X      oo   X X     X X
+X XXX X X X X XXXoXXXX XXXXX X X
+X   X   X   X    oo  X   X   X X
+X X X X X XXXXXXXXoX X X X X X X
+X X  X  X X  ooooooX  X  X  X  X
+X X X XXX X Xo X XXX X X X X X X
+X X XoooX   Xo XX    X    X    X
+X X XoXoXXXXXoX X XX X XXX X X X
+XX oooXooooooo    X  X        XX
+XXXEXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+Step 68
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X               X          X   X
+X X XXXXX XXX X XXXXXX X X X X X
+X  X    X X  X          X  X X X
+X X X X X X X  XXXXX XXX X X X X
+X X   X X X X        X   X    XX
+X X X X X X X  X X XXX X XXXXX X
+X    X  X X X     X    X X     X
+X XXX X X X X XXXX X X X X X X X
+XX    X X X           X     X  X
+X X X X X XXX  XXX XXX XXX X X X
+X   X X X   X     X      X X X X
+X X X X XXX X   X  X X X X X X E
+X XX  X   X XX     X XX  X   X X
+EoX X X X X           XX X X   X
+XoX    X  XooooF    XX X  XX XXX
+XoX X     XoX        X X XX    X
+XoX       Xo       X X         X
+Xo X  Xooooo      X      X    XX
+XoX XXXoX XXXXX XP XXXXX X X X X
+XoooooooX      Xoo X   X   X   X
+XXXXXXXXX XXX  XoXXX X X XXXXX X
+X     X  X      oo   X X     X X
+X XXX X X X X XXXoXXXX XXXXX X X
+X   X   X   X    oo  X   X   X X
+X X X X X XXXXXXXXoX X X X X X X
+X X  X  X X  ooooooX  X  X  X  X
+X X X XXX X Xo X XXX X X X X X X
+X X XoooX   Xo XX    X    X    X
+X X XoXoXXXXXoX X XX X XXX X X X
+XX oooXooooooo    X  X        XX
+XXXEXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+Step 69
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X               X          X   X
+X X XXXXX XXX X XXXXXX X X X X X
+X  X    X X  X          X  X X X
+X X X X X X X  XXXXX XXX X X X X
+X X   X X X X        X   X    XX
+X X X X X X X  X X XXX X XXXXX X
+X    X  X X X     X    X X     X
+X XXX X X X X XXXX X X X X X X X
+XX    X X X           X     X  X
+X X X X X XXX  XXX XXX XXX X X X
+X   X X X   X     X      X X X X
+X X X X XXX X   X  X X X X X X E
+X XX  X   X XX     X XX  X   X X
+EoX X X X X           XX X X   X
+XoX    X  XooooF    XX X  XX XXX
+XoX X     XoX        X X XX    X
+XoX       Xo       X X         X
+Xo X  Xooooo     PX      X    XX
+XoX XXXoX XXXXX Xo XXXXX X X X X
+XoooooooX      Xoo X   X   X   X
+XXXXXXXXX XXX  XoXXX X X XXXXX X
+X     X  X      oo   X X     X X
+X XXX X X X X XXXoXXXX XXXXX X X
+X   X   X   X    oo  X   X   X X
+X X X X X XXXXXXXXoX X X X X X X
+X X  X  X X  ooooooX  X  X  X  X
+X X X XXX X Xo X XXX X X X X X X
+X X XoooX   Xo XX    X    X    X
+X X XoXoXXXXXoX X XX X XXX X X X
+XX oooXooooooo    X  X        XX
+XXXEXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+Step 70
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X               X          X   X
+X X XXXXX XXX X XXXXXX X X X X X
+X  X    X X  X          X  X X X
+X X X X X X X  XXXXX XXX X X X X
+X X   X X X X        X   X    XX
+X X X X X X X  X X XXX X XXXXX X
+X    X  X X X     X    X X     X
+X XXX X X X X XXXX X X X X X X X
+XX    X X X           X     X  X
+X X X X X XXX  XXX XXX XXX X X X
+X   X X X   X     X      X X X X
+X X X X XXX X   X  X X X X X X E
+X XX  X   X XX     X XX  X   X X
+EoX X X X X           XX X X   X
+XoX    X  XooooF    XX X  XX XXX
+XoX X     XoX        X X XX    X
+XoX       Xo       X X         X
+Xo X  Xooooo     PX      X    XX
+XoX XXXoX XXXXX Xo XXXXX X X X X
+XoooooooX      Xoo X   X   X   X
+XXXXXXXXX XXX  XoXXX X X XXXXX X
+X     X  X      oo   X X     X X
+X XXX X X X X XXXoXXXX XXXXX X X
+X   X   X   X    oo  X   X   X X
+X X X X X XXXXXXXXoX X X X X X X
+X X  X  X X  ooooooX  X  X  X  X
+X X X XXX X Xo X XXX X X X X X X
+X X XoooX   Xo XX    X    X    X
+X X XoXoXXXXXoX X XX X XXX X X X
+XX oooXooooooo    X  X        XX
+XXXEXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+Step 71
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X               X          X   X
+X X XXXXX XXX X XXXXXX X X X X X
+X  X    X X  X          X  X X X
+X X X X X X X  XXXXX XXX X X X X
+X X   X X X X        X   X    XX
+X X X X X X X  X X XXX X XXXXX X
+X    X  X X X     X    X X     X
+X XXX X X X X XXXX X X X X X X X
+XX    X X X           X     X  X
+X X X X X XXX  XXX XXX XXX X X X
+X   X X X   X     X      X X X X
+X X X X XXX X   X  X X X X X X E
+X XX  X   X XX     X XX  X   X X
+EoX X X X X           XX X X   X
+XoX    X  XooooF    XX X  XX XXX
+XoX X     XoX        X X XX    X
+XoX       Xo     P X X         X
+Xo X  Xooooo     oX      X    XX
+XoX XXXoX XXXXX Xo XXXXX X X X X
+XoooooooX      Xoo X   X   X   X
+XXXXXXXXX XXX  XoXXX X X XXXXX X
+X     X  X      oo   X X     X X
+X XXX X X X X XXXoXXXX XXXXX X X
+X   X   X   X    oo  X   X   X X
+X X X X X XXXXXXXXoX X X X X X X
+X X  X  X X  ooooooX  X  X  X  X
+X X X XXX X Xo X XXX X X X X X X
+X X XoooX   Xo XX    X    X    X
+X X XoXoXXXXXoX X XX X XXX X X X
+XX oooXooooooo    X  X        XX
+XXXEXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+Step 72
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X               X          X   X
+X X XXXXX XXX X XXXXXX X X X X X
+X  X    X X  X          X  X X X
+X X X X X X X  XXXXX XXX X X X X
+X X   X X X X        X   X    XX
+X X X X X X X  X X XXX X XXXXX X
+X    X  X X X     X    X X     X
+X XXX X X X X XXXX X X X X X X X
+XX    X X X           X     X  X
+X X X X X XXX  XXX XXX XXX X X X
+X   X X X   X     X      X X X X
+X X X X XXX X   X  X X X X X X E
+X XX  X   X XX     X XX  X   X X
+EoX X X X X           XX X X   X
+XoX    X  XooooF    XX X  XX XXX
+XoX X     XoX        X X XX    X
+XoX       Xo     P X X         X
+Xo X  Xooooo     oX      X    XX
+XoX XXXoX XXXXX Xo XXXXX X X X X
+XoooooooX      Xoo X   X   X   X
+XXXXXXXXX XXX  XoXXX X X XXXXX X
+X     X  X      oo   X X     X X
+X XXX X X X X XXXoXXXX XXXXX X X
+X   X   X   X    oo  X   X   X X
+X X X X X XXXXXXXXoX X X X X X X
+X X  X  X X  ooooooX  X  X  X  X
+X X X XXX X Xo X XXX X X X X X X
+X X XoooX   Xo XX    X    X    X
+X X XoXoXXXXXoX X XX X XXX X X X
+XX oooXooooooo    X  X        XX
+XXXEXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+Step 73
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X               X          X   X
+X X XXXXX XXX X XXXXXX X X X X X
+X  X    X X  X          X  X X X
+X X X X X X X  XXXXX XXX X X X X
+X X   X X X X        X   X    XX
+X X X X X X X  X X XXX X XXXXX X
+X    X  X X X     X    X X     X
+X XXX X X X X XXXX X X X X X X X
+XX    X X X           X     X  X
+X X X X X XXX  XXX XXX XXX X X X
+X   X X X   X     X      X X X X
+X X X X XXX X   X  X X X X X X E
+X XX  X   X XX     X XX  X   X X
+EoX X X X X           XX X X   X
+XoX    X  XooooF    XX X  XX XXX
+XoX X     XoX    P   X X XX    X
+XoX       Xo     o X X         X
+Xo X  Xooooo     oX      X    XX
+XoX XXXoX XXXXX Xo XXXXX X X X X
+XoooooooX      Xoo X   X   X   X
+XXXXXXXXX XXX  XoXXX X X XXXXX X
+X     X  X      oo   X X     X X
+X XXX X X X X XXXoXXXX XXXXX X X
+X   X   X   X    oo  X   X   X X
+X X X X X XXXXXXXXoX X X X X X X
+X X  X  X X  ooooooX  X  X  X  X
+X X X XXX X Xo X XXX X X X X X X
+X X XoooX   Xo XX    X    X    X
+X X XoXoXXXXXoX X XX X XXX X X X
+XX oooXooooooo    X  X        XX
+XXXEXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+Step 74
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X               X          X   X
+X X XXXXX XXX X XXXXXX X X X X X
+X  X    X X  X          X  X X X
+X X X X X X X  XXXXX XXX X X X X
+X X   X X X X        X   X    XX
+X X X X X X X  X X XXX X XXXXX X
+X    X  X X X     X    X X     X
+X XXX X X X X XXXX X X X X X X X
+XX    X X X           X     X  X
+X X X X X XXX  XXX XXX XXX X X X
+X   X X X   X     X      X X X X
+X X X X XXX X   X  X X X X X X E
+X XX  X   X XX     X XX  X   X X
+EoX X X X X           XX X X   X
+XoX    X  XooooF    XX X  XX XXX
+XoX X     XoX    P   X X XX    X
+XoX       Xo     o X X         X
+Xo X  Xooooo     oX      X    XX
+XoX XXXoX XXXXX Xo XXXXX X X X X
+XoooooooX      Xoo X   X   X   X
+XXXXXXXXX XXX  XoXXX X X XXXXX X
+X     X  X      oo   X X     X X
+X XXX X X X X XXXoXXXX XXXXX X X
+X   X   X   X    oo  X   X   X X
+X X X X X XXXXXXXXoX X X X X X X
+X X  X  X X  ooooooX  X  X  X  X
+X X X XXX X Xo X XXX X X X X X X
+X X XoooX   Xo XX    X    X    X
+X X XoXoXXXXXoX X XX X XXX X X X
+XX oooXooooooo    X  X        XX
+XXXEXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+Step 75
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X               X          X   X
+X X XXXXX XXX X XXXXXX X X X X X
+X  X    X X  X          X  X X X
+X X X X X X X  XXXXX XXX X X X X
+X X   X X X X        X   X    XX
+X X X X X X X  X X XXX X XXXXX X
+X    X  X X X     X    X X     X
+X XXX X X X X XXXX X X X X X X X
+XX    X X X           X     X  X
+X X X X X XXX  XXX XXX XXX X X X
+X   X X X   X     X      X X X X
+X X X X XXX X   X  X X X X X X E
+X XX  X   X XX     X XX  X   X X
+EoX X X X X           XX X X   X
+XoX    X  XooooF P  XX X  XX XXX
+XoX X     XoX    o   X X XX    X
+XoX       Xo     o X X         X
+Xo X  Xooooo     oX      X    XX
+XoX XXXoX XXXXX Xo XXXXX X X X X
+XoooooooX      Xoo X   X   X   X
+XXXXXXXXX XXX  XoXXX X X XXXXX X
+X     X  X      oo   X X     X X
+X XXX X X X X XXXoXXXX XXXXX X X
+X   X   X   X    oo  X   X   X X
+X X X X X XXXXXXXXoX X X X X X X
+X X  X  X X  ooooooX  X  X  X  X
+X X X XXX X Xo X XXX X X X X X X
+X X XoooX   Xo XX    X    X    X
+X X XoXoXXXXXoX X XX X XXX X X X
+XX oooXooooooo    X  X        XX
+XXXEXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+Step 76
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X               X          X   X
+X X XXXXX XXX X XXXXXX X X X X X
+X  X    X X  X          X  X X X
+X X X X X X X  XXXXX XXX X X X X
+X X   X X X X        X   X    XX
+X X X X X X X  X X XXX X XXXXX X
+X    X  X X X     X    X X     X
+X XXX X X X X XXXX X X X X X X X
+XX    X X X           X     X  X
+X X X X X XXX  XXX XXX XXX X X X
+X   X X X   X     X      X X X X
+X X X X XXX X   X  X X X X X X E
+X XX  X   X XX     X XX  X   X X
+EoX X X X X           XX X X   X
+XoX    X  XooooF P  XX X  XX XXX
+XoX X     XoX    o   X X XX    X
+XoX       Xo     o X X         X
+Xo X  Xooooo     oX      X    XX
+XoX XXXoX XXXXX Xo XXXXX X X X X
+XoooooooX      Xoo X   X   X   X
+XXXXXXXXX XXX  XoXXX X X XXXXX X
+X     X  X      oo   X X     X X
+X XXX X X X X XXXoXXXX XXXXX X X
+X   X   X   X    oo  X   X   X X
+X X X X X XXXXXXXXoX X X X X X X
+X X  X  X X  ooooooX  X  X  X  X
+X X X XXX X Xo X XXX X X X X X X
+X X XoooX   Xo XX    X    X    X
+X X XoXoXXXXXoX X XX X XXX X X X
+XX oooXooooooo    X  X        XX
+XXXEXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+Step 77
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X               X          X   X
+X X XXXXX XXX X XXXXXX X X X X X
+X  X    X X  X          X  X X X
+X X X X X X X  XXXXX XXX X X X X
+X X   X X X X        X   X    XX
+X X X X X X X  X X XXX X XXXXX X
+X    X  X X X     X    X X     X
+X XXX X X X X XXXX X X X X X X X
+XX    X X X           X     X  X
+X X X X X XXX  XXX XXX XXX X X X
+X   X X X   X     X      X X X X
+X X X X XXX X   X  X X X X X X E
+X XX  X   X XX     X XX  X   X X
+EoX X X X X           XX X X   X
+XoX    X  XooooFPo  XX X  XX XXX
+XoX X     XoX    o   X X XX    X
+XoX       Xo     o X X         X
+Xo X  Xooooo     oX      X    XX
+XoX XXXoX XXXXX Xo XXXXX X X X X
+XoooooooX      Xoo X   X   X   X
+XXXXXXXXX XXX  XoXXX X X XXXXX X
+X     X  X      oo   X X     X X
+X XXX X X X X XXXoXXXX XXXXX X X
+X   X   X   X    oo  X   X   X X
+X X X X X XXXXXXXXoX X X X X X X
+X X  X  X X  ooooooX  X  X  X  X
+X X X XXX X Xo X XXX X X X X X X
+X X XoooX   Xo XX    X    X    X
+X X XoXoXXXXXoX X XX X XXX X X X
+XX oooXooooooo    X  X        XX
+XXXEXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+Step 78
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X               X          X   X
+X X XXXXX XXX X XXXXXX X X X X X
+X  X    X X  X          X  X X X
+X X X X X X X  XXXXX XXX X X X X
+X X   X X X X        X   X    XX
+X X X X X X X  X X XXX X XXXXX X
+X    X  X X X     X    X X     X
+X XXX X X X X XXXX X X X X X X X
+XX    X X X           X     X  X
+X X X X X XXX  XXX XXX XXX X X X
+X   X X X   X     X      X X X X
+X X X X XXX X   X  X X X X X X E
+X XX  X   X XX     X XX  X   X X
+EoX X X X X           XX X X   X
+XoX    X  XooooFPo  XX X  XX XXX
+XoX X     XoX    o   X X XX    X
+XoX       Xo     o X X         X
+Xo X  Xooooo     oX      X    XX
+XoX XXXoX XXXXX Xo XXXXX X X X X
+XoooooooX      Xoo X   X   X   X
+XXXXXXXXX XXX  XoXXX X X XXXXX X
+X     X  X      oo   X X     X X
+X XXX X X X X XXXoXXXX XXXXX X X
+X   X   X   X    oo  X   X   X X
+X X X X X XXXXXXXXoX X X X X X X
+X X  X  X X  ooooooX  X  X  X  X
+X X X XXX X Xo X XXX X X X X X X
+X X XoooX   Xo XX    X    X    X
+X X XoXoXXXXXoX X XX X XXX X X X
+XX oooXooooooo    X  X        XX
+XXXEXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+Step 79
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X               X          X   X
+X X XXXXX XXX X XXXXXX X X X X X
+X  X    X X  X          X  X X X
+X X X X X X X  XXXXX XXX X X X X
+X X   X X X X        X   X    XX
+X X X X X X X  X X XXX X XXXXX X
+X    X  X X X     X    X X     X
+X XXX X X X X XXXX X X X X X X X
+XX    X X X           X     X  X
+X X X X X XXX  XXX XXX XXX X X X
+X   X X X   X     X      X X X X
+X X X X XXX X   X  X X X X X X E
+X XX  X   X XX     X XX  X   X X
+EoX X X X X           XX X X   X
+XoX    X  XooooFoo  XX X  XX XXX
+XoX X     XoX    o   X X XX    X
+XoX       Xo     o X X         X
+Xo X  Xooooo     oX      X    XX
+XoX XXXoX XXXXX Xo XXXXX X X X X
+XoooooooX      Xoo X   X   X   X
+XXXXXXXXX XXX  XoXXX X X XXXXX X
+X     X  X      oo   X X     X X
+X XXX X X X X XXXoXXXX XXXXX X X
+X   X   X   X    oo  X   X   X X
+X X X X X XXXXXXXXoX X X X X X X
+X X  X  X X  ooooooX  X  X  X  X
+X X X XXX X Xo X XXX X X X X X X
+X X XoooX   Xo XX    X    X    X
+X X XoXoXXXXXoX X XX X XXX X X X
+XX oooXooooooo    X  X        XX
+XXXEXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+Step 80
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X               X          X   X
+X X XXXXX XXX X XXXXXX X X X X X
+X  X    X X  X          X  X X X
+X X X X X X X  XXXXX XXX X X X X
+X X   X X X X        X   X    XX
+X X X X X X X  X X XXX X XXXXX X
+X    X  X X X     X    X X     X
+X XXX X X X X XXXX X X X X X X X
+XX    X X X           X     X  X
+X X X X X XXX  XXX XXX XXX X X X
+X   X X X   X     X      X X X X
+X X X X XXX X   X  X X X X X X E
+X XX  X   X XX     X XX  X   X X
+EoX X X X X           XX X X   X
+XoX    X  XooooFoo  XX X  XX XXX
+XoX X     XoX    o   X X XX    X
+XoX       Xo     o X X         X
+Xo X  Xooooo     oX      X    XX
+XoX XXXoX XXXXX Xo XXXXX X X X X
+XoooooooX      Xoo X   X   X   X
+XXXXXXXXX XXX  XoXXX X X XXXXX X
+X     X  X      oo   X X     X X
+X XXX X X X X XXXoXXXX XXXXX X X
+X   X   X   X    oo  X   X   X X
+X X X X X XXXXXXXXoX X X X X X X
+X X  X  X X  ooooooX  X  X  X  X
+X X X XXX X Xo X XXX X X X X X X
+X X XoooX   Xo XX    X    X    X
+X X XoXoXXXXXoX X XX X XXX X X X
+XX oooXooooooo    X  X        XX
+XXXEXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+Step 81
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X               X          X   X
+X X XXXXX XXX X XXXXXX X X X X X
+X  X    X X  X          X  X X X
+X X X X X X X  XXXXX XXX X X X X
+X X   X X X X        X   X    XX
+X X X X X X X  X X XXX X XXXXX X
+X    X  X X X     X    X X     X
+X XXX X X X X XXXX X X X X X X X
+XX    X X X           X     X  X
+X X X X X XXX  XXX XXX XXX X X X
+X   X X X   X     X      X X X X
+X X X X XXX X   X  X X X X X X E
+X XX  X   X XX     X XX  X   X X
+EoX X X X X           XX X X   X
+XoX    X  XooooFoo  XX X  XX XXX
+XoX X     XoX    o   X X XX    X
+XoX       Xo     o X X         X
+Xo X  Xooooo     oX      X    XX
+XoX XXXoX XXXXX Xo XXXXX X X X X
+XoooooooX      Xoo X   X   X   X
+XXXXXXXXX XXX  XoXXX X X XXXXX X
+X     X  X      oo   X X     X X
+X XXX X X X X XXXoXXXX XXXXX X X
+X   X   X   X    oo  X   X   X X
+X X X X X XXXXXXXXoX X X X X X X
+X X  X  X X  ooooooX  X  X  X  X
+X X X XXX X Xo X XXX X X X X X X
+X X XoooX   Xo XX    X    X    X
+X X XoXoXXXXXoX X XX X XXX X X X
+XX oooXooooooo    X  X        XX
+XXXEXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+Step 82
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X               X          X   X
+X X XXXXX XXX X XXXXXX X X X X X
+X  X    X X  X          X  X X X
+X X X X X X X  XXXXX XXX X X X X
+X X   X X X X        X   X    XX
+X X X X X X X  X X XXX X XXXXX X
+X    X  X X X     X    X X     X
+X XXX X X X X XXXX X X X X X X X
+XX    X X X           X     X  X
+X X X X X XXX  XXX XXX XXX X X X
+X   X X X   X     X      X X X X
+X X X X XXX X   X  X X X X X X E
+X XX  X   X XX     X XX  X   X X
+EoX X X X X           XX X X   X
+XoX    X  XooooFoo  XX X  XX XXX
+XoX X     XoX    o   X X XX    X
+XoX       Xo     o X X         X
+Xo X  Xooooo     oX      X    XX
+XoX XXXoX XXXXX Xo XXXXX X X X X
+XoooooooX      Xoo X   X   X   X
+XXXXXXXXX XXX  XoXXX X X XXXXX X
+X     X  X      oo   X X     X X
+X XXX X X X X XXXoXXXX XXXXX X X
+X   X   X   X    oo  X   X   X X
+X X X X X XXXXXXXXoX X X X X X X
+X X  X  X X  ooooooX  X  X  X  X
+X X X XXX X Xo X XXX X X X X X X
+X X XoooX   Xo XX    X    X    X
+X X XoXoXXXXXoX X XX X XXX X X X
+XX oooXooooooo    X  X        XX
+XXXEXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+A maze is fully solvable as all players can reach the finishing point
+

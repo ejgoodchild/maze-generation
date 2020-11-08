@@ -165,7 +165,10 @@ void UserInterface::analyseMazes(int width, int height, int players)
         ma.solvable += curMazeProg->outcome == Outcome::SOLVABLE ? 1: 0;
         ma.partial += curMazeProg->outcome == Outcome::PARTIAL ? 1 : 0;
         ma.unsolvable += curMazeProg->outcome == Outcome::UNSOLVABLE ? 1 : 0;
-        
+       // if (curMazeProg->outcome == Outcome::UNSOLVABLE) Save
+       // ::save("UNSOLVABLE", curMazeProg->toString());
+       // if (curMazeProg->outcome == Outcome::PARTIAL) SaveLoad::save("PARTIAL", curMazeProg->toString());
+
     }
 
     cout << ma.toString() ;
