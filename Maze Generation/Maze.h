@@ -71,6 +71,8 @@ class Maze : protected MazeGeneration
 		void getBestExitPaths();
 		void collabPathfinding(int noOfPlayers);
 
+	
+
 	private:
 		/* Variables */
 		int width, height;
