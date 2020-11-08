@@ -41,8 +41,11 @@ void UserInterface::saveMaze()
 
 void UserInterface::loadMaze()
 {
-    string msg = "What file would you like to load?";
-    curMaze = SaveLoad::load(getUserFileName(msg));
+    curMaze = NULL;
+    while (!curMaze) {
+        string msg = "What file would you like to load?";
+        curMaze = SaveLoad::load(getUserFileName(msg));
+    }  
     curMazeProg = curMaze->getProgression();
     
     curMaze->printMaze();
