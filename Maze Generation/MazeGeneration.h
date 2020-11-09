@@ -16,6 +16,8 @@ class MazeGeneration
 		int getUserInt(string);
 		int getUserInt(string, int, int);
 		void outputln(string);
+		bool inRange(int val, int min, int max) { return val <= max ? val >= min : false; }
+		bool isEven(int val) { return val % 2 == 0; }
 	private:
 		bool isIntValid(string val);
 		string getFileWithExt(string filename);

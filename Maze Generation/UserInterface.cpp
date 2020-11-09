@@ -1,3 +1,7 @@
+/*
+* Author: Ethan Goodchild
+*/
+
 #include "UserInterface.h"
 #include <iostream>
 #include <time.h>
@@ -29,6 +33,10 @@ void UserInterface::generateMaze()
 
 }
 
+/**
+ * Lets user choose whether they would like to save the maze or the 
+ * mazes progression
+ */
 void UserInterface::saveMaze()
 { 
     string msg = "Please type the number for the option you'd like to pick...\n| Save Maze (1) | Save Progression (2)";
@@ -40,6 +48,10 @@ void UserInterface::saveMaze()
         SaveLoad::save(getUserFileName(msgSave),curMazeProg->toString());
 }
 
+/**
+ * Lets the user load a file which contains a maze with/without 
+ * progression that has been saved
+ */
 void UserInterface::loadMaze()
 {
     curMaze = NULL;
@@ -48,12 +60,16 @@ void UserInterface::loadMaze()
         curMaze = SaveLoad::load(getUserFileName(msg));
     }  
     curMazeProg = curMaze->getProgression();
-    
     curMaze->printMaze();
+    outputln(curMaze->getMazeInfo() + " has been loaded...");
 }
 
 
-
+/**
+ * When no maze has been selected, this menu provides options
+ * to either generate maze, load a maze, perform maze analysis
+ * or exit the program
+ */
 void UserInterface::getUserMaze()
 {
     if (curMaze) { delete curMaze; }
@@ -65,7 +81,12 @@ void UserInterface::getUserMaze()
 }
 
 
-
+/**
+ * Loads the main menu which gives the user the option to
+ * solve the currently loaded maze, clear any progression
+ * save the maze, change the maze, analyse the maze or exit
+ * the program
+ */
 void UserInterface::promptUserOptions()
 {
     string msg = "Please type the number for the option you'd like to pick...\n"
@@ -76,6 +97,11 @@ void UserInterface::promptUserOptions()
     promptUserOptions();
 }
 
+/**
+ * Performs user option based on its parameter
+ * 
+ * param the selected option  
+ */
 void UserInterface::performUserOption(UserOptions options)
 {
     switch (options) {
@@ -115,6 +141,10 @@ void UserInterface::performUserOption(UserOptions options)
     }
 }
 
+/**
+ * Asks user what kind of pathfinding they would like to perform
+ * and performs it based on their choice
+ */
 void UserInterface::performPathFinding()
 {
     performUserOption(UserOptions::CLEAR);
@@ -124,6 +154,11 @@ void UserInterface::performPathFinding()
     performUserOption(method);
 }
 
+/**
+ * Sets up collaborative path finding by asking the user how many
+ * players they want and then calling the collaborative pathfinding
+ * method
+ */
 void UserInterface::performCollabPathfinding()
 {
     string msg = "How many players would you like in the game?";
@@ -131,31 +166,42 @@ void UserInterface::performCollabPathfinding()
     curMaze->collabPathfinding(getUserInt(msg, 2, curMaze->getNoOfExits()));   
 
 }
+/**
+ * Asks and returns the upper limit integer value betwen a range of values
+ * 
+ * @param a string the represent what the upper limit is for, the minimum 
+ * value and the maximum value for the upper limit 
+ */
 int UserInterface::getUserUpperLimit(string msgEnd, int min, int max)
 {
     string msg = "Please define the upper limit for the " + msgEnd;
     outputln(msg);
     return getUserInt(msg, min, max);
 }
+
+/**
+ * Analyses mazes within a range specified by the user and performs a 100
+ * tests on each combination of width, height and number of players in a 
+ * maze
+ */
 void UserInterface::analyseMazes()
 {
-
     int width = getUserUpperLimit("maze width...", MIN_MAZE_LENGTH, 250);
     int height = getUserUpperLimit("maze height...", MIN_MAZE_LENGTH, 250);
     int players = getUserUpperLimit("number of players...", 2, (MIN_MAZE_LENGTH - 2) * 4);
     
-
-    for (int x = MIN_MAZE_LENGTH; x <= width; x++) {
-        for (int y = MIN_MAZE_LENGTH; y <= height; y++) {
-            for (int p = 2; p <= players; p++) {
+    for (int x = MIN_MAZE_LENGTH; x <= width; x++)
+        for (int y = MIN_MAZE_LENGTH; y <= height; y++)
+            for (int p = 2; p <= players; p++)
                 analyseMazes(x, y, p);
 
-            }
-        }
-    }
-
 }
-
+/**
+ * Analyses 100 mazes with width, height and number of players defined
+ * by the user
+ * 
+ * @param the width, height and number of player of the maze
+ */
 void UserInterface::analyseMazes(int width, int height, int players)
 {
     MazeAnalysis ma =  MazeAnalysis(width, height, players);
@@ -165,36 +211,30 @@ void UserInterface::analyseMazes(int width, int height, int players)
         ma.solvable += curMazeProg->outcome == Outcome::SOLVABLE ? 1: 0;
         ma.partial += curMazeProg->outcome == Outcome::PARTIAL ? 1 : 0;
         ma.unsolvable += curMazeProg->outcome == Outcome::UNSOLVABLE ? 1 : 0;
-       // if (curMazeProg->outcome == Outcome::UNSOLVABLE) Save
-       // ::save("UNSOLVABLE", curMazeProg->toString());
-       // if (curMazeProg->outcome == Outcome::PARTIAL) SaveLoad::save("PARTIAL", curMazeProg->toString());
-
     }
 
     cout << ma.toString() ;
 }
-
+/**
+ * Generates a new maze based on the width, height and number 
+ * of players specified.
+ *
+ * @param the width, height and number of players in maze
+ */
 void UserInterface::generateMaze(int width, int height, int players)
 {
-    if (curMaze) {
-        delete curMaze;
-    }
+    if (curMaze) delete curMaze;
+   
     curMaze = new Maze(width, height);
-    
-
     curMaze->setExits(randInt(players, curMaze->getMaxNumOfExits()));
     curMaze->generateMaze();
     curMazeProg = curMaze->getProgression();
-
-
-
 }
 
 
-
-
-
-
+/**
+ * Starts the user interface
+ */
 void UserInterface::start()
 {
     getUserMaze();

@@ -1,3 +1,6 @@
+/*
+* Author: Ethan Goodchild
+*/
 #include "Maze.h"
 
 
@@ -42,7 +45,8 @@ Maze::Maze(int w, int h, string mazeData, std::vector<string> progress) : Maze(w
 {
 	progression.originalMaze = mazeData;
 	progression.progress = progress;
-	cout << progression.toString();
+	outputln(progression.toString());
+	
 }
 
 
@@ -244,20 +248,7 @@ void Maze::generateExits()
 	}
 }
 
-/**
- * Generates additional paths in the rare case that the number of exits is larger
- * than the amount of exits possible
- */
-void Maze::generateAdditionalPaths()
-{
-	int exitsPossible = getPossibleExits().size();
-	if (exitsPossible >= noOfExits) return;
-	std::vector <MazeNode*> nodes = getPathInnerBorder();
-	std::random_shuffle(std::begin(nodes), std::end(nodes));
 
-	int additionalRoutes = (noOfExits - exitsPossible) % nodes.size();
-	for (int i = additionalRoutes; i >= 0; i--) generatePaths(nodes.at(i));
-}
 
 /**
  * Recursively generates a random path around the maze until an invalid end node is found
@@ -467,16 +458,7 @@ vector<MazeNode*> Maze::getBestPath(MazeNode* start, MazeNode* end)
 }
 
 
-/**
- * Finds out if a value is within the range of a min value and max value
- *
- * @param the value to be checked, the minimum value and the maximum value
- * @return true if value in range, false if not
- */
-bool Maze::inRange(int val, int min, int max)
-{
-	return val <= max ? val >= min : false;
-}
+
 /**
  * Finds possible exits in row / column when given the list of outer and inner 
  * nodes and adds them the list given.
@@ -489,6 +471,9 @@ void Maze::findPossibleExits(vector<MazeNode*> inner, vector<MazeNode*> outer, v
 		if (isPathNode(inner.at(i))) exits->emplace_back(outer.at(i));
 	
 }
+/**
+ * Sets all nodes nodetype to null
+ */
 void Maze::resetAllNodeTypes()
 {
 	for (int i = 0; i < nodes.size(); i++)

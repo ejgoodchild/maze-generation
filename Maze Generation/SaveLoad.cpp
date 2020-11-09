@@ -1,3 +1,6 @@
+/*
+* Author: Ethan Goodchild
+*/
 #include "SaveLoad.h"
 #include <iostream>
 #include <fstream>
@@ -109,14 +112,25 @@ Maze* SaveLoad::load(ifstream* file)
     cout << "Maze sucessfully loaded" << endl;
     return foundMaze ? new Maze(x, y, mazeData, progressData) : new Maze(x, y, mazeData);
 }
-
+/**
+ * Validates whether a line of text is part of a maze structure
+ *
+ * @param the line of text and if the maze has already been found
+ * in textfile
+ * @return if line is valid true otherwise false
+ */
 bool SaveLoad::validateLine(string ln, bool* foundMaze)
 {
     for (int i = 0; i < ln.length(); i++)
         if (!isMazeChar(&ln.at(i))) return *foundMaze;
     return true;
 }
-
+/**
+ * Checks to see if character is one that can appear on a maze
+ *
+ * @param character to check
+ * @returnif character is valid
+ */
 bool SaveLoad::isMazeChar(char* c)
 {
     char mazeChars[7]{ 'E',' ', 'S', 'X', 'P', 'o', 'F' };

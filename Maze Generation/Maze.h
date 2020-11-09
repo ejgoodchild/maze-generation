@@ -56,6 +56,7 @@ public:
 	void printMazeSize();
 	void printMaze();
 	string toString();
+	string getMazeInfo() { return "Maze[" + to_string(width) + "," + to_string(height) + "]"; }
 
 	/* Getters / Setters */
 	int getMaxNumOfExits();
@@ -99,7 +100,6 @@ public:
 		void generateStartPoint();
 		void generateWalls();
 		void generateExits();
-		void generateAdditionalPaths();
 
 		/* Pathfinding */
 		MazeNode* getPathEndNode(MazeNode*, Directions);
@@ -119,8 +119,6 @@ public:
 
 
 		/* Math */
-		bool inRange(int val, int min, int max);
-		bool isEven(int val) { return val % 2 == 0; }
 		bool inMazeRange(int x, int y) {	return inRange(x, 0, width - 1) && inRange(y, 0, height - 1);}
 
 		/* Nodes */
