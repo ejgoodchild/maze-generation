@@ -1,4 +1,5 @@
 ## C++ Maze Generator
+<p align="center"><img src="https://ejgoodchild.github.io/images/maze.jpg"></p>
 
 ## About
 This repo contains a Maze Generator that builds a maze out of ASCII characters.
